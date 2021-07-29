@@ -1,6 +1,6 @@
 # Hi, I'm Zhaowei Gu
 
-Thank you for stopping by my repo. I'm a newly graduated student from Boston and currently looking for a full-time software engineer role! Please feel free to send me a [messege](#Contacts) if you think I'm a good fit in your company!
+Thank you for stopping by my repo. I'm a graduated student from Boston University studying Software Development, and currently looking for a full-time position! Please feel free to send me a [messege](#Contacts) if you think I'm a good fit in your company!
 
 ### Programming Languages
 ![Python](https://img.shields.io/badge/-Python-05122A?style=flat&logo=python)
