@@ -34,5 +34,4 @@ Thank you for stopping by my repo. I'm a graduated student from Boston Universit
 
 ## Contacts
 📧 <zhaoweifz@gmail.com>
-
-[![Linkedin](https://img.shields.io/badge/-Zhaowei Gu-05122A?style=flat&logo=Linkedin)](www.linkedin.com/in/zhaoweigu)
+[![Linkedin](https://img.shields.io/badge/-Zhaowei_Gu-05122A?style=flat&logo=Linkedin)](www.linkedin.com/in/zhaoweigu)
