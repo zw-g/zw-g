@@ -1,6 +1,6 @@
 # Hi, I'm Zhaowei Gu
 
-Thank you for stopping by my repo. I'm a graduated student from Boston University studying Software Development, and currently looking for a full-time position! Please feel free to [send me a messege](https://www.linkedin.com/in/zhaoweigu/) if you think I'm a good fit in your company!
+Thank you for stopping by my repo. I'm a Software Development Engineer at AWS, and currently looking for a full-time position! Please feel free to [send me a messege](https://www.linkedin.com/in/zhaoweigu/) if you think I'm a good fit in your company!
 
 ### Programming Languages
 ![Python](https://img.shields.io/badge/-Python-05122A?style=flat&logo=python)
@@ -38,5 +38,4 @@ Thank you for stopping by my repo. I'm a graduated student from Boston Universit
 [![Mail Badge](https://img.shields.io/badge/-zhaoweifz-c0392b?style=flat&labelColor=c0392b&logo=gmail&logoColor=white)](mailto:zhaoweifz@gmail.com)
 
 ### Profile Visits 
-
 ![visitors](https://visitor-badge.glitch.me/badge?page_id=zw-g.zw-g)
