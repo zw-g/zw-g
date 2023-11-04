@@ -1,5 +1,8 @@
 # Hi, I'm Zhaowei Gu
 
+![](https://img.shields.io/github/followers/zw-g?style=social)
+![](https://img.shields.io/github/stars/zw-g?style=social)
+
 Thank you for stopping by my repo. I'm a Software Development Engineer at AWS, and currently looking for a full-time position! Please feel free to [send me a messege](https://www.linkedin.com/in/zhaoweigu/) if you think I'm a good fit in your company!
 
 ### Programming Languages
@@ -30,6 +33,10 @@ Thank you for stopping by my repo. I'm a Software Development Engineer at AWS, a
 ![VMware](https://img.shields.io/badge/-VMware-05122A?style=flat&logo=VMware)
 ![Virtual_Box](https://img.shields.io/badge/-Virtual_Box-05122A?style=flat&logo=Virtual-Box)
 
+### Github infomation
+
+![GithubStats](https://github-profile-summary-cards.vercel.app/api/cards/stats?username=zw-g&theme=github)
+![GithubMostCommitLanguage](https://github-profile-summary-cards.vercel.app/api/cards/most-commit-language?username=zw-g&theme=github)
 
 ## Contacts
 📧 <zhaoweifz@gmail.com>
@@ -38,4 +45,4 @@ Thank you for stopping by my repo. I'm a Software Development Engineer at AWS, a
 [![Mail Badge](https://img.shields.io/badge/-zhaoweifz-c0392b?style=flat&labelColor=c0392b&logo=gmail&logoColor=white)](mailto:zhaoweifz@gmail.com)
 
 ### Profile Visits 
-![visitors](https://visitor-badge.glitch.me/badge?page_id=zw-g.zw-g)
+![Count](https://count.getloli.com/get/@zw-g?theme=gelbooru)
