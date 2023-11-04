@@ -1,4 +1,42 @@
-# Hi, I'm Zhaowei Gu
+<h4 align="center"><samp>
+  Hi there 👋 welcome to my Github! I'm a Software Development Engineer and Professional Pragmatic Learner. I also like Python and where is my offer? 💰🐯
+</samp></h4>
+
+<p align="center">
+  <!-- https://giphy.com/ -->
+  <!-- <img width="250" src="https://media.giphy.com/media/MWL1pOYgkPYNWyfGlJ/giphy.gif"> -->
+  <!-- <img width="250" src="https://media.giphy.com/media/QETn2YdGU9lrsmuHRx/giphy.gif"> -->
+  <!-- <img width="250" src="https://media.giphy.com/media/x57iirsJSb5lNjFZg5/giphy.gif"> -->
+  <!-- <img width="250" src="https://media.giphy.com/media/2UCumWD8HAXcl5Kq0a/giphy.gif"> -->
+  <!-- <img width="250" src="https://media.giphy.com/media/cMQ3ZRrpdiW59YrrYQ/giphy.gif"> -->
+  <!-- <img width="250" src="https://media.giphy.com/media/iuXwSRD2DiprA5tHkV/giphy.gif"> -->
+  <!-- <img width="250" src="https://media.giphy.com/media/q8TcPaQaGNYwvtR1ld/giphy.gif"> -->
+  <img width="250" src="https://media.giphy.com/media/5ndklThG9vUUdTmgMn/giphy.gif">
+  <!-- <img width="250" src="https://media.giphy.com/media/syfUUMguuwhBAXReTd/giphy.gif"> -->
+  <!-- <img width="250" src="https://media.giphy.com/media/nrQv5LwVZkO1w4U6u0/giphy.gif"> -->
+</p>
+
+<p align="center">
+  <a href="https://github.com/zw-g">
+    <picture>
+      <source media="(prefers-color-scheme: dark)" srcset="https://cdn.simpleicons.org/github/white">
+      <img alt="GitHub" title="GitHub" height="24" width="24" src="https://cdn.simpleicons.org/github"></picture></a>
+  </a>&nbsp;
+  <a href="https://www.linkedin.com/in/zhaoweigu/">
+    <img alt="LinkedIn" title="LinkedIn" height="24" width="24" src="https://cdn.simpleicons.org/linkedin"></a>
+  </a>&nbsp;
+  <a href="mailto:zhaoweifz@gmail.com">
+    <img alt="Gmail" title="Gmail" height="24" width="24" src="https://cdn.simpleicons.org/gmail"></a>
+</p>
+
+<p align="center"><samp>
+  more about me 👇
+</samp></p>
+
+<!--
+<p align="center"><samp>
+  Check out my repos ⬇️ 
+</samp></p>
 
 ![](https://img.shields.io/github/followers/zw-g?style=social)
 ![](https://img.shields.io/github/stars/zw-g?style=social)
@@ -45,4 +83,8 @@ Thank you for stopping by my repo. I'm a Software Development Engineer at AWS, a
 [![Mail Badge](https://img.shields.io/badge/-zhaoweifz-c0392b?style=flat&labelColor=c0392b&logo=gmail&logoColor=white)](mailto:zhaoweifz@gmail.com)
 
 ### Profile Visits 
-![Count](https://count.getloli.com/get/@zw-g?theme=gelbooru)
+
+<p align="center">
+  <img src="https://count.getloli.com/get/@zw-g?theme=gelbooru" alt="Count">
+</p>
+-->
