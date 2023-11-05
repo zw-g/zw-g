@@ -33,7 +33,13 @@
 
 <!-- more information -->
 <details>
-<summary align="center"><samp> more about me 👇 </samp></summary>
+<summary align="center"><samp> more about me 👇 </samp></summary><br>
+
+<div align="center" width="50">
+<p><strong> Vibing to : 🎧 </strong></p>
+
+[![Spotify](https://novatorem-puce-eta.vercel.app/api/spotify)](https://open.spotify.com/user/31q23hv2amglcciovjyskzqpc74u)
+</div>
 
 ### 😎 我是谁 | Who am I
 - 🧑🏻‍💻 My name is Zhaowei Gu（顾钊玮）it sounds like Jaw-Way
