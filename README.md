@@ -94,6 +94,6 @@
 ![GithubMostCommitLanguage](https://github-profile-summary-cards.vercel.app/api/cards/most-commit-language?username=zw-g&theme=github)
 
 ### 🔢 这里已经被光临过多少次 | How many times have viewer been here
-[<img alt="Profile Visits" src="https://count.getloli.com/get/@zw-g?theme=gelbooru">](#)
+[<img alt="Profile Visits" src="https://count.getloli.com/get/@zw-g?theme=rule34">](https://moe-counter.glitch.me/)
 </div>
 </details>
