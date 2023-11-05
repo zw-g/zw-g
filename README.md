@@ -33,13 +33,7 @@
 
 <!-- more information -->
 <details>
-<summary align="center"><samp> more about me 👇 </samp></summary><br>
-
-<div align="center" width="50">
-<p><strong> Vibing to : 🎧 </strong></p>
-
-[![Spotify](https://novatorem-puce-eta.vercel.app/api/spotify)](https://open.spotify.com/user/31q23hv2amglcciovjyskzqpc74u)
-</div>
+<summary align="center"><samp> more about me 👇 </samp></summary><be>
 
 ### 😎 我是谁 | Who am I
 - 🧑🏻‍💻 My name is Zhaowei Gu（顾钊玮）it sounds like Jaw-Way
@@ -48,6 +42,11 @@
 - 📷 Nikon(1st cam), GR III X, Fujifilm
 - 🕹️ [QQ Speed](https://speed.qq.com/), [DFO](https://www.dfoneople.com/), Don't play much anymore 😭
 - ⌨️ HHKB, DIY
+
+<div align="center" >
+<p><strong> Vibing to : 🎧 </strong></p>
+  
+[![Spotify](https://novatorem-puce-eta.vercel.app/api/spotify)](https://open.spotify.com/user/31q23hv2amglcciovjyskzqpc74u)
 
 ### 🛠 技术栈 | Tech stack
 ![Python](https://img.shields.io/badge/-Python-05122A?style=flat&logo=python)
@@ -96,4 +95,5 @@
 
 ### 🔢 这里已经被光临过多少次 | How many times have viewer been here
 [<img alt="Profile Visits" src="https://count.getloli.com/get/@zw-g?theme=gelbooru">](#)
+</div>
 </details>
