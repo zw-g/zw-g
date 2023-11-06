@@ -18,5 +18,5 @@ jobs:
           retries_delay: 300
           retries_output_action: 5
           retries_delay_output_action: 120
-          output_action: none
+          output_action: none 
           token: ${{ secrets.METRICS_TOKEN }}
