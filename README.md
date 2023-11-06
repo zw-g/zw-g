@@ -1,5 +1,5 @@
 <h4 align="center"><samp>
-  Hi there 👋 welcome to my Github! I'm a Software Development Engineer and Professional Pragmatic Learner. I also like Automation and where is my job offer? 🐯🏺
+  Hi there 👋 welcome to my Github! I'm a Software Development Engineer and Professional Pragmatic Learner. I also like Automation and where is my job offer? 🐯
 </samp></h4>
 
 <!-- select picture -->
@@ -35,20 +35,55 @@
 <details>
 <summary align="center"><samp> more about me 👇 </samp></summary><be>
 
-### 😎 我是谁 | Who am I
-- 🧑🏻‍💻 My name is Zhaowei Gu（顾钊玮）it sounds like Jaw-Way
-- ❤️ Tech enthusiast
-- 📍 Currently Working in San Jose, CA
-- 📷 Nikon(1st cam), GR III X, Fujifilm
-- 🕹️ [QQ Speed](https://speed.qq.com/), [DFO](https://www.dfoneople.com/), Don't play much anymore 😭
-- ⌨️ HHKB, DIY
+#
 
-<div align="center" >
-<p><strong> Vibing to : 🎧 </strong></p>
+<!-- my picture -->
+<img align="right" width = "333" alt="Me" src="/me/IMG_2024.jpeg"/>
+
+<!-- my introduction -->
+<div align="left" >
   
-[![Spotify](https://novatorem-puce-eta.vercel.app/api/spotify)](https://open.spotify.com/user/31q23hv2amglcciovjyskzqpc74u)
+  - 🧑🏻‍💻 My name sounds like **Jaw-Way**
+  - 🎓 I've graduated with BS in **Technology Information Management** and MS in **Software Development**
+  - 🔭 I'm currently working on a **Product Notification Project**
+  - 🌱 I'm currently learning **Web Scraping with anti-bot mitigation techniques** and **API Gateway**
+  - 🤔 My career interests lie in the development of innovative products that enrich people's everyday experiences.
+  - 🔍 I’m looking for career opportunities in the Software industry
 
-### 🛠 技术栈 | Tech stack
+</div>
+  
+<!-- Spotify song -->
+<p align="center" ><strong> Vibing to : 🎧 </strong></p>
+
+<p align="center">
+  <a href="https://open.spotify.com/user/31q23hv2amglcciovjyskzqpc74u">
+    <img src="https://novatorem-puce-eta.vercel.app/api/spotify" alt="Spotify">
+  </a>
+</p>
+
+<br/>
+
+<!-- matrics -->
+<br/>
+<table>
+  <tr>
+    <td>
+      <img src="/metric-General1.svg" width="100%" alt="Metrics" />
+    </td>
+    <td>
+      <img src="/metric-General2.svg" width="100%" alt="Metrics" />
+    </td>
+  </tr>
+</table>
+
+<!-- Leetcode -->
+[<img align="left" width = "450" alt="Leetcode" src="/metric-Leetcode.svg"/>](#)
+
+<br/>
+
+<!-- LANGUAGE AND TOOLS -->
+
+### 🛠 LANGUAGE AND TOOLS
 ![Python](https://img.shields.io/badge/-Python-05122A?style=flat&logo=python)
 ![Java](https://img.shields.io/badge/-Java-05122A?style=flat&logo=Java&logoColor=FFA518)
 ![JavaScript ES6](https://img.shields.io/badge/-JavaScript-05122A?style=flat&logo=javascript)
@@ -89,22 +124,41 @@
 ![VSCode](https://img.shields.io/badge/VSCode-333333?style=flat&logo=visualstudiocode&logoColor=007ACC)
 ![PhotoShop](https://img.shields.io/badge/PhotoShop-333333?style=flat&logo=adobephotoshop&logoColor=31A8FF)
 
-### ℹ️ Github相关信息 | Github infomation
-![GithubStats](https://github-profile-summary-cards.vercel.app/api/cards/stats?username=zw-g&theme=github)
-![GithubMostCommitLanguage](https://github-profile-summary-cards.vercel.app/api/cards/most-commit-language?username=zw-g&theme=github)
+<br/><br/>
 
-### 🔢 这里已经被光临过多少次 | How many times have viewer been here
-[<img alt="Profile Visits" src="https://count.getloli.com/get/@zw-g?theme=rule34">](https://moe-counter.glitch.me/)
+#
+
+[<img align="right" width = "450" alt="Leetcode" src="/metric-Steam.svg"/>](#)
+
+<div align="center" >
+  
+  ### ℹ️ Github相关信息 | Github infomation
+  ![GithubStats](https://github-profile-summary-cards.vercel.app/api/cards/stats?username=zw-g&theme=github)
+  ![GithubMostCommitLanguage](https://github-profile-summary-cards.vercel.app/api/cards/most-commit-language?username=zw-g&theme=github)
+
+</div>
+
+#
+
+<div align="center" >
+  
+  ### 🔢 这里已经被光临过多少次 | How many times have viewer been here
+  [<img alt="Profile Visits" src="https://count.getloli.com/get/@zw-g?theme=rule34">](https://moe-counter.glitch.me/)
+
+</div>
 
 <hr></hr>
 
-**Code Cycle**<br>
+<div align="center" >
+  
+  **Code Cycle**
+  
+  <img src="https://raw.githubusercontent.com/Tarikul-Islam-Anik/Animated-Fluent-Emojis/master/Emojis/Smilies/Face%20with%20Spiral%20Eyes.png" width="10%" alt="Broken system!"/>
+  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+  <img src="https://raw.githubusercontent.com/Tarikul-Islam-Anik/Animated-Fluent-Emojis/master/Emojis/Smilies/Relieved%20Face.png" width="10%" alt="It's working!"/>
+  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+  <img src="https://raw.githubusercontent.com/Tarikul-Islam-Anik/Animated-Fluent-Emojis/master/Emojis/Smilies/Astonished%20Face.png" width="10%" alt="It's working but you don't know how!"/><br>
 
-<img src="https://raw.githubusercontent.com/Tarikul-Islam-Anik/Animated-Fluent-Emojis/master/Emojis/Smilies/Face%20with%20Spiral%20Eyes.png" width="10%" alt="Broken system!"/>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-<img src="https://raw.githubusercontent.com/Tarikul-Islam-Anik/Animated-Fluent-Emojis/master/Emojis/Smilies/Relieved%20Face.png" width="10%" alt="It's working!"/>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-<img src="https://raw.githubusercontent.com/Tarikul-Islam-Anik/Animated-Fluent-Emojis/master/Emojis/Smilies/Astonished%20Face.png" width="10%" alt="It's working but you don't know how!"/><br>
 </div>
 
 </details>
