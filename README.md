@@ -1,5 +1,5 @@
 <h4 align="center"><samp>
-  Hi there 👋 welcome to my Github! I'm a Software Development Engineer and Professional Pragmatic Learner. I also like Automation and where is my job offer? 🐯🏺
+  Hi there 👋 welcome to my Github! I'm a Software Development Engineer and Professional Pragmatic Learner. I also like Automation and where is my job offer? 🐯
 </samp></h4>
 
 <!-- select picture -->
@@ -32,23 +32,60 @@
 </p>
 
 <!-- more information -->
+<!-- 
 <details>
 <summary align="center"><samp> more about me 👇 </samp></summary><be>
+-->
 
-### 😎 我是谁 | Who am I
-- 🧑🏻‍💻 My name is Zhaowei Gu（顾钊玮）it sounds like Jaw-Way
-- ❤️ Tech enthusiast
-- 📍 Currently Working in San Jose, CA
-- 📷 Nikon(1st cam), GR III X, Fujifilm
-- 🕹️ [QQ Speed](https://speed.qq.com/), [DFO](https://www.dfoneople.com/), Don't play much anymore 😭
-- ⌨️ HHKB, DIY
+#
 
-<div align="center" >
-<p><strong> Vibing to : 🎧 </strong></p>
+<!-- my picture -->
+<img align="right" width = "49%" alt="Me" src="/me/IMG_2024.jpeg"/>
+
+<!-- my introduction -->
+<div align="left" >
   
-[![Spotify](https://novatorem-puce-eta.vercel.app/api/spotify)](https://open.spotify.com/user/31q23hv2amglcciovjyskzqpc74u)
+  <br/>
+  
+  - 🧑🏻‍💻 My name sounds like **Jaw-Way**
+  - 🎓 I've graduated with BS in **Technology Information Management** and MS in **Software Development**
+  - 🔭 I'm currently working on a **Product Notification Project**
+  - 🌱 I'm currently learning **Web Scraping with anti-bot mitigation techniques** and **API Gateway**
+  - 🤔 My career interests lie in the development of innovative products that enrich people's everyday experiences.
+  - 🔍 I’m looking for career opportunities in the Software industry
+  <!-- 
+  - 📍 Currently Working in San Jose, CA
+  - 📷 Nikon(1st cam), GR III X, Fujifilm Nikon(1st cam), GR III X, Fujifilm Nikon(1st cam), GR III X, Fujifilm Nikon(1st cam), GR III X, Fujifilm
+  - 🕹️ [QQ Speed](https://speed.qq.com/), [DFO](https://www.dfoneople.com/), Don't play much anymore 😭
+  - ⌨️ HHKB, DIY
+  -->
+  
+  <br/><br/><br/>
+  
+  <!-- Spotify song -->
+  <p align="center" ><strong> Vibing to : 🎧 </strong></p>
+  
+  <br/>
+  
+  [![Spotify](https://novatorem-puce-eta.vercel.app/api/spotify)](https://open.spotify.com/user/31q23hv2amglcciovjyskzqpc74u)
 
-### 🛠 技术栈 | Tech stack
+  <br/><br/>
+  
+</div>
+
+#
+
+<p align="center">
+  <img align="left" width = "48%" alt="Metrics" src="/metric-General1.svg"/>
+  <br/>
+  <img align="right" width = "48%" alt="Metrics" src="/metric-General2.svg"/>
+</p>
+
+<br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>
+
+#
+  
+### 🛠 LANGUAGE AND TOOLS
 ![Python](https://img.shields.io/badge/-Python-05122A?style=flat&logo=python)
 ![Java](https://img.shields.io/badge/-Java-05122A?style=flat&logo=Java&logoColor=FFA518)
 ![JavaScript ES6](https://img.shields.io/badge/-JavaScript-05122A?style=flat&logo=javascript)
@@ -105,6 +142,5 @@
 <img src="https://raw.githubusercontent.com/Tarikul-Islam-Anik/Animated-Fluent-Emojis/master/Emojis/Smilies/Relieved%20Face.png" width="10%" alt="It's working!"/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 <img src="https://raw.githubusercontent.com/Tarikul-Islam-Anik/Animated-Fluent-Emojis/master/Emojis/Smilies/Astonished%20Face.png" width="10%" alt="It's working but you don't know how!"/><br>
-</div>
 
 </details>
