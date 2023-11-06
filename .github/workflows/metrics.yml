@@ -9,63 +9,10 @@ on:
 jobs:
   metrics:
     runs-on: ubuntu-latest
-    permissions:
-      contents: write
     steps:
-      - name: General2
-        uses: lowlighter/metrics@latest
-        with:
-          filename: metric-General2.svg
-          token: ${{ secrets.METRICS_TOKEN }}
-
-          # 🏆 Achievements
-          plugin_achievements: yes
-          plugin_achievements_threshold: C
-          plugin_achievements_secrets: yes
-          plugin_achievements_display: compact
-          plugin_achievements_limit: 0
-
-          # ♐ Random code snippet
-          plugin_code: yes
-          plugin_code_lines: 12 # type: number (1 ≤ 𝑥 ≤ 128)
-          plugin_code_load: 400 # type: number (100 ≤ 𝑥 ≤ 1000)
-          plugin_code_days: 365 # type: number (0 ≤ 𝑥 ≤ 365)
-
-          # 💡 Coding habits and activity
-          plugin_habits: yes
-          plugin_habits_from: 1000
-          plugin_habits_days: 30
-          plugin_habits_facts: yes
-          
-          # Config order
-          config_order: habits, code, achievements
-
-      - name: Steam
-        uses: lowlighter/metrics@latest
-        with:
-          filename: metric-Steam.svg
-          token: ${{ secrets.METRICS_TOKEN }}
-
-          # 🕹️ Steam
-          plugin_steam_token: ${{ secrets.STEAM_TOKEN }}
-          plugin_steam: yes
-          plugin_steam_user: "76561198093054868"
-          plugin_steam_sections: player, most-played, recently-played
-
-      - name: Leetcode
-        uses: lowlighter/metrics@latest
-        with:
-          filename: metric-Leetcode.svg
-          token: ${{ secrets.METRICS_TOKEN }}
-
-          # 🗳️ Leetcode
-          plugin_leetcode: yes
-          plugin_leetcode_user: "zw-g"
-          plugin_leetcode_sections: solved, skills, recent
-          plugin_leetcode_limit_skills: 10 # type: number (0 ≤ 𝑥)
-          plugin_leetcode_limit_recent: 2 #  type: number (1 ≤ 𝑥 ≤ 15)
-  
+    
       - name: General1
+        if: ${{ success() || failure() }}
         uses: lowlighter/metrics@latest
         with:
           filename: metric-General1.svg
@@ -111,3 +58,59 @@ jobs:
 
           # Config order
           config_order: base.header, isocalendar, languages
+          
+      - name: General2
+        if: ${{ success() || failure() }}
+        uses: lowlighter/metrics@latest
+        with:
+          filename: metric-General2.svg
+          token: ${{ secrets.METRICS_TOKEN }}
+
+          # 🏆 Achievements
+          plugin_achievements: yes
+          plugin_achievements_threshold: C
+          plugin_achievements_secrets: yes
+          plugin_achievements_display: compact
+          plugin_achievements_limit: 0
+
+          # ♐ Random code snippet
+          plugin_code: yes
+          plugin_code_lines: 12 # type: number (1 ≤ 𝑥 ≤ 128)
+          plugin_code_load: 400 # type: number (100 ≤ 𝑥 ≤ 1000)
+          plugin_code_days: 365 # type: number (0 ≤ 𝑥 ≤ 365)
+
+          # 💡 Coding habits and activity
+          plugin_habits: yes
+          plugin_habits_from: 1000
+          plugin_habits_days: 30
+          plugin_habits_facts: yes
+          
+          # Config order
+          config_order: habits, code, achievements
+
+      - name: Steam
+        if: ${{ success() || failure() }}
+        uses: lowlighter/metrics@latest
+        with:
+          filename: metric-Steam.svg
+          token: ${{ secrets.METRICS_TOKEN }}
+
+          # 🕹️ Steam
+          plugin_steam_token: ${{ secrets.STEAM_TOKEN }}
+          plugin_steam: yes
+          plugin_steam_user: "76561198093054868"
+          plugin_steam_sections: player, most-played, recently-played
+
+      - name: Leetcode
+        if: ${{ success() || failure() }}
+        uses: lowlighter/metrics@latest
+        with:
+          filename: metric-Leetcode.svg
+          token: ${{ secrets.METRICS_TOKEN }}
+
+          # 🗳️ Leetcode
+          plugin_leetcode: yes
+          plugin_leetcode_user: "zw-g"
+          plugin_leetcode_sections: solved, skills, recent
+          plugin_leetcode_limit_skills: 10 # type: number (0 ≤ 𝑥)
+          plugin_leetcode_limit_recent: 2 #  type: number (1 ≤ 𝑥 ≤ 15)
