@@ -13,10 +13,10 @@ jobs:
       contents: write
     steps:
   
-      - name: general
+      - name: General1
         uses: lowlighter/metrics@latest
         with:
-          filename: general-metric.svg
+          filename: General1-metric.svg
           token: ${{ secrets.METRICS_TOKEN }}
           config_timezone: America/Los_Angeles
 
@@ -35,40 +35,44 @@ jobs:
           plugin_languages_sections: most-used, recently-used
           plugin_languages_details: lines, percentage
 
+          # 🧑‍🤝‍🧑 People
+          #plugin_people: yes
+          #plugin_people_limit: 0
+          #plugin_people_identicons: no
+          #plugin_people_size: 28 # type: number (8 ≤ 𝑥 ≤ 64)
+          #plugin_people_shuffle: yes
+
+          # 📰 Recent activity
+          #plugin_activity: yes
+          #plugin_activity_limit: 3
+          #plugin_activity_load: 300 # type: number (100 ≤ 𝑥 ≤ 1000)
+          #plugin_activity_days: 365 # type: number (0 ≤ 𝑥 ≤ 365)
+
           # 📌 Starred topics
           #plugin_topics: yes
           #plugin_topics_limit: 0
           #plugin_topics_mode: icons
           
           # 🌟 Recently starred repositories
-          plugin_stars: yes
-          plugin_stars_limit: 2
+          #plugin_stars: yes
+          #plugin_stars_limit: 2
 
-          # 💡 Coding habits and activity
-          plugin_habits: yes
-          plugin_habits_from: 1000
-          plugin_habits_days: 30
-          plugin_habits_facts: yes
+          # Config order
+          config_order: base.header, isocalendar, languages
 
-          # 🧑‍🤝‍🧑 People
-          plugin_people: yes
-          plugin_people_limit: 0
-          plugin_people_identicons: yes
-          plugin_people_size: 28 # type: number (8 ≤ 𝑥 ≤ 64)
-          plugin_people_shuffle: yes
-          
+      - name: General2
+        uses: lowlighter/metrics@latest
+        with:
+          filename: General2-metric.svg
+          token: ${{ secrets.METRICS_TOKEN }}
+          config_timezone: America/Los_Angeles
+
           # 🏆 Achievements
           plugin_achievements: yes
           plugin_achievements_threshold: C
           plugin_achievements_secrets: yes
           plugin_achievements_display: compact
           plugin_achievements_limit: 0
-          
-          # 📰 Recent activity
-          plugin_activity: yes
-          plugin_activity_limit: 3
-          plugin_activity_load: 300 # type: number (100 ≤ 𝑥 ≤ 1000)
-          plugin_activity_days: 365 # type: number (0 ≤ 𝑥 ≤ 365)
 
           # ♐ Random code snippet
           plugin_code: yes
@@ -76,12 +80,21 @@ jobs:
           plugin_code_load: 400 # type: number (100 ≤ 𝑥 ≤ 1000)
           plugin_code_days: 365 # type: number (0 ≤ 𝑥 ≤ 365)
 
-          # 🗳️ Leetcode
-          plugin_leetcode: yes
-          plugin_leetcode_user: "zw-g"
-          plugin_leetcode_sections: solved, skills, recent
-          plugin_leetcode_limit_skills: 10 # type: number (0 ≤ 𝑥)
-          plugin_leetcode_limit_recent: 2 #  type: number (1 ≤ 𝑥 ≤ 15)
+          # 💡 Coding habits and activity
+          plugin_habits: yes
+          plugin_habits_from: 1000
+          plugin_habits_days: 30
+          plugin_habits_facts: yes
+          
+          # Config order
+          config_order: habits, code, achievements
+
+      - name: Steam
+        uses: lowlighter/metrics@latest
+        with:
+          filename: Steam-metric.svg
+          token: ${{ secrets.METRICS_TOKEN }}
+          config_timezone: America/Los_Angeles
 
           # 🕹️ Steam
           plugin_steam_token: ${{ secrets.STEAM_TOKEN }}
@@ -89,5 +102,16 @@ jobs:
           plugin_steam_user: "76561198093054868"
           plugin_steam_sections: player, most-played, recently-played
 
-          # Config order
-          config_order: base.header, isocalendar, languages, people, stars, steam+habits, achievements, activity, code, leetcode
+      - name: Leetcode
+        uses: lowlighter/metrics@latest
+        with:
+          filename: Leetcode-metric.svg
+          token: ${{ secrets.METRICS_TOKEN }}
+          config_timezone: America/Los_Angeles
+
+          # 🗳️ Leetcode
+          plugin_leetcode: yes
+          plugin_leetcode_user: "zw-g"
+          plugin_leetcode_sections: solved, skills, recent
+          plugin_leetcode_limit_skills: 10 # type: number (0 ≤ 𝑥)
+          plugin_leetcode_limit_recent: 2 #  type: number (1 ≤ 𝑥 ≤ 15)
