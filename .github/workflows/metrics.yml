@@ -16,21 +16,81 @@ jobs:
       - name: general
         uses: lowlighter/metrics@latest
         with:
-          filename: general.svg
+          filename: general-metric.svg
           token: ${{ secrets.METRICS_TOKEN }}
           config_timezone: America/Los_Angeles
-          
-          base: header
+
+          # base
+          base: header, activity, community, repositories, metadata
           base_indepth: yes
-          config_order: base.header, isocalendar, languages, stars
-          output_action: gist
-          committer_gist: ${{ secrets.GIST }}
+          base_hireable: yes
+
+          # 📅 Isometric commit calendar
           plugin_isocalendar: yes
+          plugin_isocalendar_duration: half-year
+
+          # 🈷️ Languages activity
           plugin_languages: yes
-          plugin_languages_ignored: html, css, tex, less, dockerfile, makefile, qmake, lex, cmake, shell, gnuplot, vue, scala, c, c++, python, ejs
-          plugin_languages_details: lines, bytes-size, percentage
+          plugin_languages_other: yes
           plugin_languages_sections: most-used, recently-used
-          plugin_languages_indepth: yes
-          plugin_languages_limit: 2
+          plugin_languages_details: lines, percentage
+
+          # 👨‍💻 Lines of code changed
+          plugin_lines: yes
+
+          # 📌 Starred topics
+          plugin_topics: yes
+          plugin_topics_limit: 0
+          plugin_topics_mode: icons
+          
+          # 🌟 Recently starred repositories
           plugin_stars: yes
-          plugin_stars_limit: 4
+          plugin_stars_limit: 3
+
+          # 💡 Coding habits and activity
+          plugin_habits: yes
+          plugin_habits_from: 1000
+          plugin_habits_days: 30
+          plugin_habits_facts: yes
+
+          # 🧑‍🤝‍🧑 People
+          plugin_people: yes
+          plugin_people_limit: 0
+          plugin_people_identicons: yes
+          plugin_people_size: 8 # type: number (8 ≤ 𝑥 ≤ 64)
+          plugin_people_shuffle: yes
+          
+          # 🏆 Achievements
+          plugin_achievements: yes
+          plugin_achievements_threshold: X
+          plugin_achievements_secrets: yes
+          plugin_achievements_display: compact
+          plugin_achievements_limit: 0
+          
+          # 📰 Recent activity
+          plugin_activity: yes
+          plugin_activity_limit: 5
+          plugin_activity_load: 300 # type: number (100 ≤ 𝑥 ≤ 1000)
+          plugin_activity_days: 365 # type: number (0 ≤ 𝑥 ≤ 365)
+
+          # ♐ Random code snippet
+          plugin_code: yes
+          plugin_code_lines: 12 # type: number (1 ≤ 𝑥 ≤ 128)
+          plugin_code_load: 400 # type: number (100 ≤ 𝑥 ≤ 1000)
+          plugin_code_days: 365 # type: number (0 ≤ 𝑥 ≤ 365)
+
+          # 🗳️ Leetcode
+          plugin_leetcode: yes
+          plugin_leetcode_user: "zw-g"
+          plugin_leetcode_sections: solved, skills, recent
+          plugin_leetcode_limit_skills: 10 # type: number (0 ≤ 𝑥)
+          plugin_leetcode_limit_recent: 2 #  type: number (1 ≤ 𝑥 ≤ 15)
+
+          # 🕹️ Steam
+          plugin_steam_token: ${{ secrets.STEAM_TOKEN }}
+          plugin_steam: yes
+          plugin_steam_user: "76561198093054868"
+          plugin_steam_sections: player, most-played, recently-played
+
+          # Config order
+          config_order: 
