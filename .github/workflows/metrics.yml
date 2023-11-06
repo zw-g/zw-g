@@ -5,14 +5,12 @@ on:
   # (optional) Run workflow manually
   workflow_dispatch:
   # (optional) Run workflow when pushing on master/main
-  push: {branches: ["master", "main"]}
+  push: {branches: ['master', 'main'], paths: ['metrics.yml']}
 jobs:
-  metrics:
+  General1:
     runs-on: ubuntu-latest
     steps:
-    
       - name: General1
-        if: ${{ success() || failure() }}
         uses: lowlighter/metrics@latest
         with:
           filename: metric-General1.svg
@@ -58,13 +56,16 @@ jobs:
 
           # Config order
           config_order: base.header, isocalendar, languages
-          
+
+  General2:
+    runs-on: ubuntu-latest
+    steps:
       - name: General2
-        if: ${{ success() || failure() }}
         uses: lowlighter/metrics@latest
         with:
           filename: metric-General2.svg
           token: ${{ secrets.METRICS_TOKEN }}
+          config_timezone: America/Los_Angeles
 
           # 🏆 Achievements
           plugin_achievements: yes
@@ -87,26 +88,32 @@ jobs:
           
           # Config order
           config_order: habits, code, achievements
-
+          
+  Steam:
+    runs-on: ubuntu-latest
+    steps:
       - name: Steam
-        if: ${{ success() || failure() }}
         uses: lowlighter/metrics@latest
         with:
           filename: metric-Steam.svg
           token: ${{ secrets.METRICS_TOKEN }}
+          config_timezone: America/Los_Angeles
 
           # 🕹️ Steam
           plugin_steam_token: ${{ secrets.STEAM_TOKEN }}
           plugin_steam: yes
           plugin_steam_user: "76561198093054868"
           plugin_steam_sections: player, most-played, recently-played
-
+          
+  Leetcode:
+    runs-on: ubuntu-latest
+    steps:
       - name: Leetcode
-        if: ${{ success() || failure() }}
         uses: lowlighter/metrics@latest
         with:
           filename: metric-Leetcode.svg
           token: ${{ secrets.METRICS_TOKEN }}
+          config_timezone: America/Los_Angeles
 
           # 🗳️ Leetcode
           plugin_leetcode: yes
