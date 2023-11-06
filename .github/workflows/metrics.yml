@@ -7,16 +7,30 @@ on:
   # (optional) Run workflow when pushing on master/main
   push: {branches: ["master", "main"]}
 jobs:
-  github-metrics:
+  metrics:
     runs-on: ubuntu-latest
     permissions:
       contents: write
     steps:
-      - uses: lowlighter/metrics@latest
+  
+      - name: general
+        uses: lowlighter/metrics@latest
         with:
-          retries: 3
-          retries_delay: 300
-          retries_output_action: 5
-          retries_delay_output_action: 120
-          output_action: none 
+          filename: general.svg
           token: ${{ secrets.METRICS_TOKEN }}
+          config_timezone: America/Los_Angeles
+          
+          base: header
+          base_indepth: yes
+          config_order: base.header, isocalendar, languages, stars
+          output_action: gist
+          committer_gist: ${{ secrets.GIST }}
+          plugin_isocalendar: yes
+          plugin_languages: yes
+          plugin_languages_ignored: html, css, tex, less, dockerfile, makefile, qmake, lex, cmake, shell, gnuplot, vue, scala, c, c++, python, ejs
+          plugin_languages_details: lines, bytes-size, percentage
+          plugin_languages_sections: most-used, recently-used
+          plugin_languages_indepth: yes
+          plugin_languages_limit: 2
+          plugin_stars: yes
+          plugin_stars_limit: 4
