@@ -61,8 +61,6 @@
   </a>
 </p>
 
-<br/>
-
 <!-- matrics -->
 <br/>
 <table>
