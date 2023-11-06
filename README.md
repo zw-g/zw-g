@@ -52,14 +52,16 @@
 
 </div>
   
-  <!-- Spotify song -->
-  <p align="center" ><strong> Vibing to : 🎧 </strong></p>
+<!-- Spotify song -->
+<p align="center" ><strong> Vibing to : 🎧 </strong></p>
 
-  <p align="center">
-    <a href="https://open.spotify.com/user/31q23hv2amglcciovjyskzqpc74u">
-      <img src="https://novatorem-puce-eta.vercel.app/api/spotify" alt="Spotify">
-    </a>
-  </p>
+<p align="center">
+  <a href="https://open.spotify.com/user/31q23hv2amglcciovjyskzqpc74u">
+    <img src="https://novatorem-puce-eta.vercel.app/api/spotify" alt="Spotify">
+  </a>
+</p>
+
+<br/>
 
 <!-- matrics -->
 <br/>
