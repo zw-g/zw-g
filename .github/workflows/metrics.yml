@@ -1,15 +1,16 @@
 name: Metrics
 on:
   # Schedule daily updates
-  schedule: [{cron: "0 * * * *"}]
+  schedule: [{cron: "0 0 * * *"}]
   # (optional) Run workflow manually
   workflow_dispatch:
   # (optional) Run workflow when pushing on master/main
   push: {branches: ['master', 'main'], paths: ['.github/workflows/metrics.yml']}
 jobs:
-  General1:
+  metrics:
     runs-on: ubuntu-latest
     steps:
+    
       - name: General1
         uses: lowlighter/metrics@latest
         with:
@@ -57,15 +58,13 @@ jobs:
           # Config order
           config_order: base.header, isocalendar, languages
 
-  General2:
-    runs-on: ubuntu-latest
-    steps:
       - name: General2
         uses: lowlighter/metrics@latest
         with:
           filename: metric-General2.svg
           token: ${{ secrets.METRICS_TOKEN }}
           config_timezone: America/Los_Angeles
+          base: ""
 
           # 🏆 Achievements
           plugin_achievements: yes
@@ -89,15 +88,13 @@ jobs:
           # Config order
           config_order: habits, code, achievements
           
-  Steam:
-    runs-on: ubuntu-latest
-    steps:
       - name: Steam
         uses: lowlighter/metrics@latest
         with:
           filename: metric-Steam.svg
           token: ${{ secrets.METRICS_TOKEN }}
           config_timezone: America/Los_Angeles
+          base: ""
 
           # 🕹️ Steam
           plugin_steam_token: ${{ secrets.STEAM_TOKEN }}
@@ -105,15 +102,13 @@ jobs:
           plugin_steam_user: "76561198093054868"
           plugin_steam_sections: player, most-played, recently-played
           
-  Leetcode:
-    runs-on: ubuntu-latest
-    steps:
       - name: Leetcode
         uses: lowlighter/metrics@latest
         with:
           filename: metric-Leetcode.svg
           token: ${{ secrets.METRICS_TOKEN }}
           config_timezone: America/Los_Angeles
+          base: ""
 
           # 🗳️ Leetcode
           plugin_leetcode: yes
