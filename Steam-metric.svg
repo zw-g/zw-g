@@ -69,7 +69,7 @@
                             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" width="16" height="16">
                                 <path fill-rule="evenodd" d="M10.5 7.75a2.5 2.5 0 11-5 0 2.5 2.5 0 015 0zm1.43.75a4.002 4.002 0 01-7.86 0H.75a.75.75 0 110-1.5h3.32a4.001 4.001 0 017.86 0h3.32a.75.75 0 110 1.5h-3.32z"/>
                             </svg>
-                            158 Commits
+                            159 Commits
                         </div>
                         <div class="field">
                             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" width="16" height="16">
@@ -274,7 +274,7 @@
                                         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" width="16" height="16">
                                             <path d="M4.75 0a.75.75 0 0 1 .75.75V2h5V.75a.75.75 0 0 1 1.5 0V2h1.25c.966 0 1.75.784 1.75 1.75v10.5A1.75 1.75 0 0 1 13.25 16H2.75A1.75 1.75 0 0 1 1 14.25V3.75C1 2.784 1.784 2 2.75 2H4V.75A.75.75 0 0 1 4.75 0ZM2.5 7.5v6.75c0 .138.112.25.25.25h10.5a.25.25 0 0 0 .25-.25V7.5Zm10.75-4H2.75a.25.25 0 0 0-.25.25V6h11V3.75a.25.25 0 0 0-.25-.25Z"/>
                                         </svg>
-                                        Last played on 4 Nov 2022
+                                        Last played on 5 Nov 2022
                                     </div>
                                 </div>
                                 <div class="achievements">
@@ -291,7 +291,7 @@
                                         <div>
                                             <div class="name">
                                                 <div>Killing Spree</div>
-                                                <div class="unlocked">24 Oct 2022</div>
+                                                <div class="unlocked">25 Oct 2022</div>
                                             </div>
                                             <div class="description">Kill at least 4 players in a single match.</div>
                                         </div>
@@ -301,7 +301,7 @@
                                         <div>
                                             <div class="name">
                                                 <div>Now You See Me, Now You Don't</div>
-                                                <div class="unlocked">24 Oct 2022</div>
+                                                <div class="unlocked">25 Oct 2022</div>
                                             </div>
                                             <div class="description">Equip a ghillie suit for the first time.</div>
                                         </div>
@@ -376,7 +376,7 @@
                                         <div>
                                             <div class="name">
                                                 <div>Hard to pick just one</div>
-                                                <div class="unlocked">9 Dec 2018</div>
+                                                <div class="unlocked">10 Dec 2018</div>
                                             </div>
                                             <div class="description">Use 50 different wallpapers from the Workshop.</div>
                                         </div>
@@ -394,7 +394,7 @@
             </section>
             <footer>
                 <span>These metrics include private contributions</span>
-                <span>Last updated 5 Nov 2023, 23:10:55 (timezone America/Los_Angeles) with lowlighter/metrics@3.34.0</span>
+                <span>Last updated 6 Nov 2023, 07:14:01  with lowlighter/metrics@3.34.0</span>
             </footer>
         </div>
         <div xmlns="http://www.w3.org/1999/xhtml" id="metrics-end"></div>
