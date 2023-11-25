@@ -39,7 +39,7 @@
                             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" width="16" height="16">
                                 <path d="m.427 1.927 1.215 1.215a8.002 8.002 0 1 1-1.6 5.685.75.75 0 1 1 1.493-.154 6.5 6.5 0 1 0 1.18-4.458l1.358 1.358A.25.25 0 0 1 3.896 6H.25A.25.25 0 0 1 0 5.75V2.104a.25.25 0 0 1 .427-.177ZM7.75 4a.75.75 0 0 1 .75.75v2.992l2.028.812a.75.75 0 0 1-.557 1.392l-2.5-1A.751.751 0 0 1 7 8.25v-3.5A.75.75 0 0 1 7.75 4Z"/>
                             </svg>
-                            626 hours played
+                            635 hours played
                         </div>
                     </section>
                 </div>
@@ -143,7 +143,7 @@
                                         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" width="16" height="16">
                                             <path d="M8 0a8 8 0 1 1 0 16A8 8 0 0 1 8 0ZM1.5 8a6.5 6.5 0 1 0 13 0 6.5 6.5 0 0 0-13 0Zm7-3.25v2.992l2.028.812a.75.75 0 0 1-.557 1.392l-2.5-1A.751.751 0 0 1 7 8.25v-3.5a.75.75 0 0 1 1.5 0Z"/>
                                         </svg>
-                                        3 hours played
+                                        12 hours played
                                     </div>
                                 </div>
                                 <div class="infos">
@@ -151,7 +151,7 @@
                                         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" width="16" height="16">
                                             <path d="M4.75 0a.75.75 0 0 1 .75.75V2h5V.75a.75.75 0 0 1 1.5 0V2h1.25c.966 0 1.75.784 1.75 1.75v10.5A1.75 1.75 0 0 1 13.25 16H2.75A1.75 1.75 0 0 1 1 14.25V3.75C1 2.784 1.784 2 2.75 2H4V.75A.75.75 0 0 1 4.75 0ZM2.5 7.5v6.75c0 .138.112.25.25.25h10.5a.25.25 0 0 0 .25-.25V7.5Zm10.75-4H2.75a.25.25 0 0 0-.25.25V6h11V3.75a.25.25 0 0 0-.25-.25Z"/>
                                         </svg>
-                                        Last played on 23 Nov 2023
+                                        Last played on 24 Nov 2023
                                     </div>
                                 </div>
                                 <div class="achievements">
@@ -160,32 +160,32 @@
                                             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" width="16" height="16">
                                                 <path d="M3.217 6.962A3.75 3.75 0 0 1 0 3.25v-.5C0 1.784.784 1 1.75 1h1.356c.228-.585.796-1 1.462-1h6.864c.647 0 1.227.397 1.462 1h1.356c.966 0 1.75.784 1.75 1.75v.5a3.75 3.75 0 0 1-3.217 3.712 5.014 5.014 0 0 1-2.771 3.117l.144 1.446c.005.05.03.12.114.204.086.087.217.17.373.227.283.103.618.274.89.568.285.31.467.723.467 1.226v.75h1.25a.75.75 0 0 1 0 1.5H2.75a.75.75 0 0 1 0-1.5H4v-.75c0-.503.182-.916.468-1.226.27-.294.606-.465.889-.568.139-.048.266-.126.373-.227.084-.085.109-.153.114-.204l.144-1.446a5.015 5.015 0 0 1-2.77-3.117ZM4.5 1.568V5.5a3.5 3.5 0 1 0 7 0V1.568a.068.068 0 0 0-.068-.068H4.568a.068.068 0 0 0-.068.068Zm2.957 8.902-.12 1.204c-.093.925-.858 1.47-1.467 1.691a.766.766 0 0 0-.3.176c-.037.04-.07.093-.07.21v.75h5v-.75c0-.117-.033-.17-.07-.21a.766.766 0 0 0-.3-.176c-.609-.221-1.374-.766-1.466-1.69l-.12-1.204a5.064 5.064 0 0 1-1.087 0ZM13 2.5v2.872a2.25 2.25 0 0 0 1.5-2.122v-.5a.25.25 0 0 0-.25-.25H13Zm-10 0H1.75a.25.25 0 0 0-.25.25v.5c0 .98.626 1.813 1.5 2.122Z"/>
                                             </svg>
-                                            6 / 146 achievements unlocked
+                                            14 / 146 achievements unlocked
                                         </div>
                                     </div>
                                     <div class="achievement">
-                                        <img src="data:image/jpg;base64,/9j/2wBDAAYEBQYFBAYGBQYHBwYIChAKCgkJChQODwwQFxQYGBcUFhYaHSUfGhsjHBYWICwgIyYnKSopGR8tMC0oMCUoKSj/2wBDAQcHBwoIChMKChMoGhYaKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCj/wAARCAAgACADASIAAhEBAxEB/8QAGAAAAwEBAAAAAAAAAAAAAAAAAwQGBQL/xAAsEAACAQMDBAECBgMAAAAAAAABAgMEBREAEiEGBzFBkRQiFRYyM1FxgaHR/8QAFgEBAQEAAAAAAAAAAAAAAAAAAgMF/8QAJBEAAQMEAgICAwAAAAAAAAAAAQIDEQQFITEAQQYSIlEyYXH/2gAMAwEAAhEDEQA/AELBZpL5PWQQ1cMM8KCQJIhIkBOPI8Y49HyNVNo7fwyQqLxc5vq38w0EQcJ/G5m4+NLdsre0tVW1qjdUKRSwkjO0sMsxHvjH+9Ft8fUstnprnUC6XCxsJBNFR3ARTsVdg0nCglTtOF3ZA1j+QeQ3AXKopaWo9W0lI0AQSMgEQdg97x/YWm00aaJp99oFagTvYnBgyNcDdehGgqGht9zVp8bhBWIEdlHsEE/ONT9/s8ljnpIamrhnmmQySLGhGwZwPPnPPoeNL3y40Nx6go6zomzVVMkTII5pKhpXqJGOEHJO3cTjJbJ8HGq3ufRmJrZVyLiZXanf2WH6l/vGD86vab1dGLlS0tZUFTbntgpSDMGJ2YmIkz0dcNytVEuieeZaCVpA7MfZgamP1xLt5d/w6qraY78kfVR7eSxQfcv+RrOg7h1tT27/AC1Y7XVyVM6SQNMuHwrsSTGi/cX+4j0F859aUst0ls1TUT0tPDLNIgRGcnCc5PHv18ao7R15NTRqK2ld5gf3KchQ/vlTo+QWKtTcH6ylpS4lSkH8okgGT6jJEnIPfUcVpuVG5RssPvhK0gjUd4knGuaHbXt2tu6eq6vqOGSOaqURrTx1TJJHGARmQKcFmz4IIGB40h3GrAy22hVy8iMZSGfcwUDauSeSfPPvGuLp17U1QJoqPa7eGmbIH9KP+6nbxc5LxU09RPBFHURpsLoTh+f49Y5+dTslkvNRdWK+5NFKEkmJHxMYgTIBMfZ47lc7ezQPMU7oU4oRo9nOdann/9k=" alt="" />
+                                        <img src="data:image/jpg;base64,/9j/2wBDAAYEBQYFBAYGBQYHBwYIChAKCgkJChQODwwQFxQYGBcUFhYaHSUfGhsjHBYWICwgIyYnKSopGR8tMC0oMCUoKSj/2wBDAQcHBwoIChMKChMoGhYaKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCj/wAARCAAgACADASIAAhEBAxEB/8QAFwABAQEBAAAAAAAAAAAAAAAABgUEAf/EAC4QAAIBAwIEAwcFAAAAAAAAAAECAwQFEQAhBhIxQRMUkQciMlFhcYFCQ4Kx0f/EABgBAAMBAQAAAAAAAAAAAAAAAAECAwQF/8QAJhEAAQMDBAIBBQAAAAAAAAAAAQIDEQQFIQAGMUFhcRIUIoGRof/aAAwDAQACEQMRAD8An8P2aS+z1cMNVDDPDGJAjoSJATjqOmNux66VWj2fQyQqLxcpvOP+zQRBwny5mbb01K4I8KgpbtfKgFmplEEfbdsE/wBqPXSuuulbX2zydJRwRhnUvIKpsSIPiBIQZz9Dv32zrhbm3JdG7k9S0bsNAgdD4mBMEQoifPOONCx2OlXRNvvNArI94JwSM9eJ0XvPCFNSSyR0d7pjIvWGs5UJ/kpIHpqLfbS1nejSWsp6mSoiMrCJThVzhcHuDvvt00re9m0R+WNLHDKBkKWwMfMYG/40fv48ezW24lQH81UU7BRj3SxdR+CW9dX27uG5LrmGKp4qbUojhOSUmMxMTHf50t7sdG3SOusNAKAmcjjnHqetY7bV1C2i6W2jieWaVo6mJVHMTyMOfAHXYA4+mtFBxDJTqUgfwj3C4YfldiDrLZLrJZqieemghlmlQIjOThN8nbv29NWKXiumlVDe7RT1k4O0qxoeb7hv91TcVhrVVz1RT0xU2ogyCJJIEkDmJH7/AI9ivFEmjaZfdAWAeZEAHA+XrzpLw3ZqfiOiN34gDSoGMNNEkjRoyqfeJAO+WyOv6dQ/aDNBFDbLbSxxxrEzTCKMBQi4IAwPudcr+OpZIRHbaFIQByp4hAVR8gq7D10evN0kvFTT1E0EMdRGhQuhOH3z07Y39dYdt7Yuqbo1WVjRS0kkgSPtgGMTPMTjRvF6ofoXmWXgpwiOzycgHjjzr//Z" alt="" />
                                         <div>
                                             <div class="name">
-                                                <div>Hero Powers Activate</div>
-                                                <div class="unlocked">21 Nov 2023</div>
+                                                <div>Invigoration</div>
+                                                <div class="unlocked">23 Nov 2023</div>
                                             </div>
-                                            <div class="description">Use any Hero Level 3 Ability</div>
+                                            <div class="description">Have 75 buffs active on your Monkeys at once</div>
                                         </div>
                                     </div>
                                     <div class="achievement">
-                                        <img src="data:image/jpg;base64,/9j/2wBDAAYEBQYFBAYGBQYHBwYIChAKCgkJChQODwwQFxQYGBcUFhYaHSUfGhsjHBYWICwgIyYnKSopGR8tMC0oMCUoKSj/2wBDAQcHBwoIChMKChMoGhYaKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCj/wAARCAAgACADASIAAhEBAxEB/8QAFwABAQEBAAAAAAAAAAAAAAAABAUCBv/EACwQAAEEAQMDAgUFAQAAAAAAAAECAwQRBQAhMQYSQRORBxQyYXEVIiMzUaH/xAAZAQABBQAAAAAAAAAAAAAAAAACAAEDBAX/xAAnEQABAwQBAwMFAAAAAAAAAAABAgMRBAUhMQAGQWESE4EVIzJR4f/aAAwDAQACEQMRAD8ABgMM5nH5jDMtll9lCXAhxBIcBNcjitvB5Guij9FQYmNcldS5hyOpIBcTEbC0NAmh3rP5HA1n4aQC5JnTwCp9BEZq/HcLUfav+6z1XHymTzj7MWNKksMSDGjpQumy4mtuQO/eyTuLHHGsi+dQ3FV3foaV4htMTgAiAAQCM7Pc/wBGyWSjVRtPPtj1qB3nHYkHGuGR0k3kYSZeAyanmllSUtzWfSUSlRSQSLogg+NSc/h3MG/EZky2X3nkFxxLaCOwXQ55vfwONdj0Cr9JzcvpqahLiJyBPiutEKR/WCo83RASQeLv/dD+J8P0TjJawfVStUdZrdafqTfsffUNi6nuf1pq31bpLZJiQmTIPpBMTg4/c8e82OiTROvMNgLA8xG5A1rhfhxkjFnS4IJSXSH2jzZSKUPavbQszlsq3k87Px5kQ8ejJ/z9vYpoKHagqTY7vWNdxCPtfF6m4XKO4aRIfjR2XXnEemhThNI3s7efHtpsnque/FZbUxHL4K0OKUlRbdQtBSe5AIsi7q6PmtXbv07Wm8PVlOz9tcAmZOQCohIzsR4OdcC0XmlTQNNOOj3Eg4OO+ASca4XAdWOYrIZXOsymsm+44WT82FKffbPaUrCvqFCrSNq3I2Gq/WmcOXx2GUttTT71y1MqO6AQQB+NyR9tCjdWZFHzTxYYVNkdqfUtXYEoBCdiSb/ceTQFJGyRoOYybuYkx5D7DTchtHYVoJpe98eK399K19NVQvDVY6wQhJ/KRJhOJTuJ+fjhXa90aqF1tpwe4oRAkjJg51rzz//Z" alt="" />
+                                        <img src="data:image/jpg;base64,/9j/2wBDAAYEBQYFBAYGBQYHBwYIChAKCgkJChQODwwQFxQYGBcUFhYaHSUfGhsjHBYWICwgIyYnKSopGR8tMC0oMCUoKSj/2wBDAQcHBwoIChMKChMoGhYaKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCj/wAARCAAgACADASIAAhEBAxEB/8QAGAAAAwEBAAAAAAAAAAAAAAAABAUGBwP/xAApEAACAgIABgICAQUAAAAAAAABAgMEBREABhIhMUETkQdhgRQVIjKx/8QAFwEBAAMAAAAAAAAAAAAAAAAAAwABBP/EACURAAEDBQABAwUAAAAAAAAAAAEDBBEAAgUhMWESFEEGEyIyUf/aAAwDAQACEQMRAD8AAwGGkzk9yCG3DDPCiyBJEJEgJ15HjXb0fI4fR8n46hRWbmfNPBYkOhBSjEmj6XZ/2P6UccuQ6kqw5fJ11+S5DG0NcMOwYoWJI9+FH3xU8nYAZvCWp70rWZbfSEvMoZyoGz0gjSL+l173vjBmc68GQcJpuDagndYCAPyBMAi2BJjZ7OjAIFDiMO09kksskDeQTvYidEg65UZJy3WsWWrYvLBbvcilkUEUrgDewVJBGu4I2P32Ol+fw8mDnqQ2bcM80yGSRY0I6BvQ8+d9/Q8cadk6aVOVIUeYWP7Jk4Ji4XXTE56HH8Kx4lvyhSMDY204PzI71nOu7jyu/o/fDM848Ry7Vrc4N6CskTaATIPpBMAx+p/u6rJ4Zp7JZVJIBS0eedJA5yhfxtkv6XIWaBJHykTxnyCR2dT/AB/ziw5DyC08NWpWrMYgr9UBDMFKFHKgHZHgj3xmGFykuHsWJ61eGWaRPjRpCdJ32e3v19cdnzm2FxMfUTN/5KLnx9SSKylHEkewG2p8HsdDfA5v6ccrZFypagSir6diCRdG7gOiJPnuiDSYfNNLWCSKqo+4AdGR86EnUx5rR58njRjc5jopZcnJegeAxUENgo53ovJ2jBG/HVviS5/yE1itiK1sg3tCeZAwPSenp19lvrgGDnLJLTkX4YmsyuW6mZii9gBoMSxOhslj714A4WZjJy5izXsT14o7EadBdCdP3349a7/fDMcPk18sg4dJQknddBkTzRImYkD4mplMyyLFaxNUFS4RGyOwRPOea//Z" alt="" />
                                         <div>
                                             <div class="name">
-                                                <div>Tetrimino</div>
-                                                <div class="unlocked">21 Nov 2023</div>
+                                                <div>Scholar</div>
+                                                <div class="unlocked">23 Nov 2023</div>
                                             </div>
-                                            <div class="description">Place 50 Monkeys on a map at once</div>
+                                            <div class="description">Apply 10 Monkey Knowledge points</div>
                                         </div>
                                     </div>
                                     <div class="achievement">
                                         <div>
-                                            <div class="description ellipsis">+4 others...</div>
+                                            <div class="description ellipsis">+12 others...</div>
                                         </div>
                                     </div>
                                 </div>
