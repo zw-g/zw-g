@@ -1,4 +1,4 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="480" height="560" class="">
+<svg xmlns="http://www.w3.org/2000/svg" width="480" height="557" class="">
     <defs>
         <style/>
     </defs>
@@ -12,7 +12,7 @@
                         <path fill-rule="evenodd" d="M8 1.5c-2.363 0-4 1.69-4 3.75 0 .984.424 1.625.984 2.304l.214.253c.223.264.47.556.673.848.284.411.537.896.621 1.49a.75.75 0 01-1.484.211c-.04-.282-.163-.547-.37-.847a8.695 8.695 0 00-.542-.68c-.084-.1-.173-.205-.268-.32C3.201 7.75 2.5 6.766 2.5 5.25 2.5 2.31 4.863 0 8 0s5.5 2.31 5.5 5.25c0 1.516-.701 2.5-1.328 3.259-.095.115-.184.22-.268.319-.207.245-.383.453-.541.681-.208.3-.33.565-.37.847a.75.75 0 01-1.485-.212c.084-.593.337-1.078.621-1.489.203-.292.45-.584.673-.848.075-.088.147-.173.213-.253.561-.679.985-1.32.985-2.304 0-2.06-1.637-3.75-4-3.75zM6 15.25a.75.75 0 01.75-.75h2.5a.75.75 0 010 1.5h-2.5a.75.75 0 01-.75-.75zM5.75 12a.75.75 0 000 1.5h4.5a.75.75 0 000-1.5h-4.5z"/>
                     </svg>
                     Recent coding habits
-                    <small class="h-details">(computed from last 50 commits)</small>
+                    <small class="h-details">(computed from last 51 commits)</small>
                 </h2>
                 <div class="row">
                     <ul class="facts">
@@ -62,7 +62,7 @@
                                 <path fill-rule="evenodd" d="M8 1.5a6.5 6.5 0 100 13 6.5 6.5 0 000-13zM0 8a8 8 0 1116 0A8 8 0 010 8zm6.5-.25A.75.75 0 017.25 7h1a.75.75 0 01.75.75v2.75h.25a.75.75 0 010 1.5h-2a.75.75 0 010-1.5h.25v-2h-.25a.75.75 0 01-.75-.75zM8 6a1 1 0 100-2 1 1 0 000 2z"/>
                             </svg>
                             <span class="code">ce0c3cca</span>
-                            <span class="code">node_modules/cheerio-select/lib/positionals.d.ts.map</span>
+                            <span class="code">node_modules/cheerio/lib/options.d.ts.map</span>
                             <span class="code">
                                 <span class="snippet additions">++1</span>
                                 <span class="snippet deletions">--0</span>
@@ -73,7 +73,7 @@
                 <div class="row">
                     <section class="snippet">
                         <div class="body markdown">
-                            <code class="language-diff" xml:space="preserve"><span class="token coord">@@ -0,0 +1 @@</span><br /><span class="token inserted-sign inserted"><span class="token prefix inserted">+</span><span class="token line">{"version":3,"file":"positionals.d.ts","sourceRoot":"https://raw.githubusercontent.com/cheeriojs/cheerio-select/ef063a6ca4c3f0d02d2fc3505e750b6fb81c448d/src/","sources":["positionals.ts"],"names":[],"mappings":"AAAA,OAAO,KAAK,EAAE,QAAQ,EAAE,cAAc,EAAE,MAAM,UAAU,CAAC;AAEzD,oBAAY,MAAM,GACZ,OAAO,GACP,MAAM,GACN,IAAI,GACJ,KAAK,GACL,IAAI,GACJ,IAAI,GACJ,MAAM,GACN,KAAK,GACL,KAAK,CAAC;AACZ,eAAO,MAAM,WAAW,EAAE,GAAG,CAAC,MAAM,CASlC,CAAC;AAEH,MAAM,WAAW,eAAgB,SAAQ,cAAc;IACnD,IAAI,EAAE,MAAM,CAAC;IACb,IAAI,EAAE,MAAM,GAAG,IAAI,CAAC;CACvB;AAED,wBAAgB,QAAQ,CAAC,CAAC,EAAE,QAAQ,GAAG,CAAC,IAAI,eAAe,CAS1D;AAED,wBAAgB,QAAQ,CACpB,MAAM,EAAE,MAAM,EACd,IAAI,EAAE,MAAM,GAAG,IAAI,EACnB,SAAS,EAAE,MAAM,GAClB,MAAM,CAyBR"}<br /></span></span>\No newline at end of file</code>
+                            <code class="language-diff" xml:space="preserve"><span class="token coord">@@ -0,0 +1 @@</span><br /><span class="token inserted-sign inserted"><span class="token prefix inserted">+</span><span class="token line">{"version":3,"file":"options.d.ts","sourceRoot":"https://raw.githubusercontent.com/cheeriojs/cheerio/d1cbc66d53392ce8bf6cd0068f675836372d2bf3/src/","sources":["options.ts"],"names":[],"mappings":";AAAA,OAAO,KAAK,EAAE,iBAAiB,EAAE,MAAM,YAAY,CAAC;AACpD,OAAO,KAAK,EAAE,aAAa,EAAE,MAAM,aAAa,CAAC;AACjD,OAAO,KAAK,EAAE,OAAO,IAAI,aAAa,EAAE,MAAM,gBAAgB,CAAC;AAE/D;;;;GAIG;AACH,MAAM,WAAW,kBAAmB,SAAQ,iBAAiB,EAAE,aAAa;CAAG;AAC/E,uDAAuD;AACvD,MAAM,WAAW,aAAa;IAC5B,qEAAqE;IACrE,gBAAgB,CAAC,EAAE,OAAO,CAAC;IAC3B,0CAA0C;IAC1C,sBAAsB,CAAC,EAAE,OAAO,CAAC;CAClC;AAED;;;;;GAKG;AACH,MAAM,WAAW,cAAe,SAAQ,kBAAkB,EAAE,aAAa;IACvE,4EAA4E;IAC5E,GAAG,CAAC,EAAE,kBAAkB,GAAG,OAAO,CAAC;IAEnC,0EAA0E;IAC1E,OAAO,CAAC,EAAE,MAAM,GAAG,GAAG,CAAC;IAEvB;;;;;;OAMG;IACH,UAAU,CAAC,EAAE,aAAa,CAAC,YAAY,CAAC,CAAC;IACzC;;;;;;;;;;;;;;;;;;;;;;;;;;;;OA4BG;IACH,OAAO,CAAC,EAAE,aAAa,CAAC,SAAS,CAAC,CAAC;CACpC;AAED,oCAAoC;AACpC,MAAM,WAAW,eAAgB,SAAQ,IAAI,CAAC,cAAc,EAAE,KAAK,CAAC;IAClE;;;;OAIG;IACH,eAAe,CAAC,EAAE,OAAO,CAAC;CAC3B;AAED,QAAA,MAAM,WAAW,EAAE,cAGlB,CAAC;AAEF,+BAA+B;AAC/B,eAAe,WAAW,CAAC;AAO3B;;;;;;;GAOG;AACH,wBAAgB,OAAO,CACrB,OAAO,CAAC,EAAE,cAAc,GAAG,IAAI,GAC9B,eAAe,GAAG,SAAS,CAM7B"}<br /></span></span>\No newline at end of file</code>
                         </div>
                     </section>
                 </div>
@@ -253,7 +253,7 @@
                                     </defs>
                                     <svg xmlns="http://www.w3.org/2000/svg" class="gauge info">
                                         <circle class="gauge-base" r="25" cx="28" cy="28"/>
-                                        <circle class="gauge-arc" transform="rotate(-90 28 28)" r="25" cx="28" cy="28" stroke-dasharray="82.59240246406571 155"/>
+                                        <circle class="gauge-arc" transform="rotate(-90 28 28)" r="25" cx="28" cy="28" stroke-dasharray="82.80458590006845 155"/>
                                     </svg>
                                     <svg xmlns="http://www.w3.org/2000/svg" mask="url(#mask)">
                                         <g xmlns="http://www.w3.org/2000/svg" transform="translate(5 4)" fill="none" fill-rule="evenodd">
@@ -315,7 +315,7 @@
                                 <div class="title">
                                     <span class="prefix"></span>
                                     Maintainer
-                                    <span class="gh">ranked 273k out of 44.9m repositories</span>
+                                    <span class="gh">ranked 273k out of 55.4m repositories</span>
                                     <div class="value-wrapper">
                                         <div class="value">128</div>
                                     </div>
@@ -483,7 +483,7 @@
                                 <div class="title">
                                     <span class="prefix"></span>
                                     Influencer
-                                    <span class="gh">ranked 3.49m out of 125m users</span>
+                                    <span class="gh">ranked 3.50m out of 125m users</span>
                                     <div class="value-wrapper">
                                         <div class="value">3</div>
                                     </div>
@@ -523,6 +523,42 @@
                                     </div>
                                 </div>
                                 <div class="text">Created 1 user project</div>
+                            </div>
+                        </div>
+                        <div class="achievement c largeable-width-half">
+                            <div class="icon">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 60 60" height="44" width="44">
+                                    <defs>
+                                        <mask id="mask">
+                                            <circle class="gauge-base" r="25" cx="28" cy="28" fill="white"/>
+                                        </mask>
+                                    </defs>
+                                    <svg xmlns="http://www.w3.org/2000/svg" class="gauge info">
+                                        <circle class="gauge-base" r="25" cx="28" cy="28"/>
+                                        <circle class="gauge-arc" transform="rotate(-90 28 28)" r="25" cx="28" cy="28" stroke-dasharray="0 155"/>
+                                    </svg>
+                                    <svg xmlns="http://www.w3.org/2000/svg" mask="url(#mask)">
+                                        <g fill="none" fill-rule="evenodd">
+                                            <path d="M6 42c.45-3.415 3.34-6 7-6 1.874 0 3.752.956 5 3m-6-13a5 5 0 110 10 5 5 0 010-10zm38 16c-.452-3.415-3.34-6-7-6-1.874 0-3.752.956-5 3m6-13a5 5 0 100 10 5 5 0 000-10z" stroke="#79B8FF" stroke-width="2" stroke-linecap="round"/>
+                                            <path d="M37 51c-.92-4.01-4.6-7-9-7-4.401 0-8.083 2.995-9 7" stroke="#2088FF" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                            <path d="M28.01 31.004a6.5 6.5 0 110 13 6.5 6.5 0 010-13z" stroke="#2088FF" stroke-width="2" stroke-linecap="round"/>
+                                            <path d="M28 14.011a5 5 0 11-5 4.998 5 5 0 015-4.998z" stroke="#79B8FF" stroke-width="2" stroke-linecap="round"/>
+                                            <path d="M22 26c1.558-1.25 3.665-2 6-2 2.319 0 4.439.761 6 2" stroke="#79B8FF" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                            <path d="M51 9V8c0-1.3-1.574-3-3-3h-8c-1.426 0-3 1.7-3 3v13l4-4h6c2.805-.031 4-1.826 4-4V9zM5 9V8c0-1.3 1.574-3 3-3h8c1.426 0 3 1.7 3 3v13l-4-4H9c-2.805-.031-4-1.826-4-4V9z" stroke="#2088FF" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                            <path d="M43 11a1 1 0 11-2 0 1 1 0 012 0zm4 0a1 1 0 11-2 0 1 1 0 012 0zm-36 0a1 1 0 11-2 0 1 1 0 012 0zm4 0a1 1 0 11-2 0 1 1 0 012 0z" fill="#2088FF"/>
+                                        </g>
+                                    </svg>
+                                </svg>
+                            </div>
+                            <div class="info">
+                                <div class="title">
+                                    <span class="prefix"></span>
+                                    Chatter
+                                    <div class="value-wrapper">
+                                        <div class="value">1</div>
+                                    </div>
+                                </div>
+                                <div class="text">Participated in discussions 1 time</div>
                             </div>
                         </div>
                         <div class="achievement secret largeable-width-half">
