@@ -39,7 +39,7 @@
                             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" width="16" height="16">
                                 <path d="m.427 1.927 1.215 1.215a8.002 8.002 0 1 1-1.6 5.685.75.75 0 1 1 1.493-.154 6.5 6.5 0 1 0 1.18-4.458l1.358 1.358A.25.25 0 0 1 3.896 6H.25A.25.25 0 0 1 0 5.75V2.104a.25.25 0 0 1 .427-.177ZM7.75 4a.75.75 0 0 1 .75.75v2.992l2.028.812a.75.75 0 0 1-.557 1.392l-2.5-1A.751.751 0 0 1 7 8.25v-3.5A.75.75 0 0 1 7.75 4Z"/>
                             </svg>
-                            895 hours played
+                            899 hours played
                         </div>
                     </section>
                 </div>
@@ -143,7 +143,7 @@
                                         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" width="16" height="16">
                                             <path d="M8 0a8 8 0 1 1 0 16A8 8 0 0 1 8 0ZM1.5 8a6.5 6.5 0 1 0 13 0 6.5 6.5 0 0 0-13 0Zm7-3.25v2.992l2.028.812a.75.75 0 0 1-.557 1.392l-2.5-1A.751.751 0 0 1 7 8.25v-3.5a.75.75 0 0 1 1.5 0Z"/>
                                         </svg>
-                                        18 hours played
+                                        22 hours played
                                     </div>
                                 </div>
                                 <div class="infos">
@@ -151,7 +151,7 @@
                                         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" width="16" height="16">
                                             <path d="M4.75 0a.75.75 0 0 1 .75.75V2h5V.75a.75.75 0 0 1 1.5 0V2h1.25c.966 0 1.75.784 1.75 1.75v10.5A1.75 1.75 0 0 1 13.25 16H2.75A1.75 1.75 0 0 1 1 14.25V3.75C1 2.784 1.784 2 2.75 2H4V.75A.75.75 0 0 1 4.75 0ZM2.5 7.5v6.75c0 .138.112.25.25.25h10.5a.25.25 0 0 0 .25-.25V7.5Zm10.75-4H2.75a.25.25 0 0 0-.25.25V6h11V3.75a.25.25 0 0 0-.25-.25Z"/>
                                         </svg>
-                                        Last played on 27 Mar 2024
+                                        Last played on 28 Mar 2024
                                     </div>
                                 </div>
                                 <div class="achievements">
@@ -160,32 +160,32 @@
                                             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" width="16" height="16">
                                                 <path d="M3.217 6.962A3.75 3.75 0 0 1 0 3.25v-.5C0 1.784.784 1 1.75 1h1.356c.228-.585.796-1 1.462-1h6.864c.647 0 1.227.397 1.462 1h1.356c.966 0 1.75.784 1.75 1.75v.5a3.75 3.75 0 0 1-3.217 3.712 5.014 5.014 0 0 1-2.771 3.117l.144 1.446c.005.05.03.12.114.204.086.087.217.17.373.227.283.103.618.274.89.568.285.31.467.723.467 1.226v.75h1.25a.75.75 0 0 1 0 1.5H2.75a.75.75 0 0 1 0-1.5H4v-.75c0-.503.182-.916.468-1.226.27-.294.606-.465.889-.568.139-.048.266-.126.373-.227.084-.085.109-.153.114-.204l.144-1.446a5.015 5.015 0 0 1-2.77-3.117ZM4.5 1.568V5.5a3.5 3.5 0 1 0 7 0V1.568a.068.068 0 0 0-.068-.068H4.568a.068.068 0 0 0-.068.068Zm2.957 8.902-.12 1.204c-.093.925-.858 1.47-1.467 1.691a.766.766 0 0 0-.3.176c-.037.04-.07.093-.07.21v.75h5v-.75c0-.117-.033-.17-.07-.21a.766.766 0 0 0-.3-.176c-.609-.221-1.374-.766-1.466-1.69l-.12-1.204a5.064 5.064 0 0 1-1.087 0ZM13 2.5v2.872a2.25 2.25 0 0 0 1.5-2.122v-.5a.25.25 0 0 0-.25-.25H13Zm-10 0H1.75a.25.25 0 0 0-.25.25v.5c0 .98.626 1.813 1.5 2.122Z"/>
                                             </svg>
-                                            33 / 47 achievements unlocked
+                                            39 / 47 achievements unlocked
                                         </div>
                                     </div>
                                     <div class="achievement">
-                                        <img src="data:image/jpg;base64,/9j/2wBDAAYEBQYFBAYGBQYHBwYIChAKCgkJChQODwwQFxQYGBcUFhYaHSUfGhsjHBYWICwgIyYnKSopGR8tMC0oMCUoKSj/2wBDAQcHBwoIChMKChMoGhYaKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCj/wAARCAAgACADASIAAhEBAxEB/8QAGAAAAwEBAAAAAAAAAAAAAAAABQYHBAj/xAAsEAACAQQBAwMDAwUAAAAAAAABAgMEBQYRAAchMRIiYRNRcQgUkTJBQoGh/8QAGAEAAgMAAAAAAAAAAAAAAAAAAQIAAwT/xAAjEQEAAQMEAgIDAAAAAAAAAAABAgADEQQhMUESUXGxImGR/9oADAMBAAIRAxEAPwDleKNpZFRASzHQA5W770Dyy2WKhuEMUVZJOAZaaJtPT7G/f6tD4Oj2PNn6Z8LS95Ob7cow1utbB1DDYkm8qPwP6j+B9+EMvps56pZA1ZHQVa2V5SKNZWEdPHFvQfuRskdy3cniEs3PAQDdX98Bub91pt2GUc45oFbeg2V1WLV14njippKdWZKN29Us4UbJX07H31s99ckjqUYq3kc6Qx7Hsy6XZVBNaHmulm2HrUh0IXj37vaWPvA2QdA9v7g8Sf1F4VHjmWm5W6MLarmTNEFHaN/Lp/JBHw3xwRuDPx8hHcxtxyJ77/tG7p5QjnGKz9As2OM5L+wq5NW24ERv6j2R/wDF/wDuj8H44fymlzDBrhUQ2aprXsbOz0xjX6iRhjv0kaPpI3+D55DkYowZfI4813VHJaq2UtGtfJAIAB9SAlHfQ0PUwOzxyOJ+YDnke8cPz1V2m1UYW2MlE4T6p7wkZvlV2i/f19wp7QGBqZZF+mrIPKKNDZPjt9+/FPrhmpyvJ2ipZN2yi3DTgHs3f3P/ALI/gDg6DqfkiWWqtstc86ThlMspLyKCNEKx7gcSHYuxJ8nhY/m3EDox17fnqpqdUTtkIyX3n6r/2Q==" alt="" />
+                                        <img src="data:image/jpg;base64,/9j/2wBDAAYEBQYFBAYGBQYHBwYIChAKCgkJChQODwwQFxQYGBcUFhYaHSUfGhsjHBYWICwgIyYnKSopGR8tMC0oMCUoKSj/2wBDAQcHBwoIChMKChMoGhYaKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCj/wAARCAAgACADASIAAhEBAxEB/8QAGAABAAMBAAAAAAAAAAAAAAAABwMECAX/xAAtEAACAgIBAwIFAgcAAAAAAAABAgMEBREGABIhBzEIExRBUWGBFRYiMlKRof/EABcBAAMBAAAAAAAAAAAAAAAAAAABAgT/xAAiEQABBAIBBAMAAAAAAAAAAAABAgMRIQAxBBITQbEyofD/2gAMAwEAAhEDEQA/AM08ZwN/kmZr4zEwNPanbtVV/wCk/gAeSfsOl7hXojbTMNLzNYqmFhlkglkNpY2Yhdq6EjRQnXn9f0PUPw5cFu5XN1uSfMZcXSmKytDYMUquE7gRoeR5Gx9/bqjybK2OV5OL5tQ/R2S/00SIfl1EZ2EaoB4HkEt/kSfx0kJcfcLLSgIFnZBM6vcZrZaBEkXl7lPofk5c+P5WSGxhrM7RVZhZV+xVUHukYDQB8gfsNdEGaxVzC5OxQyUD17UDlJI3GipHTVxSXK8Qysc8mKmhwyWYQ4kiIjsIJQjMd+C6uQyt7gjx464Xr9wS9xrkNjKTOWoX7Mn0xksGaVtAFi5Pn3O+ghbbnacUDIo6Jjc3uMH2QkSBknw4cgzNbneMxVFpJ6U8rd9M2vkxMSpHe32JUDetHeta6Tc1hMvxXiueoYjCZO/VtTM2Plgi7nqKxJaOZASysN+NeCCD42estUrU9K1FYqyPFNEwdHQ6KkHYIP2PSL6e+reb4tyD+IWrFvIV2kksS1JLLBJpXUqXb38+d/sOkUq6u4iJqj5gyL+veSzyFNfHGjjmI5ByunxyDkGPy1PHVJ4nnSyoDWGUjSxxnTdu/wCpmP8AaoPv0K+ufIczk+b5anlXljhr2nEdM2fnpXPgEIfbzrfjX40Na6h5p6qZ3P8AJnytW9cpxrObFaulliKrFQp7D49xv/Z6P55nnkaSRizMdkk731QSQrrVExQHiTJv2fxH+Qp21Z//2Q==" alt="" />
                                         <div>
                                             <div class="name">
-                                                <div>Return to Sender</div>
-                                                <div class="unlocked">27 Mar 2024</div>
+                                                <div>2 Fuzz 2 Nefarious</div>
+                                                <div class="unlocked">28 Mar 2024</div>
                                             </div>
                                             <div class="description"></div>
                                         </div>
                                     </div>
                                     <div class="achievement">
-                                        <img src="data:image/jpg;base64,/9j/2wBDAAYEBQYFBAYGBQYHBwYIChAKCgkJChQODwwQFxQYGBcUFhYaHSUfGhsjHBYWICwgIyYnKSopGR8tMC0oMCUoKSj/2wBDAQcHBwoIChMKChMoGhYaKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCj/wAARCAAgACADASIAAhEBAxEB/8QAGQAAAwADAAAAAAAAAAAAAAAABgcIAwQF/8QALRAAAgEDAwIEBAcAAAAAAAAAAQIDBAURAAYhEjEHIkFhCBRRoTJCUnGBgpL/xAAXAQADAQAAAAAAAAAAAAAAAAAAAQQD/8QAIhEAAgEDBQADAQAAAAAAAAAAAQIRAAMxBBIhQWFRcYGh/9oADAMBAAIRAxEAPwCWIYnmlSONSzscAAZJ03r98P8Au23WahraWKOumnAM1NCcPTkjOG6sA/Tj11ufDHstLzuU3+4xhqC2MGjVhkPP3X+F/F/nRFcblct+7ye4bhDjayNItFSNMFjOG6VZkyMluTluM49NZNcO/apEASZ9wByOe6qtacuBxmg+i8A91y7VrrvVRx0s9OrOlE5zLMqjJK9OR9cAnnGlC6lGKnuNUfabrcdhb1irbCHO1ZXjSspVmDxjqbpZ1XJwVJByOM5HbQV8ReyU2zu96+3xhbXci00YXtG+fOn7ZOR7N7aauS21iOeRH9BzyM0XtOUGMVg8Ad7ttncnyFXL0224ERv1HhJPyv8AfB9j7aY247ZebFNS01DTmptz3BFSSJWYxQEg+dRwGHKdWO2PXUzIxRgy9xo3uHifuWst1LSC4SQCAAB4CY3fAx5mHJ0Nalw6x7PcYP31VWj1qWkK3J8inBtu13i9zTRXKD5W2w17iSSYMplhU9Q6QeCTwpb9OfXSt8bt6tu3dMggkJt1JmGnHowz5n/sfsBrnw+Jm41slTbJa55opwytJKS8gBGCAx5A0FOxZiT3Omlvaxdo8jr5/TS1utS8oW3Ps1//2Q==" alt="" />
+                                        <img src="data:image/jpg;base64,/9j/2wBDAAYEBQYFBAYGBQYHBwYIChAKCgkJChQODwwQFxQYGBcUFhYaHSUfGhsjHBYWICwgIyYnKSopGR8tMC0oMCUoKSj/2wBDAQcHBwoIChMKChMoGhYaKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCj/wAARCAAgACADASIAAhEBAxEB/8QAGAABAAMBAAAAAAAAAAAAAAAABwMECAX/xAApEAABAwMCBgIDAQEAAAAAAAABAgMEBQYRABIHEyEiMUEIFBZRYaHx/8QAGAEAAgMAAAAAAAAAAAAAAAAAAAQBAgX/xAAhEQABAgYDAQEAAAAAAAAAAAABAgMAERIhMUEEUWGB4f/aAAwDAQACEQMRAD8AzNb1FnV+qsU6lsLflPK2pQkf7/B7z60tWZwSqf5O8zdUUtUdlKt8lDyUhZx27CfIzj1qL48WNVqvXYdxQ5iI0CFKCX9qyHFdudoGOoIIBz6J1Uvm5Krfl8fSQt5UVcv6sOGhe1IG/aDjxuPkk/v9DT3HbRsXEZ76n3XCyyoJAFzsHy41F+8eCVU/KG2bWilyjPBPLkuPJUEHb3byPHXPrRLX6PNoNUfp9TYWxKZVtUhQ6/8AP770zWjV5vDypUdsPc+JNnusyEpK+WtpKkt9AoDCkqKjkD0PR1zPkJY1Vo1dmV+bMRJhTpSksFSyXEjGdpGOgA6DHoDRyEI1mK8Vx5Kw06oFMrGUiSDIzuYh+O1xXDHvWl0SkPg0+RI3yYy1JCVp29yskZyEjIx5wNIV8Wpc9l1CU7btvxqvAcmCdCnpjqdkwVA55fac7QScdCMHWZ4EyRT5jUqG6tl9pQWhaFEFKgcggjwdJdgcYK1QbxdrVZlzqk0+lXPjKkFKXVEYBxggY6YwNJErnUiWMHfV4eU2KqgP2Fa2rRrV9Vumza5SqtAp0aUJsl+rSOY66oDtZZTtTtbz16j35Jxox+Qtx3DJvSqUasvgQY0krjRkqSpLaSntOQM5KSCc+CTqtfvF+tV28kVujTJ1NaZCfrxkyCpLRCcE4wAc9Scj3o1nzH58p2RKdW686orWtaiSpROSST5OhJWDUsjGOu7xCWwDUfnkf//Z" alt="" />
                                         <div>
                                             <div class="name">
-                                                <div>Just Stay Down</div>
-                                                <div class="unlocked">26 Mar 2024</div>
+                                                <div>Can't Stop Me</div>
+                                                <div class="unlocked">28 Mar 2024</div>
                                             </div>
-                                            <div class="description">Defeat 30 Ejected Nefarious Trooper Heads</div>
+                                            <div class="description">Complete a Gold Cup Battleplex Challenge</div>
                                         </div>
                                     </div>
                                     <div class="achievement">
                                         <div>
-                                            <div class="description ellipsis">+31 others...</div>
+                                            <div class="description ellipsis">+37 others...</div>
                                         </div>
                                     </div>
                                 </div>
