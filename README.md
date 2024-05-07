@@ -1,5 +1,5 @@
 <h4 align="center"><samp>
-  Hi there 👋 welcome to my Github! I'm a pragmatic Software Engineer passionate about Automation, currently seeking job opportunities. 💼
+  Hi there 👋 welcome to my Github! I'm a Software Engineer @ Meta Core Feed Ranking team passionate about Automation. 💼
 </samp></h4>
 
 <!-- select picture -->
@@ -46,10 +46,9 @@
   
   - 🧑🏻‍💻 My name sounds like **Jaw-Way**
   - 🎓 I've graduated with BS in **Technology Information Management** and MS in **Software Development**
-  - 🔭 I'm currently working on a **Product Notification Project**
+  - 🔭 I'm currently working on a **Onboarding @ meta**
   - 🌱 I'm currently learning **Web Scraping with anti-bot mitigation techniques** and **API Gateway**
   - 🤔 My career interests lie in the development of innovative products that enrich people's everyday experiences.
-  - 🔍 I’m looking for career opportunities in the Software industry
 
 </div>
   
