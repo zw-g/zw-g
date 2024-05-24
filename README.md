@@ -46,8 +46,8 @@
   
   - 🧑🏻‍💻 My name sounds like **Jaw-Way**
   - 🎓 I've graduated with BS in **Technology Information Management** and MS in **Software Development**
-  - 🔭 I'm currently working on a **Onboarding @ meta**
-  - 🌱 I'm currently learning **Web Scraping with anti-bot mitigation techniques** and **API Gateway**
+  - 🔭 I'm currently working on a **Facebook Feed Ranking**
+  - 🌱 I'm currently learning **Machine Learning** and **AI Modeling**
   - 🤔 My career interests lie in the development of innovative products that enrich people's everyday experiences.
 
 </div>
