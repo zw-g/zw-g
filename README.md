@@ -1,5 +1,5 @@
 <h4 align="center"><samp>
-  Hi there 👋 welcome to my Github! I'm a Software Engineer @ Meta Core Feed Ranking team passionate about Automation. 💼
+  Hi there 👋 welcome to my Github! I'm a Software Engineer @ Meta Core Feed Ranking team passionate about Automation.
 </samp></h4>
 
 <!-- select picture -->
@@ -45,7 +45,7 @@
 <div align="left" >
   
   - 🧑🏻‍💻 My name sounds like **Jaw-Way**
-  - 🎓 I've graduated with BS in **Technology Information Management** and MS in **Software Development**
+  - 🎓 I've graduated with BS in **Technology Information Management** & MS in **Software Development**
   - 🔭 I'm currently working on a **Facebook Feed Ranking**
   - 🌱 I'm currently learning **Machine Learning** and **AI Modeling**
   - 🤔 My career interests lie in the development of innovative products that enrich people's everyday experiences.
@@ -133,15 +133,6 @@
   ### ℹ️ Github相关信息 | Github infomation
   ![GithubStats](https://github-profile-summary-cards.vercel.app/api/cards/stats?username=zw-g&theme=github)
   ![GithubMostCommitLanguage](https://github-profile-summary-cards.vercel.app/api/cards/most-commit-language?username=zw-g&theme=github)
-
-</div>
-
-#
-
-<div align="center" >
-  
-  ### 🔢 这里已经被光临过多少次 | How many times have viewer been here
-  [<img alt="Profile Visits" src="https://count.getloli.com/get/@zw-g?theme=rule34">](https://moe-counter.glitch.me/)
 
 </div>
 
