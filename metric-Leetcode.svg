@@ -19,9 +19,9 @@
                             <div class="category column">
                                 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 120 120" width="50" height="50" class="gauge all">
                                     <circle class="gauge-base" r="53" cx="60" cy="60"/>
-                                    <circle class="gauge-arc" transform="rotate(-90 60 60)" r="53" cx="60" cy="60" stroke-dasharray="13.741286057692307 329"/>
-                                    <text x="60" y="50" dominant-baseline="central">139</text>
-                                    <text x="60" y="80" dominant-baseline="central" class="secondary">/3328</text>
+                                    <circle class="gauge-arc" transform="rotate(-90 60 60)" r="53" cx="60" cy="60" stroke-dasharray="13.835986782817663 329"/>
+                                    <text x="60" y="50" dominant-baseline="central">140</text>
+                                    <text x="60" y="80" dominant-baseline="central" class="secondary">/3329</text>
                                 </svg>
                                 <span class="title">All</span>
                             </div>
@@ -37,8 +37,8 @@
                             <div class="category column">
                                 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 120 120" width="50" height="50" class="gauge medium">
                                     <circle class="gauge-base" r="53" cx="60" cy="60"/>
-                                    <circle class="gauge-arc" transform="rotate(-90 60 60)" r="53" cx="60" cy="60" stroke-dasharray="13.598163030998853 329"/>
-                                    <text x="60" y="50" dominant-baseline="central">72</text>
+                                    <circle class="gauge-arc" transform="rotate(-90 60 60)" r="53" cx="60" cy="60" stroke-dasharray="13.78702640642939 329"/>
+                                    <text x="60" y="50" dominant-baseline="central">73</text>
                                     <text x="60" y="80" dominant-baseline="central" class="secondary">/1742</text>
                                 </svg>
                                 <span class="title">Medium</span>
@@ -46,9 +46,9 @@
                             <div class="category column">
                                 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 120 120" width="50" height="50" class="gauge hard">
                                     <circle class="gauge-base" r="53" cx="60" cy="60"/>
-                                    <circle class="gauge-arc" transform="rotate(-90 60 60)" r="53" cx="60" cy="60" stroke-dasharray="8.703703703703702 329"/>
+                                    <circle class="gauge-arc" transform="rotate(-90 60 60)" r="53" cx="60" cy="60" stroke-dasharray="8.69220607661823 329"/>
                                     <text x="60" y="50" dominant-baseline="central">20</text>
-                                    <text x="60" y="80" dominant-baseline="central" class="secondary">/756</text>
+                                    <text x="60" y="80" dominant-baseline="central" class="secondary">/757</text>
                                 </svg>
                                 <span class="title">Hard</span>
                             </div>
@@ -66,13 +66,13 @@
                         <div class="label fundamental"><span class="dot">⬤</span> Array <span class="count">x124</span></div>
                         <div class="label intermediate"><span class="dot">⬤</span> Hash Table <span class="count">x55</span></div>
                         <div class="label fundamental"><span class="dot">⬤</span> String <span class="count">x43</span></div>
+                        <div class="label fundamental"><span class="dot">⬤</span> Sorting <span class="count">x35</span></div>
                         <div class="label intermediate"><span class="dot">⬤</span> Depth-First Search <span class="count">x34</span></div>
-                        <div class="label fundamental"><span class="dot">⬤</span> Sorting <span class="count">x34</span></div>
                         <div class="label advanced"><span class="dot">⬤</span> Dynamic Programming <span class="count">x32</span></div>
                         <div class="label fundamental"><span class="dot">⬤</span> Two Pointers <span class="count">x30</span></div>
-                        <div class="label intermediate"><span class="dot">⬤</span> Breadth-First Search <span class="count">x27</span></div>
-                        <div class="label intermediate"><span class="dot">⬤</span> Tree <span class="count">x26</span></div>
-                        <div class="label intermediate"><span class="dot">⬤</span> Binary Tree <span class="count">x25</span></div>
+                        <div class="label intermediate"><span class="dot">⬤</span> Breadth-First Search <span class="count">x28</span></div>
+                        <div class="label intermediate"><span class="dot">⬤</span> Tree <span class="count">x27</span></div>
+                        <div class="label intermediate"><span class="dot">⬤</span> Binary Tree <span class="count">x26</span></div>
                     </div>
                 </section>
                 <section class="leetcode subsection">
@@ -87,8 +87,8 @@
                             <path fill-rule="evenodd" d="M8 5.5a2.5 2.5 0 100 5 2.5 2.5 0 000-5zM4 8a4 4 0 118 0 4 4 0 01-8 0z"/>
                         </svg>
                         <div class="infos">
-                            <div class="title">Open the Lock</div>
-                            <div class="date">21 Apr 2024</div>
+                            <div class="title">Kth Largest Sum in a Binary Tree</div>
+                            <div class="date">22 Oct 2024</div>
                         </div>
                     </div>
                     <div class="field">
@@ -96,8 +96,8 @@
                             <path fill-rule="evenodd" d="M8 5.5a2.5 2.5 0 100 5 2.5 2.5 0 000-5zM4 8a4 4 0 118 0 4 4 0 01-8 0z"/>
                         </svg>
                         <div class="infos">
-                            <div class="title">Find if Path Exists in Graph</div>
-                            <div class="date">20 Apr 2024</div>
+                            <div class="title">Open the Lock</div>
+                            <div class="date">21 Apr 2024</div>
                         </div>
                     </div>
                 </section>
