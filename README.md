@@ -21,7 +21,7 @@
 <!-- my contact info -->
 <p align="center">
   <a href="https://www.linkedin.com/in/zhaoweigu/">
-    <img alt="LinkedIn" title="LinkedIn" height="24" width="24" src="https://cdn.simpleicons.org/linkedin"></a>
+    <img alt="LinkedIn" title="LinkedIn" height="24" width="24" src="https://cdn.simpleicons.org/instapaper/blue"></a>
   </a>&nbsp;
   <a href="https://github.com/zw-g">
     <picture>
