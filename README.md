@@ -46,22 +46,19 @@
 ### 📊 GitHub Stats
 
 <p align="center">
-  <picture>
-    <source media="(prefers-color-scheme: dark)" srcset="https://github-readme-stats.vercel.app/api?username=zw-g&show_icons=true&theme=react&hide_border=true&count_private=true" />
-    <img width="48%" src="https://github-readme-stats.vercel.app/api?username=zw-g&show_icons=true&theme=default&hide_border=true&count_private=true" />
-  </picture>
+  <img width="48%" src="https://github-profile-summary-cards.vercel.app/api/cards/stats?username=zw-g&theme=github_dark" />
   &nbsp;
-  <picture>
-    <source media="(prefers-color-scheme: dark)" srcset="https://github-readme-stats.vercel.app/api/top-langs/?username=zw-g&layout=compact&theme=react&hide_border=true&langs_count=8" />
-    <img width="40%" src="https://github-readme-stats.vercel.app/api/top-langs/?username=zw-g&layout=compact&theme=default&hide_border=true&langs_count=8" />
-  </picture>
+  <img width="48%" src="https://github-profile-summary-cards.vercel.app/api/cards/repos-per-language?username=zw-g&theme=github_dark" />
 </p>
 
 <p align="center">
-  <picture>
-    <source media="(prefers-color-scheme: dark)" srcset="https://github-readme-streak-stats.herokuapp.com/?user=zw-g&theme=react&hide_border=true" />
-    <img width="52%" src="https://github-readme-streak-stats.herokuapp.com/?user=zw-g&theme=default&hide_border=true" />
-  </picture>
+  <a href="https://git.io/streak-stats">
+    <img width="52%" src="https://streak-stats.demolab.com/?user=zw-g&theme=react&hide_border=true" />
+  </a>
+</p>
+
+<p align="center">
+  <img width="96%" src="https://github-profile-summary-cards.vercel.app/api/cards/profile-details?username=zw-g&theme=github_dark" />
 </p>
 
 ---
