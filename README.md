@@ -63,21 +63,12 @@
 
 <br/>
 
-<!-- ─────────────── WEATHER ─────────────── -->
+<!-- ─────────────── WEATHER + MUSIC (side by side) ─────────────── -->
 
-<p align="center">
-  <img src="./assets/weather-globe.svg" width="300" alt="Live weather — Menlo Park, CA" />
-</p>
-
-<br/>
-
-<!-- ─────────────── NOW VIBING ─────────────── -->
-
-<p align="center">
-  <a href="https://music.youtube.com">
-    <img src="./assets/music-widget.svg" width="420" alt="Recently liked on YouTube Music" />
-  </a>
-</p>
+<table align="center" border="0" cellspacing="0" cellpadding="8"><tr>
+  <td align="center"><img src="./assets/weather-globe.svg" width="400" alt="Live weather — Menlo Park, CA" /></td>
+  <td align="center"><a href="https://music.youtube.com"><img src="./assets/music-widget.svg" width="400" alt="Now vibing on YouTube Music" /></a></td>
+</tr></table>
 
 <br/>
 
@@ -91,26 +82,23 @@
   </a>
 </p>
 
-<!-- ─────────────── AI ─────────────── -->
+<!-- ─────────────── AI / ML ─────────────── -->
 
-<h4 align="center">✨ AI</h4>
+<h4 align="center">✨ AI / ML</h4>
 
 <p align="center">
   <a href="https://anthropic.com"><img src="https://go-skill-icons.vercel.app/api/icons?i=claude&theme=dark" height="44" alt="Claude" /></a>&nbsp;&nbsp;
   <a href="https://openai.com"><img src="https://go-skill-icons.vercel.app/api/icons?i=chatgpt&theme=dark" height="44" alt="ChatGPT" /></a>&nbsp;&nbsp;
   <a href="https://deepmind.google/technologies/gemini/"><img src="https://go-skill-icons.vercel.app/api/icons?i=gemini&theme=dark" height="44" alt="Gemini" /></a>&nbsp;&nbsp;
-  <a href="https://meta.ai"><img src="https://img.shields.io/badge/Meta_AI-0668E1?style=for-the-badge&logo=meta&logoColor=white" height="30" alt="Meta AI" /></a>
+  <a href="https://pytorch.org"><img src="https://go-skill-icons.vercel.app/api/icons?i=pytorch&theme=dark" height="44" alt="PyTorch" /></a>
 </p>
 
 <br/>
 
-<!-- ─────────────── CONTRIBUTION GRAPH ─────────────── -->
+<!-- ─────────────── CONTRIBUTION ROLLERCOASTER ─────────────── -->
 
 <p align="center">
-  <picture>
-    <source media="(prefers-color-scheme: dark)" srcset="https://github-readme-activity-graph.vercel.app/graph?username=zw-g&bg_color=0D1117&color=90EE90&title_color=90EE90&line=90EE90&point=FFD700&area=true&area_color=90EE90&hide_border=true&radius=12" />
-    <img src="https://github-readme-activity-graph.vercel.app/graph?username=zw-g&bg_color=FFF8F0&color=2D2D48&title_color=2D2D48&line=90EE90&point=FFD700&area=true&area_color=90EE90&hide_border=true&radius=12" width="98%" alt="activity graph" />
-  </picture>
+  <img src="./assets/contribution-rollercoaster.svg" width="98%" alt="Commit activity with alien roller coaster" />
 </p>
 
 <hr/>
