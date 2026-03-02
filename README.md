@@ -18,28 +18,28 @@
 </h4>
 
 <!-- ═══════════════════════════════════════════════════════════════ -->
-<!-- ALIEN + WEATHER GLOBE — side by side on landing page          -->
+<!-- ORIGINAL ALIEN GIF — the professional one Papa loves          -->
 <!-- ═══════════════════════════════════════════════════════════════ -->
 <p align="center">
-  <img src="./assets/weather-globe.svg" width="280" alt="weather globe with alien" />
+  <img src="https://media.giphy.com/media/LXjLNXabM2b0qN4DV6/giphy.gif" width="200" alt="alien" />
 </p>
 
 <!-- ═══════════════════════════════════════════════════════════════ -->
-<!-- INTRO TEXT — visible in both themes                            -->
+<!-- INTRO TEXT                                                      -->
 <!-- ═══════════════════════════════════════════════════════════════ -->
 <p align="center">
   <samp>Hi there 👋 welcome to my Github! I'm a Software Engineer @ Meta Core Feed Ranking team passionate about Automation.</samp>
 </p>
 
 <!-- ═══════════════════════════════════════════════════════════════ -->
-<!-- SOCIAL ICONS — colorful via skillicons.dev (works dark+light) -->
+<!-- SOCIAL ICONS — all skillicons.dev for consistency              -->
 <!-- ═══════════════════════════════════════════════════════════════ -->
 <p align="center">
-  <a href="https://www.linkedin.com/in/zhaoweigu/"><img src="https://skillicons.dev/icons?i=linkedin" height="32" alt="LinkedIn" /></a>
-  <a href="https://github.com/zw-g"><img src="https://skillicons.dev/icons?i=github" height="32" alt="GitHub" /></a>
-  <a href="mailto:zhaoweigu1024419269@gmail.com"><img src="https://skillicons.dev/icons?i=gmail" height="32" alt="Gmail" /></a>
-  <a href="https://www.instagram.com/zhaoweiiii/"><img src="https://skillicons.dev/icons?i=instagram" height="32" alt="Instagram" /></a>
-  <a href="https://www.facebook.com/gzw.fb"><img src="https://img.shields.io/badge/-0866FF?style=flat-square&logo=facebook&logoColor=white" height="32" alt="Facebook" /></a>
+  <a href="https://www.linkedin.com/in/zhaoweigu/"><img src="https://skillicons.dev/icons?i=linkedin" height="32" alt="LinkedIn" /></a>&nbsp;
+  <a href="https://github.com/zw-g"><img src="https://skillicons.dev/icons?i=github" height="32" alt="GitHub" /></a>&nbsp;
+  <a href="mailto:zhaoweigu1024419269@gmail.com"><img src="https://skillicons.dev/icons?i=gmail" height="32" alt="Gmail" /></a>&nbsp;
+  <a href="https://www.instagram.com/zhaoweiiii/"><img src="https://skillicons.dev/icons?i=instagram" height="32" alt="Instagram" /></a>&nbsp;
+  <a href="https://www.facebook.com/gzw.fb"><img src="https://go-skill-icons.vercel.app/api/icons?i=facebook" height="32" alt="Facebook" /></a>
 </p>
 
 <!-- ═══════════════════════════════════════════════════════════════ -->
@@ -63,11 +63,19 @@
 
 <br/>
 
+<!-- ─────────────── WEATHER ─────────────── -->
+
+<p align="center">
+  <img src="./assets/weather-globe.svg" width="300" alt="Live weather — Menlo Park, CA" />
+</p>
+
+<br/>
+
 <!-- ─────────────── NOW VIBING ─────────────── -->
 
 <p align="center">
   <a href="https://music.youtube.com">
-    <img src="./assets/music-widget.svg" width="400" alt="Recently liked on YouTube Music" />
+    <img src="./assets/music-widget.svg" width="420" alt="Recently liked on YouTube Music" />
   </a>
 </p>
 
@@ -83,16 +91,15 @@
   </a>
 </p>
 
-<!-- ─────────────── AI TOOLS ─────────────── -->
+<!-- ─────────────── AI ─────────────── -->
 
 <h4 align="center">✨ AI</h4>
 
 <p align="center">
-  <a href="https://anthropic.com"><img src="https://img.shields.io/badge/-Anthropic-191919?style=for-the-badge&logo=anthropic&logoColor=white" alt="Anthropic" /></a>
-  <a href="https://openai.com"><img src="https://img.shields.io/badge/-OpenAI-412991?style=for-the-badge&logo=openai&logoColor=white" alt="OpenAI" /></a>
-  <a href="https://deepmind.google/technologies/gemini/"><img src="https://img.shields.io/badge/-Google_Gemini-4285F4?style=for-the-badge&logo=googlegemini&logoColor=white" alt="Gemini" /></a>
-  <a href="https://meta.ai"><img src="https://img.shields.io/badge/-Meta_AI-0668E1?style=for-the-badge&logo=meta&logoColor=white" alt="Meta AI" /></a>
-  <a href="https://mistral.ai"><img src="https://img.shields.io/badge/-Mistral-FF7000?style=for-the-badge&logo=mistral&logoColor=white" alt="Mistral" /></a>
+  <a href="https://anthropic.com"><img src="https://go-skill-icons.vercel.app/api/icons?i=claude" height="44" alt="Anthropic Claude" /></a>&nbsp;&nbsp;
+  <a href="https://openai.com"><img src="https://go-skill-icons.vercel.app/api/icons?i=chatgpt" height="44" alt="OpenAI" /></a>&nbsp;&nbsp;
+  <a href="https://deepmind.google/technologies/gemini/"><img src="https://go-skill-icons.vercel.app/api/icons?i=gemini" height="44" alt="Google Gemini" /></a>&nbsp;&nbsp;
+  <a href="https://meta.ai"><img src="https://go-skill-icons.vercel.app/api/icons?i=meta" height="44" alt="Meta AI" /></a>
 </p>
 
 <br/>
