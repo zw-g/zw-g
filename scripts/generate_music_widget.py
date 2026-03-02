@@ -1,12 +1,14 @@
 #!/usr/bin/env python3
 """
-Generate a "Recently Liked" music widget SVG for GitHub profile README.
+Generate a "Now Vibing To" music widget SVG for GitHub profile README.
 Fetches the most recently liked song from YouTube Music via YouTube Data API v3.
 
 Works both locally (reads oauth.json) and in GitHub Actions (reads env vars).
+
+NOTE: No <image> tags or data: URIs — GitHub's SVG sanitizer strips them.
+Album art is a gradient placeholder with a music note icon overlay.
 """
 
-import base64
 import html
 import json
 import os
@@ -34,9 +36,8 @@ OUTPUT_PATH = os.path.join(REPO_DIR, "assets", "music-widget.svg")
 CLIENT_ID = os.environ.get("YTM_CLIENT_ID", "")
 CLIENT_SECRET = os.environ.get("YTM_CLIENT_SECRET", "")
 
-SVG_WIDTH = 420
-SVG_HEIGHT = 130
-THUMB_SIZE = 80
+SVG_WIDTH = 400
+SVG_HEIGHT = 160
 
 
 def load_oauth():
@@ -107,37 +108,12 @@ def fetch_liked_song(access_token):
     if channel.endswith(" - Topic"):
         channel = channel[: -len(" - Topic")]
 
-    # Get best available thumbnail
-    thumbs = snippet.get("thumbnails", {})
-    thumb_url = None
-    for quality in ("medium", "high", "default"):
-        if quality in thumbs:
-            thumb_url = thumbs[quality]["url"]
-            break
-
     video_id = snippet.get("resourceId", {}).get("videoId", "")
     return {
         "title": title,
         "artist": channel,
-        "thumbnail_url": thumb_url,
         "video_id": video_id,
     }
-
-
-def fetch_thumbnail_b64(url):
-    """Download thumbnail and return base64 data URI."""
-    if not url:
-        return None
-    try:
-        req = urllib.request.Request(url, headers={"User-Agent": "Mozilla/5.0"})
-        with urllib.request.urlopen(req, timeout=10, context=SSL_CTX) as resp:
-            data = resp.read()
-            ct = resp.headers.get("Content-Type", "image/jpeg")
-            b64 = base64.b64encode(data).decode()
-            return f"data:{ct};base64,{b64}"
-    except Exception as e:
-        print(f"Thumbnail fetch failed: {e}", file=sys.stderr)
-        return None
 
 
 def truncate_text(text, max_chars=30):
@@ -147,157 +123,135 @@ def truncate_text(text, max_chars=30):
     return text[: max_chars - 1] + "…"
 
 
-def generate_svg(song, thumb_b64):
-    """Generate the SVG widget."""
+def generate_svg(song):
+    """Generate the premium music widget SVG.
+
+    No <image> tags, no data: URIs, no external URLs.
+    Album art = gradient placeholder with music note overlay.
+    All animations CSS @keyframes only (no JS, no SMIL).
+    """
     title_esc = html.escape(truncate_text(song["title"], 32))
     artist_esc = html.escape(truncate_text(song["artist"], 36))
-    video_url = f"https://music.youtube.com/watch?v={song['video_id']}" if song["video_id"] else "#"
 
-    # Fallback placeholder if no thumbnail
-    if thumb_b64:
-        thumb_element = f'''<image x="20" y="25" width="{THUMB_SIZE}" height="{THUMB_SIZE}" href="{thumb_b64}" clip-path="url(#thumbClip)" preserveAspectRatio="xMidYMid slice"/>'''
-    else:
-        thumb_element = f'''<rect x="20" y="25" width="{THUMB_SIZE}" height="{THUMB_SIZE}" rx="8" fill="#1a1a2e"/>
-      <text x="{20 + THUMB_SIZE // 2}" y="{25 + THUMB_SIZE // 2 + 8}" text-anchor="middle" font-size="28" fill="#FFD700">🎵</text>'''
-
-    svg = f'''<svg xmlns="http://www.w3.org/2000/svg" width="{SVG_WIDTH}" height="{SVG_HEIGHT}" viewBox="0 0 {SVG_WIDTH} {SVG_HEIGHT}" role="img" aria-label="Recently liked song: {title_esc} by {artist_esc}">
+    svg = f'''<svg xmlns="http://www.w3.org/2000/svg" width="{SVG_WIDTH}" height="{SVG_HEIGHT}" viewBox="0 0 {SVG_WIDTH} {SVG_HEIGHT}" role="img" aria-label="Now Vibing To: {title_esc} by {artist_esc}">
   <defs>
-    <clipPath id="thumbClip">
-      <rect x="20" y="25" width="{THUMB_SIZE}" height="{THUMB_SIZE}" rx="8"/>
-    </clipPath>
-    <filter id="glow">
-      <feGaussianBlur stdDeviation="2" result="g"/>
-      <feMerge><feMergeNode in="g"/><feMergeNode in="SourceGraphic"/></feMerge>
-    </filter>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#0D1117"/>
+      <stop offset="100%" stop-color="#161B22"/>
+    </linearGradient>
+    <linearGradient id="art" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#2d1b69"/>
+      <stop offset="50%" stop-color="#1a0a3e"/>
+      <stop offset="100%" stop-color="#0f0825"/>
+    </linearGradient>
   </defs>
   <style>
     @keyframes tw {{
-      0%, 100% {{ opacity: .15 }}
-      50% {{ opacity: 1 }}
-    }}
-    @keyframes bop {{
-      0%, 100% {{ transform: translateY(0) }}
-      50% {{ transform: translateY(-3px) }}
+      0%, 100% {{ opacity: .1 }}
+      50% {{ opacity: .7 }}
     }}
     @keyframes eq1 {{
-      0%, 100% {{ height: 4px; y: 104px; }}
-      50% {{ height: 14px; y: 94px; }}
+      0%, 100% {{ height: 10px; y: 132px; }}
+      50% {{ height: 38px; y: 104px; }}
     }}
     @keyframes eq2 {{
-      0%, 100% {{ height: 8px; y: 100px; }}
-      50% {{ height: 18px; y: 90px; }}
+      0%, 100% {{ height: 34px; y: 108px; }}
+      50% {{ height: 12px; y: 130px; }}
     }}
     @keyframes eq3 {{
-      0%, 100% {{ height: 6px; y: 102px; }}
-      50% {{ height: 12px; y: 96px; }}
+      0%, 100% {{ height: 8px; y: 134px; }}
+      50% {{ height: 40px; y: 102px; }}
+    }}
+    @keyframes eq4 {{
+      0%, 100% {{ height: 30px; y: 112px; }}
+      50% {{ height: 10px; y: 132px; }}
+    }}
+    @keyframes eq5 {{
+      0%, 100% {{ height: 12px; y: 130px; }}
+      50% {{ height: 36px; y: 106px; }}
     }}
     @keyframes pulse {{
       0%, 100% {{ opacity: .6 }}
       50% {{ opacity: 1 }}
     }}
-    @keyframes noteFloat {{
-      0%, 100% {{ transform: translateY(0) rotate(0deg); opacity: .7 }}
-      50% {{ transform: translateY(-5px) rotate(8deg); opacity: 1 }}
-    }}
-    .st {{ fill: #FFD700 }}
-    .st1 {{ animation: tw 3s ease-in-out infinite }}
-    .st2 {{ animation: tw 3s ease-in-out .7s infinite }}
-    .st3 {{ animation: tw 2.8s ease-in-out 1.4s infinite }}
-    .st4 {{ animation: tw 3.5s ease-in-out 2.1s infinite }}
-    .st5 {{ animation: tw 2.5s ease-in-out .35s infinite }}
-    .st6 {{ animation: tw 3.2s ease-in-out 1.8s infinite }}
-    .st7 {{ animation: tw 2.6s ease-in-out 2.5s infinite }}
-    .alien {{ animation: bop 3s ease-in-out infinite }}
-    .eq-bar {{ fill: #90EE90; rx: 1 }}
-    .eq1 {{ animation: eq1 0.8s ease-in-out infinite }}
-    .eq2 {{ animation: eq2 0.6s ease-in-out infinite .1s }}
-    .eq3 {{ animation: eq3 0.7s ease-in-out infinite .2s }}
-    .label {{ animation: pulse 3s ease-in-out infinite }}
-    .note {{ animation: noteFloat 2.5s ease-in-out infinite }}
-    .note2 {{ animation: noteFloat 2.5s ease-in-out 1.2s infinite }}
+    .star {{ fill: #FFD700 }}
+    .t1 {{ animation: tw 3s ease-in-out infinite }}
+    .t2 {{ animation: tw 3s ease-in-out .6s infinite }}
+    .t3 {{ animation: tw 2.8s ease-in-out 1.3s infinite }}
+    .t4 {{ animation: tw 3.5s ease-in-out 2s infinite }}
+    .t5 {{ animation: tw 2.5s ease-in-out .3s infinite }}
+    .t6 {{ animation: tw 3.2s ease-in-out 1.7s infinite }}
+    .t7 {{ animation: tw 2.6s ease-in-out 2.4s infinite }}
+    .b1 {{ animation: eq1 1.2s ease-in-out infinite; }}
+    .b2 {{ animation: eq2 0.9s ease-in-out .15s infinite; }}
+    .b3 {{ animation: eq3 1.05s ease-in-out .3s infinite; }}
+    .b4 {{ animation: eq4 0.85s ease-in-out .1s infinite; }}
+    .b5 {{ animation: eq5 1.1s ease-in-out .25s infinite; }}
+    .lbl {{ animation: pulse 3s ease-in-out infinite; }}
   </style>
 
   <!-- Background -->
-  <rect width="{SVG_WIDTH}" height="{SVG_HEIGHT}" rx="14" fill="#0D1117"/>
-  <rect width="{SVG_WIDTH}" height="{SVG_HEIGHT}" rx="14" fill="none" stroke="#90EE90" stroke-width=".5" opacity=".2"/>
+  <rect width="{SVG_WIDTH}" height="{SVG_HEIGHT}" rx="12" fill="url(#bg)"/>
 
-  <!-- Subtle inner glow -->
-  <rect x="1" y="1" width="{SVG_WIDTH - 2}" height="{SVG_HEIGHT - 2}" rx="13" fill="none" stroke="#90EE90" stroke-width=".3" opacity=".08"/>
+  <!-- Mint border glow -->
+  <rect width="{SVG_WIDTH}" height="{SVG_HEIGHT}" rx="12" fill="none" stroke="#90EE90" stroke-opacity="0.25" stroke-width="1"/>
+  <rect x="1" y="1" width="{SVG_WIDTH - 2}" height="{SVG_HEIGHT - 2}" rx="11" fill="none" stroke="#90EE90" stroke-opacity="0.06" stroke-width="0.5"/>
 
   <!-- Stars -->
-  <circle class="st st1" cx="12" cy="14" r="1.2"/>
-  <circle class="st st2" cx="48" cy="8" r=".8"/>
-  <circle class="st st3" cx="135" cy="12" r="1"/>
-  <circle class="st st4" cx="210" cy="6" r="1.1"/>
-  <circle class="st st5" cx="290" cy="14" r=".9"/>
-  <circle class="st st6" cx="350" cy="8" r="1.2"/>
-  <circle class="st st7" cx="400" cy="16" r=".8"/>
-  <circle class="st st1" cx="375" cy="118" r="1"/>
-  <circle class="st st3" cx="30" cy="118" r=".9"/>
-  <circle class="st st5" cx="180" cy="120" r=".7"/>
-  <circle class="st st2" cx="320" cy="122" r=".8"/>
-  <circle class="st st4" cx="80" cy="6" r=".6"/>
-  <circle class="st st6" cx="255" cy="10" r=".7"/>
-  <circle fill="#334" cx="160" cy="122" r=".4"/>
-  <circle fill="#334" cx="230" cy="118" r=".5"/>
-  <circle fill="#334" cx="410" cy="65" r=".4"/>
+  <circle class="star t1" cx="15" cy="12" r="1"/>
+  <circle class="star t2" cx="58" cy="8" r=".7"/>
+  <circle class="star t3" cx="145" cy="11" r=".9"/>
+  <circle class="star t4" cx="225" cy="6" r="1"/>
+  <circle class="star t5" cx="305" cy="13" r=".8"/>
+  <circle class="star t6" cx="358" cy="8" r="1"/>
+  <circle class="star t7" cx="388" cy="15" r=".7"/>
+  <circle class="star t1" cx="370" cy="148" r=".8"/>
+  <circle class="star t3" cx="32" cy="150" r=".7"/>
+  <circle class="star t5" cx="190" cy="152" r=".6"/>
+  <circle class="star t2" cx="285" cy="148" r=".7"/>
+  <circle class="star t4" cx="92" cy="6" r=".5"/>
+  <circle class="star t6" cx="255" cy="10" r=".6"/>
+  <circle class="star t7" cx="340" cy="80" r=".4"/>
+  <circle class="star t2" cx="168" cy="22" r=".5"/>
+  <circle class="star t5" cx="380" cy="100" r=".5"/>
 
-  <!-- Album art thumbnail -->
-  {thumb_element}
+  <!-- Album art placeholder: gradient square -->
+  <rect x="20" y="30" width="100" height="100" rx="12" fill="url(#art)"/>
+  <rect x="20" y="30" width="100" height="100" rx="12" fill="none" stroke="#90EE90" stroke-opacity="0.15" stroke-width="0.5"/>
 
-  <!-- Equalizer bars next to thumbnail -->
-  <rect class="eq-bar eq1" x="105" y="94" width="3" height="4" opacity=".7"/>
-  <rect class="eq-bar eq2" x="110" y="90" width="3" height="8" opacity=".7"/>
-  <rect class="eq-bar eq3" x="115" y="92" width="3" height="6" opacity=".7"/>
+  <!-- Beamed eighth notes on album art -->
+  <g transform="translate(48, 55)" opacity="0.18">
+    <!-- Left note head -->
+    <ellipse cx="4" cy="35" rx="11" ry="7" transform="rotate(-20, 4, 35)" fill="white"/>
+    <!-- Right note head -->
+    <ellipse cx="32" cy="31" rx="11" ry="7" transform="rotate(-20, 32, 31)" fill="white"/>
+    <!-- Left stem -->
+    <rect x="13" y="-2" width="3" height="37" rx="1.5" fill="white"/>
+    <!-- Right stem -->
+    <rect x="41" y="-6" width="3" height="37" rx="1.5" fill="white"/>
+    <!-- Beam -->
+    <polygon points="13,-2 16,-2 44,-6 44,-3 16,1 13,1" fill="white"/>
+  </g>
 
-  <!-- "Recently Liked" label -->
-  <text class="label" x="125" y="42" font-family="'Segoe UI','Helvetica Neue',Arial,sans-serif" font-size="11" fill="#FFD700" font-weight="600">♫ Recently Liked</text>
+  <!-- YouTube Music icon (red circle + play triangle) -->
+  <circle cx="140" cy="44" r="8" fill="#FF0000"/>
+  <polygon points="138,40 138,48 145,44" fill="white"/>
+
+  <!-- "Now Vibing To" label -->
+  <text class="lbl" x="153" y="48" font-family="'Segoe UI','Helvetica Neue',Arial,sans-serif" font-size="11" fill="#FFD700" font-weight="600">Now Vibing To</text>
 
   <!-- Song title -->
-  <text x="125" y="64" font-family="'Segoe UI','Helvetica Neue',Arial,sans-serif" font-size="15" fill="#FFFFFF" font-weight="700">{title_esc}</text>
+  <text x="140" y="76" font-family="'Segoe UI','Helvetica Neue',Arial,sans-serif" font-size="16" fill="#FFFFFF" font-weight="700">{title_esc}</text>
 
-  <!-- Artist name -->
-  <text x="125" y="84" font-family="'Segoe UI','Helvetica Neue',Arial,sans-serif" font-size="12" fill="#90EE90" font-weight="400">{artist_esc}</text>
+  <!-- Artist -->
+  <text x="140" y="96" font-family="'Segoe UI','Helvetica Neue',Arial,sans-serif" font-size="13" fill="#90EE90" font-weight="500">{artist_esc}</text>
 
-  <!-- Floating music notes -->
-  <g class="note" opacity=".7">
-    <text x="108" y="38" font-size="14" fill="#FFD700">♪</text>
-  </g>
-  <g class="note2" opacity=".5">
-    <text x="260" y="26" font-size="10" fill="#90EE90">♫</text>
-  </g>
-
-  <!-- Cute alien with headphones -->
-  <g class="alien" transform="translate(365, 52)">
-    <!-- Body -->
-    <ellipse cx="20" cy="38" rx="12" ry="10" fill="#90EE90" stroke="#5a9a5a" stroke-width="1.2"/>
-    <!-- Head -->
-    <ellipse cx="20" cy="20" rx="15" ry="14" fill="#90EE90" stroke="#5a9a5a" stroke-width="1.2"/>
-    <!-- Eyes -->
-    <ellipse cx="14" cy="19" rx="4.5" ry="5.5" fill="#0D1117" stroke="#5a9a5a" stroke-width=".8"/>
-    <ellipse cx="26" cy="19" rx="4.5" ry="5.5" fill="#0D1117" stroke="#5a9a5a" stroke-width=".8"/>
-    <!-- Eye shine -->
-    <circle cx="15.5" cy="17.5" r="1.8" fill="#FFD700" opacity=".8"/>
-    <circle cx="27.5" cy="17.5" r="1.8" fill="#FFD700" opacity=".8"/>
-    <!-- Smile -->
-    <path d="M16,26 Q20,30 24,26" fill="none" stroke="#5a9a5a" stroke-width="1" stroke-linecap="round"/>
-    <!-- Antennae -->
-    <line x1="12" y1="8" x2="6" y2="-2" stroke="#5a9a5a" stroke-width="1.2" stroke-linecap="round"/>
-    <circle cx="6" cy="-3" r="2" fill="#FFD700"/>
-    <line x1="28" y1="8" x2="34" y2="-2" stroke="#5a9a5a" stroke-width="1.2" stroke-linecap="round"/>
-    <circle cx="34" cy="-3" r="2" fill="#FFD700"/>
-    <!-- Headphones band -->
-    <path d="M3,16 Q3,2 20,0 Q37,2 37,16" fill="none" stroke="#555" stroke-width="2.5" stroke-linecap="round"/>
-    <!-- Headphone ear cups -->
-    <rect x="-1" y="12" width="7" height="10" rx="3" fill="#444" stroke="#666" stroke-width=".8"/>
-    <rect x="34" y="12" width="7" height="10" rx="3" fill="#444" stroke="#666" stroke-width=".8"/>
-    <!-- Little arms waving -->
-    <path d="M8,36 Q2,32 0,28" fill="none" stroke="#5a9a5a" stroke-width="1.5" stroke-linecap="round"/>
-    <path d="M32,36 Q38,32 40,28" fill="none" stroke="#5a9a5a" stroke-width="1.5" stroke-linecap="round"/>
-    <!-- Tiny feet -->
-    <ellipse cx="14" cy="48" rx="5" ry="3" fill="#90EE90" stroke="#5a9a5a" stroke-width=".8"/>
-    <ellipse cx="26" cy="48" rx="5" ry="3" fill="#90EE90" stroke="#5a9a5a" stroke-width=".8"/>
-  </g>
+  <!-- EQ Bars — 5 tall animated bars, major visual element -->
+  <rect class="b1" x="140" y="132" width="8" height="10" rx="2" fill="#90EE90" opacity=".85"/>
+  <rect class="b2" x="153" y="108" width="8" height="34" rx="2" fill="#90EE90" opacity=".85"/>
+  <rect class="b3" x="166" y="134" width="8" height="8"  rx="2" fill="#90EE90" opacity=".85"/>
+  <rect class="b4" x="179" y="112" width="8" height="30" rx="2" fill="#90EE90" opacity=".85"/>
+  <rect class="b5" x="192" y="130" width="8" height="12" rx="2" fill="#90EE90" opacity=".85"/>
 
 </svg>'''
     return svg
@@ -319,22 +273,13 @@ def main():
         song = {
             "title": "Nothing playing yet",
             "artist": "Like a song on YouTube Music!",
-            "thumbnail_url": None,
             "video_id": "",
         }
 
     print(f"  🎶 {song['title']} — {song['artist']}")
 
-    # Fetch and embed thumbnail as base64
-    print("  Fetching album art...")
-    thumb_b64 = fetch_thumbnail_b64(song["thumbnail_url"])
-    if thumb_b64:
-        print("  ✓ Thumbnail embedded as base64")
-    else:
-        print("  ⚠ Using fallback placeholder")
-
-    # Generate SVG
-    svg = generate_svg(song, thumb_b64)
+    # Generate SVG (no thumbnail fetching — GitHub strips <image> data URIs)
+    svg = generate_svg(song)
 
     # Ensure output directory exists
     os.makedirs(os.path.dirname(OUTPUT_PATH), exist_ok=True)
