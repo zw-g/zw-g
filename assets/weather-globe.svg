@@ -1,252 +1,131 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 300 200" width="400" height="160">
-  <defs>
-    <style>
-      @keyframes twinkle1 {
-        0%, 100% { opacity: 0.2; }
-        50% { opacity: 1; }
-      }
-      @keyframes twinkle2 {
-        0%, 100% { opacity: 0.8; }
-        50% { opacity: 0.1; }
-      }
-      @keyframes twinkle3 {
-        0%, 100% { opacity: 0.5; }
-        40% { opacity: 0.05; }
-        80% { opacity: 0.9; }
-      }
-      @keyframes cloudDrift {
-        0% { transform: translateX(0px); }
-        50% { transform: translateX(6px); }
-        100% { transform: translateX(0px); }
-      }
-      @keyframes cloudDrift2 {
-        0% { transform: translateX(0px); }
-        50% { transform: translateX(-5px); }
-        100% { transform: translateX(0px); }
-      }
-      @keyframes glowPulse {
-        0%, 100% { opacity: 0.3; }
-        50% { opacity: 0.5; }
-      }
-      @keyframes pinPulse {
-        0%, 100% { r: 2; opacity: 1; }
-        50% { r: 3.5; opacity: 0.6; }
-      }
-      .star-a { animation: twinkle1 3s ease-in-out infinite; }
-      .star-b { animation: twinkle2 4s ease-in-out infinite; }
-      .star-c { animation: twinkle3 2.5s ease-in-out infinite; }
-      .cloud-1 { animation: cloudDrift 12s ease-in-out infinite; }
-      .cloud-2 { animation: cloudDrift2 15s ease-in-out infinite; }
-      .cloud-3 { animation: cloudDrift 18s ease-in-out infinite; }
-      .atmo-glow { animation: glowPulse 6s ease-in-out infinite; }
-      .pin-ring { animation: pinPulse 2s ease-in-out infinite; }
-    </style>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 220" width="200" height="220">
+  <style>
+    @keyframes twinkle {
+      0%, 100% { opacity: 0.3; }
+      50% { opacity: 1; }
+    }
+    @keyframes gentle-spin {
+      0% { transform: rotate(0deg); }
+      100% { transform: rotate(360deg); }
+    }
+    @keyframes cloud-float {
+      0%, 100% { transform: translateX(0); }
+      50% { transform: translateX(6px); }
+    }
+    @keyframes rain-fall {
+      0% { transform: translateY(0); opacity: 1; }
+      100% { transform: translateY(8px); opacity: 0; }
+    }
+    @keyframes snow-fall {
+      0% { transform: translateY(0) rotate(0deg); opacity: 1; }
+      100% { transform: translateY(10px) rotate(45deg); opacity: 0; }
+    }
+    @keyframes fog-drift {
+      0%, 100% { transform: translateX(0); opacity: 0.4; }
+      50% { transform: translateX(8px); opacity: 0.6; }
+    }
+    @keyframes bob {
+      0%, 100% { transform: translateY(0); }
+      50% { transform: translateY(-3px); }
+    }
+    .star { animation: twinkle 3s ease-in-out infinite; }
+    .star-d1 { animation-delay: 0s; }
+    .star-d2 { animation-delay: 0.8s; }
+    .star-d3 { animation-delay: 1.6s; }
+    .star-d4 { animation-delay: 2.2s; }
+    .star-d5 { animation-delay: 0.4s; }
+    .cloud-float { animation: cloud-float 4s ease-in-out infinite; }
+    .rain-fall { animation: rain-fall 1s ease-in infinite; }
+    .snow-fall { animation: snow-fall 2s ease-in infinite; }
+    .fog-drift { animation: fog-drift 5s ease-in-out infinite; }
+    .globe-bob { animation: bob 4s ease-in-out infinite; }
+    text { font-family: -apple-system, 'Segoe UI', sans-serif; }
+  </style>
 
-    <!-- Ocean radial gradient -->
-    <radialGradient id="ocean" cx="40%" cy="38%" r="50%">
-      <stop offset="0%" stop-color="#5BA3E0"/>
-      <stop offset="70%" stop-color="#3B8DD0"/>
-      <stop offset="100%" stop-color="#2B6CB0"/>
-    </radialGradient>
+  <!-- background -->
+  <rect width="200" height="220" rx="16" fill="#1a1a2e" stroke="#000" stroke-width="2.5"/>
 
-    <!-- 3D sphere shading -->
-    <radialGradient id="sphereShade" cx="35%" cy="30%" r="65%">
-      <stop offset="0%" stop-color="#ffffff" stop-opacity="0.15"/>
-      <stop offset="40%" stop-color="#ffffff" stop-opacity="0.03"/>
-      <stop offset="100%" stop-color="#000000" stop-opacity="0.55"/>
-    </radialGradient>
+  <!-- decorative stars/dots -->
+  <circle cx="20" cy="20" r="2" fill="#FFD700" class="star star-d1"/>
+  <circle cx="175" cy="18" r="1.5" fill="#FFD700" class="star star-d2"/>
+  <circle cx="15" cy="85" r="1.5" fill="#FFD700" class="star star-d3"/>
+  <circle cx="185" cy="90" r="2" fill="#FFD700" class="star star-d4"/>
+  <circle cx="30" cy="50" r="1" fill="#FFD700" class="star star-d5"/>
+  <circle cx="170" cy="130" r="1.5" fill="#FFD700" class="star star-d1"/>
+  <circle cx="22" cy="140" r="1" fill="#FFD700" class="star star-d3"/>
 
-    <!-- Atmosphere glow -->
-    <radialGradient id="atmosGlow" cx="50%" cy="50%" r="50%">
-      <stop offset="80%" stop-color="#87CEEB" stop-opacity="0"/>
-      <stop offset="92%" stop-color="#87CEEB" stop-opacity="0.2"/>
-      <stop offset="100%" stop-color="#87CEEB" stop-opacity="0"/>
-    </radialGradient>
-
-    <!-- Outer atmosphere for the ring effect -->
-    <radialGradient id="atmosOuter" cx="50%" cy="50%" r="50%">
-      <stop offset="85%" stop-color="#87CEEB" stop-opacity="0"/>
-      <stop offset="95%" stop-color="#5BA3E0" stop-opacity="0.12"/>
-      <stop offset="100%" stop-color="#87CEEB" stop-opacity="0"/>
-    </radialGradient>
-
-    <!-- Sun illumination gradient (partly cloudy - subtle warm light from upper-left) -->
-    <radialGradient id="sunGlow" cx="20%" cy="15%" r="70%">
-      <stop offset="0%" stop-color="#FFE4A0" stop-opacity="0.08"/>
-      <stop offset="50%" stop-color="#FFD700" stop-opacity="0.02"/>
-      <stop offset="100%" stop-color="#000000" stop-opacity="0"/>
-    </radialGradient>
-
-    <!-- Clip for Earth contents -->
-    <clipPath id="earthClip">
-      <circle cx="140" cy="88" r="68"/>
-    </clipPath>
-
-    <!-- Cloud wisps filter for soft edges -->
-    <filter id="cloudBlur">
-      <feGaussianBlur stdDeviation="1.8"/>
-    </filter>
-    <filter id="cloudBlur2">
-      <feGaussianBlur stdDeviation="2.5"/>
-    </filter>
-    <filter id="glowFilter">
-      <feGaussianBlur stdDeviation="4"/>
-    </filter>
-    <filter id="pinGlow">
-      <feGaussianBlur stdDeviation="1.5"/>
-    </filter>
-  </defs>
-
-  <!-- === SPACE BACKGROUND === -->
-  <rect width="300" height="200" fill="#0D1117"/>
-
-  <!-- Subtle space gradient (slightly lighter near Earth) -->
-  <rect width="300" height="200" fill="url(#atmosOuter)" opacity="0.3"/>
-
-  <!-- === STARS === -->
-  <!-- Layer 1: tiny dim stars -->
-  <circle cx="15" cy="12" r="0.5" fill="#C0C0C0" class="star-a" opacity="0.4"/>
-  <circle cx="42" cy="35" r="0.4" fill="#E0E0E0" class="star-b" opacity="0.3"/>
-  <circle cx="78" cy="8" r="0.5" fill="#FFD700" class="star-c" opacity="0.5"/>
-  <circle cx="25" cy="65" r="0.4" fill="#FFFFFF" class="star-a" opacity="0.3"/>
-  <circle cx="55" cy="145" r="0.5" fill="#C0C0C0" class="star-b" opacity="0.4"/>
-  <circle cx="12" cy="170" r="0.4" fill="#FFD700" class="star-c" opacity="0.3"/>
-  <circle cx="35" cy="115" r="0.5" fill="#E0E0E0" class="star-a" opacity="0.5"/>
-  <circle cx="265" cy="18" r="0.5" fill="#FFD700" class="star-b" opacity="0.6"/>
-  <circle cx="248" cy="52" r="0.4" fill="#FFFFFF" class="star-c" opacity="0.4"/>
-  <circle cx="285" cy="75" r="0.5" fill="#C0C0C0" class="star-a" opacity="0.3"/>
-  <circle cx="230" cy="12" r="0.4" fill="#FFD700" class="star-b" opacity="0.5"/>
-  <circle cx="272" cy="140" r="0.5" fill="#E0E0E0" class="star-c" opacity="0.4"/>
-  <circle cx="290" cy="165" r="0.4" fill="#FFD700" class="star-a" opacity="0.3"/>
-  <circle cx="255" cy="180" r="0.5" fill="#FFFFFF" class="star-b" opacity="0.5"/>
-  <circle cx="45" cy="185" r="0.4" fill="#C0C0C0" class="star-c" opacity="0.4"/>
-  <circle cx="8" cy="95" r="0.5" fill="#FFD700" class="star-a" opacity="0.6"/>
-
-  <!-- Layer 2: brighter accent stars -->
-  <circle cx="22" cy="28" r="0.7" fill="#FFD700" class="star-c" opacity="0.7"/>
-  <circle cx="60" cy="172" r="0.6" fill="#FFD700" class="star-a" opacity="0.5"/>
-  <circle cx="275" cy="30" r="0.7" fill="#FFD700" class="star-b" opacity="0.6"/>
-  <circle cx="240" cy="165" r="0.6" fill="#FFD700" class="star-c" opacity="0.5"/>
-  <circle cx="18" cy="140" r="0.7" fill="#FFFFFF" class="star-a" opacity="0.4"/>
-  <circle cx="50" cy="55" r="0.6" fill="#FFFFFF" class="star-b" opacity="0.6"/>
-
-  <!-- === ATMOSPHERE GLOW (behind Earth) === -->
-  <circle cx="140" cy="88" r="76" fill="none" stroke="#87CEEB" stroke-width="6" opacity="0.08" filter="url(#glowFilter)" class="atmo-glow"/>
-  <circle cx="140" cy="88" r="72" fill="none" stroke="#5BA3E0" stroke-width="3" opacity="0.1" filter="url(#glowFilter)"/>
-
-  <!-- === EARTH === -->
-  <!-- Ocean base -->
-  <circle cx="140" cy="88" r="68" fill="url(#ocean)"/>
-
-  <!-- Continent shapes clipped to Earth sphere -->
-  <g clip-path="url(#earthClip)">
-
-    <!-- North America (emphasized, with California/Bay Area visible) -->
-    <!-- Alaska -->
-    <path d="M82,32 Q88,28 95,30 Q98,32 96,36 Q92,38 86,36 Z" fill="#3CB371" opacity="0.9"/>
-
-    <!-- Canada + Northern US -->
-    <path d="M95,36 Q100,33 108,32 Q118,30 128,33 Q136,35 140,38
-             Q144,40 148,38 Q153,36 158,38 Q162,40 160,44
-             Q156,48 150,50 Q144,52 140,50
-             Q136,48 130,50 Q124,52 120,50
-             Q115,48 110,46 Q105,44 100,42
-             Q96,40 95,36 Z" fill="#3CB371" opacity="0.9"/>
-
-    <!-- Western US (California emphasized) -->
-    <path d="M100,42 Q98,46 96,52 Q94,58 93,64 Q92,70 94,74
-             Q96,72 100,68 Q104,64 108,60
-             Q112,56 115,52 Q118,50 120,50
-             Q115,48 110,46 Q105,44 100,42 Z" fill="#2E8B57" opacity="0.95"/>
-
-    <!-- California detail / Bay Area region -->
-    <path d="M96,52 Q94,56 93,60 Q92,64 93,68
-             Q95,66 98,62 Q100,58 98,54 Z" fill="#3CB371" opacity="1"/>
-
-    <!-- Eastern US -->
-    <path d="M120,50 Q124,52 130,50 Q136,48 140,50
-             Q144,52 148,54 Q152,58 150,64
-             Q148,68 144,72 Q140,74 136,72
-             Q130,70 126,68 Q122,66 118,62
-             Q114,58 112,56 Q115,52 120,50 Z" fill="#3CB371" opacity="0.9"/>
-
-    <!-- Florida -->
-    <path d="M140,72 Q142,76 144,80 Q145,84 142,86
-             Q140,84 138,80 Q137,76 138,72 Z" fill="#3CB371" opacity="0.9"/>
-
-    <!-- Mexico / Central America -->
-    <path d="M94,74 Q98,76 104,78 Q110,80 116,82
-             Q120,84 124,88 Q126,92 122,96
-             Q118,94 114,90 Q108,88 102,86
-             Q96,84 92,80 Q90,78 94,74 Z" fill="#2E8B57" opacity="0.85"/>
-
-    <!-- South America (partial, on the edge) -->
-    <path d="M130,100 Q136,98 142,102 Q148,108 152,116
-             Q154,124 150,132 Q146,138 140,140
-             Q134,138 130,132 Q126,124 124,116
-             Q122,108 126,102 Z" fill="#3CB371" opacity="0.7"/>
-
-    <!-- Greenland (partial) -->
-    <path d="M155,26 Q162,24 168,28 Q172,32 170,38
-             Q166,40 160,38 Q156,34 155,26 Z" fill="#E8E8E8" opacity="0.6"/>
-
-    <!-- === WEATHER: PARTLY CLOUDY — wispy clouds on Earth surface === -->
-    <!-- These look like satellite cloud cover imagery -->
-
-    <!-- Cloud band 1 — mid-latitude -->
-    <g class="cloud-1" filter="url(#cloudBlur)">
-      <ellipse cx="125" cy="52" rx="22" ry="6" fill="white" opacity="0.35"/>
-      <ellipse cx="140" cy="50" rx="16" ry="5" fill="white" opacity="0.25"/>
-      <ellipse cx="112" cy="54" rx="12" ry="4" fill="white" opacity="0.3"/>
-    </g>
-
-    <!-- Cloud band 2 — Pacific / approaching California -->
-    <g class="cloud-2" filter="url(#cloudBlur)">
-      <ellipse cx="88" cy="62" rx="18" ry="5" fill="white" opacity="0.3"/>
-      <ellipse cx="100" cy="60" rx="14" ry="4" fill="white" opacity="0.2"/>
-      <ellipse cx="80" cy="65" rx="10" ry="3.5" fill="white" opacity="0.25"/>
-    </g>
-
-    <!-- Cloud band 3 — tropical belt wisp -->
-    <g class="cloud-3" filter="url(#cloudBlur2)">
-      <ellipse cx="150" cy="85" rx="20" ry="5" fill="white" opacity="0.2"/>
-      <ellipse cx="130" cy="88" rx="15" ry="4" fill="white" opacity="0.18"/>
-      <ellipse cx="165" cy="82" rx="12" ry="3" fill="white" opacity="0.15"/>
-    </g>
-
-    <!-- Thin high-altitude cirrus wisps -->
-    <g class="cloud-1" filter="url(#cloudBlur2)">
-      <path d="M105,44 Q120,40 138,43 Q148,45 155,42" stroke="white" stroke-width="2" fill="none" opacity="0.12"/>
-      <path d="M90,72 Q105,68 120,72" stroke="white" stroke-width="1.5" fill="none" opacity="0.1"/>
-    </g>
+  <!-- small doodle daisies -->
+  <g transform="translate(172,70)" class="star star-d2">
+    <circle cx="0" cy="0" r="2" fill="#FFD700"/>
+    <circle cx="0" cy="-4" r="1.5" fill="#fff" stroke="#000" stroke-width="0.5"/>
+    <circle cx="3.8" cy="-1.2" r="1.5" fill="#fff" stroke="#000" stroke-width="0.5"/>
+    <circle cx="2.4" cy="3.2" r="1.5" fill="#fff" stroke="#000" stroke-width="0.5"/>
+    <circle cx="-2.4" cy="3.2" r="1.5" fill="#fff" stroke="#000" stroke-width="0.5"/>
+    <circle cx="-3.8" cy="-1.2" r="1.5" fill="#fff" stroke="#000" stroke-width="0.5"/>
+  </g>
+  <g transform="translate(28,110)" class="star star-d4">
+    <circle cx="0" cy="0" r="1.5" fill="#FFD700"/>
+    <circle cx="0" cy="-3" r="1" fill="#fff" stroke="#000" stroke-width="0.5"/>
+    <circle cx="2.8" cy="-1" r="1" fill="#fff" stroke="#000" stroke-width="0.5"/>
+    <circle cx="1.8" cy="2.4" r="1" fill="#fff" stroke="#000" stroke-width="0.5"/>
+    <circle cx="-1.8" cy="2.4" r="1" fill="#fff" stroke="#000" stroke-width="0.5"/>
+    <circle cx="-2.8" cy="-1" r="1" fill="#fff" stroke="#000" stroke-width="0.5"/>
   </g>
 
-  <!-- 3D sphere shading overlay -->
-  <circle cx="140" cy="88" r="68" fill="url(#sphereShade)"/>
+  <!-- globe group -->
+  <g class="globe-bob">
+    <!-- ocean circle -->
+    <circle cx="100" cy="95" r="52" fill="#87CEEB" stroke="#000" stroke-width="3"/>
 
-  <!-- Sun illumination (warm light from upper-left quadrant) -->
-  <circle cx="140" cy="88" r="68" fill="url(#sunGlow)"/>
+    <!-- simplified doodle continents (cute blobs, not accurate) -->
+    <!-- North America blob -->
+    <path d="M72,68 Q78,60 90,62 Q96,60 98,65 Q102,62 105,68 Q108,75 104,82
+             Q100,88 95,86 Q88,90 82,86 Q76,82 72,75 Z"
+          fill="#90EE90" stroke="#000" stroke-width="2.5" stroke-linejoin="round"/>
 
-  <!-- Subtle rim light on lit side -->
-  <circle cx="140" cy="88" r="68" fill="none" stroke="#87CEEB" stroke-width="0.5" opacity="0.3"/>
+    <!-- South America blob -->
+    <path d="M92,98 Q96,94 100,97 Q103,100 102,108 Q100,116 96,120
+             Q92,118 90,112 Q88,106 90,102 Z"
+          fill="#90EE90" stroke="#000" stroke-width="2.5" stroke-linejoin="round"/>
 
-  <!-- === MENLO PARK PIN === -->
-  <!-- Approximate position: California coast, Bay Area -->
-  <circle cx="95" cy="61" r="4" fill="#FF4444" opacity="0.25" filter="url(#pinGlow)" class="pin-ring"/>
-  <circle cx="95" cy="61" r="1.5" fill="#FF4444" opacity="0.9"/>
-  <circle cx="95" cy="61" r="0.6" fill="#FFFFFF" opacity="0.7"/>
+    <!-- Europe/Africa blob -->
+    <path d="M112,72 Q116,68 120,72 Q122,78 120,85 Q118,92 116,98
+             Q114,104 110,108 Q108,104 108,96 Q106,88 108,80 Q110,76 112,72 Z"
+          fill="#90EE90" stroke="#000" stroke-width="2.5" stroke-linejoin="round"/>
 
-  <!-- === TEXT OVERLAYS === -->
-  <!-- Temperature — large, clean, bottom-left -->
-  <text x="16" y="186" font-family="'SF Pro Display', 'Helvetica Neue', Arial, sans-serif" font-size="26" font-weight="300" fill="white" opacity="0.95" letter-spacing="-0.5">53&#176;F</text>
+    <!-- Asia blob -->
+    <path d="M122,66 Q128,62 134,66 Q138,70 140,76 Q138,80 134,82
+             Q130,84 126,80 Q122,76 120,72 Z"
+          fill="#90EE90" stroke="#000" stroke-width="2.5" stroke-linejoin="round"/>
 
-  <!-- Condition -->
-  <text x="16" y="168" font-family="'SF Pro Display', 'Helvetica Neue', Arial, sans-serif" font-size="9" fill="white" opacity="0.6" letter-spacing="1">PARTLY CLOUDY</text>
+    <!-- Australia blob -->
+    <path d="M130,100 Q136,97 140,100 Q142,104 138,108 Q134,110 130,106 Z"
+          fill="#90EE90" stroke="#000" stroke-width="2" stroke-linejoin="round"/>
 
-  <!-- Location — bottom right -->
-  <text x="284" y="190" font-family="'SF Pro Display', 'Helvetica Neue', Arial, sans-serif" font-size="8" fill="white" opacity="0.4" text-anchor="end" letter-spacing="1">MENLO PARK, CA</text>
+    <!-- globe shine (cute doodle highlight) -->
+    <path d="M70,72 Q72,65 78,62" fill="none" stroke="#fff" stroke-width="2.5" stroke-linecap="round" opacity="0.6"/>
+  </g>
 
-  <!-- Thin separator line near location -->
-  <line x1="230" y1="183" x2="284" y2="183" stroke="white" stroke-width="0.3" opacity="0.2"/>
+  <!-- weather overlay -->
+  
+    <!-- clouds -->
+    <g class="cloud-float">
+      <circle cx="138" cy="38" r="10" fill="#fff" stroke="#000" stroke-width="2"/>
+      <circle cx="152" cy="34" r="13" fill="#fff" stroke="#000" stroke-width="2"/>
+      <circle cx="166" cy="38" r="10" fill="#fff" stroke="#000" stroke-width="2"/>
+      <rect x="132" y="38" width="40" height="10" rx="4" fill="#fff" stroke="none"/>
+      <line x1="132" y1="42" x2="172" y2="42" stroke="#000" stroke-width="2" stroke-linecap="round"/>
+    </g>
 
+  <!-- temperature display -->
+  <text x="100" y="168" text-anchor="middle" font-size="22" font-weight="bold" fill="#E0E0E0" stroke="#2D2D3D" stroke-width="3" paint-order="stroke">52°F</text>
+
+  <!-- condition label -->
+  <text x="100" y="184" text-anchor="middle" font-size="10" fill="#E0E0E0" opacity="0.8">Partly Cloudy</text>
+
+  <!-- location label -->
+  <text x="100" y="200" text-anchor="middle" font-size="9" fill="#E0E0E0" opacity="0.6">📍 Menlo Park, CA</text>
+
+  <!-- timestamp -->
+  <text x="100" y="214" text-anchor="middle" font-size="7" fill="#E0E0E0" opacity="0.4">Updated Mar 02, 04:35 AM PST</text>
 </svg>
