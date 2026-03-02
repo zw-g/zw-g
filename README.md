@@ -35,11 +35,7 @@
 
 ### 🔭 What I'm Working On
 
-<a href="https://github.com/zw-g/trading-arena-dashboard">
-  <img align="center" src="https://github-readme-stats.vercel.app/api/pin/?username=zw-g&repo=trading-arena-dashboard&theme=react&hide_border=true" />
-</a>
-
-> 5 AI strategies compete head-to-head on S&P 500 stocks — featuring Claude-powered debate, multi-master voting, and quantitative models. [**See it live →**](https://zw-g.github.io/trading-arena-dashboard/)
+> **[🏟️ Trading Arena](https://zw-g.github.io/trading-arena-dashboard/)** — 5 AI strategies compete head-to-head on S&P 500 stocks. Features Claude-powered debate, multi-master voting (Buffett × Wood × Druckenmiller × Burry), and quantitative models. [**See it live →**](https://zw-g.github.io/trading-arena-dashboard/)
 
 ---
 
