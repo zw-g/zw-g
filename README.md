@@ -17,7 +17,7 @@
 <!-- my contact info — small icons -->
 <p align="center">
   <a href="https://www.linkedin.com/in/zhaoweigu/">
-    <img alt="LinkedIn" title="LinkedIn" height="24" width="24" src="https://raw.githubusercontent.com/simple-icons/simple-icons/develop/icons/linkedin.svg">
+    <img alt="LinkedIn" title="LinkedIn" height="24" width="24" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/linkedin/linkedin-original.svg">
   </a>&nbsp;&nbsp;
   <a href="https://github.com/zw-g">
     <img alt="GitHub" title="GitHub" height="24" width="24" src="https://raw.githubusercontent.com/simple-icons/simple-icons/develop/icons/github.svg">
