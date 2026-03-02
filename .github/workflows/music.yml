@@ -1,0 +1,38 @@
+name: Update Music Widget
+
+on:
+  schedule:
+    - cron: '30 */6 * * *'  # Every 6 hours (offset from weather)
+  workflow_dispatch:          # Manual trigger
+
+permissions:
+  contents: write
+
+jobs:
+  update-music:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+
+      - name: Generate music widget
+        env:
+          YTM_OAUTH_JSON: ${{ secrets.YTM_OAUTH_JSON }}
+          YTM_CLIENT_ID: ${{ secrets.YTM_CLIENT_ID }}
+          YTM_CLIENT_SECRET: ${{ secrets.YTM_CLIENT_SECRET }}
+        run: python scripts/generate_music_widget.py
+
+      - name: Commit and push if changed
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add assets/music-widget.svg
+          if ! git diff --staged --quiet; then
+            git commit -m "🎵 Update music widget [skip ci]"
+            git push
+          fi
