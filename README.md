@@ -35,10 +35,10 @@
 <!-- SOCIAL ICONS — all skillicons.dev for consistency              -->
 <!-- ═══════════════════════════════════════════════════════════════ -->
 <p align="center">
-  <a href="https://www.linkedin.com/in/zhaoweigu/"><img src="https://skillicons.dev/icons?i=linkedin" height="32" alt="LinkedIn" /></a>&nbsp;
-  <a href="https://github.com/zw-g"><img src="https://skillicons.dev/icons?i=github" height="32" alt="GitHub" /></a>&nbsp;
-  <a href="mailto:zhaoweigu1024419269@gmail.com"><img src="https://skillicons.dev/icons?i=gmail" height="32" alt="Gmail" /></a>&nbsp;
-  <a href="https://www.instagram.com/zhaoweiiii/"><img src="https://skillicons.dev/icons?i=instagram" height="32" alt="Instagram" /></a>&nbsp;
+  <a href="https://www.linkedin.com/in/zhaoweigu/"><img src="https://go-skill-icons.vercel.app/api/icons?i=linkedin" height="32" alt="LinkedIn" /></a>&nbsp;
+  <a href="https://github.com/zw-g"><img src="https://go-skill-icons.vercel.app/api/icons?i=github" height="32" alt="GitHub" /></a>&nbsp;
+  <a href="mailto:zhaoweigu1024419269@gmail.com"><img src="https://go-skill-icons.vercel.app/api/icons?i=gmail" height="32" alt="Gmail" /></a>&nbsp;
+  <a href="https://www.instagram.com/zhaoweiiii/"><img src="https://go-skill-icons.vercel.app/api/icons?i=instagram" height="32" alt="Instagram" /></a>&nbsp;
   <a href="https://www.facebook.com/gzw.fb"><img src="https://go-skill-icons.vercel.app/api/icons?i=facebook" height="32" alt="Facebook" /></a>
 </p>
 
@@ -96,10 +96,10 @@
 <h4 align="center">✨ AI</h4>
 
 <p align="center">
-  <a href="https://anthropic.com"><img src="https://go-skill-icons.vercel.app/api/icons?i=claude" height="44" alt="Anthropic Claude" /></a>&nbsp;&nbsp;
-  <a href="https://openai.com"><img src="https://go-skill-icons.vercel.app/api/icons?i=chatgpt" height="44" alt="OpenAI" /></a>&nbsp;&nbsp;
-  <a href="https://deepmind.google/technologies/gemini/"><img src="https://go-skill-icons.vercel.app/api/icons?i=gemini" height="44" alt="Google Gemini" /></a>&nbsp;&nbsp;
-  <a href="https://meta.ai"><img src="https://go-skill-icons.vercel.app/api/icons?i=meta" height="44" alt="Meta AI" /></a>
+  <a href="https://anthropic.com"><img src="https://go-skill-icons.vercel.app/api/icons?i=claude&theme=dark" height="44" alt="Claude" /></a>&nbsp;&nbsp;
+  <a href="https://openai.com"><img src="https://go-skill-icons.vercel.app/api/icons?i=chatgpt&theme=dark" height="44" alt="ChatGPT" /></a>&nbsp;&nbsp;
+  <a href="https://deepmind.google/technologies/gemini/"><img src="https://go-skill-icons.vercel.app/api/icons?i=gemini&theme=dark" height="44" alt="Gemini" /></a>&nbsp;&nbsp;
+  <a href="https://meta.ai"><img src="https://img.shields.io/badge/Meta_AI-0668E1?style=for-the-badge&logo=meta&logoColor=white" height="30" alt="Meta AI" /></a>
 </p>
 
 <br/>
