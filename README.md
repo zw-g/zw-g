@@ -1,82 +1,89 @@
+<!-- animated header -->
 <p align="center">
-  <!-- Typing SVG -->
-  <a href="https://github.com/zw-g">
-    <img src="https://readme-typing-svg.demolab.com/?lines=Software+Engineer+%40+Meta;AI+%26+ML+Enthusiast;Building+Things+That+Matter&font=Fira+Code&center=true&width=440&height=50&color=6C63FF&vCenter=true&pause=1000&size=22&duration=3000" />
-  </a>
+  <img src="https://capsule-render.vercel.app/api?type=waving&color=0:6C63FF,100:3B82F6&height=120&section=header&text=&fontSize=0" width="100%" />
 </p>
 
+<h4 align="center">
+  <a href="https://github.com/zw-g">
+    <img src="https://readme-typing-svg.demolab.com/?lines=Hi+there+%F0%9F%91%8B+welcome+to+my+Github!;Software+Engineer+%40+Meta+%E2%80%A2+Core+Feed+Ranking;Exploring+ML+%26+LLM+Agents+%F0%9F%A4%96;Building+AI-powered+automation&font=Fira+Code&center=true&width=520&height=40&color=6C63FF&vCenter=true&pause=2000&size=16&duration=2500" />
+  </a>
+</h4>
+
+<!-- select picture -->
+<p align="center">
+  <img width="250" src="https://media.giphy.com/media/LXjLNXabM2b0qN4DV6/giphy.gif">
+</p>
+
+<!-- my contact info — small icons, consistent style -->
 <p align="center">
   <a href="https://www.linkedin.com/in/zhaoweigu/">
-    <img src="https://img.shields.io/badge/LinkedIn-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white" alt="LinkedIn" />
+    <img alt="LinkedIn" title="LinkedIn" height="24" width="24" src="https://cdn.simpleicons.org/linkedin/0A66C2">
   </a>&nbsp;
   <a href="https://github.com/zw-g">
-    <img src="https://img.shields.io/badge/GitHub-181717?style=for-the-badge&logo=github&logoColor=white" alt="GitHub" />
+    <picture>
+      <source media="(prefers-color-scheme: dark)" srcset="https://cdn.simpleicons.org/github/white">
+      <img alt="GitHub" title="GitHub" height="24" width="24" src="https://cdn.simpleicons.org/github">
+    </picture>
   </a>&nbsp;
   <a href="mailto:zhaoweifz@gmail.com">
-    <img src="https://img.shields.io/badge/Gmail-EA4335?style=for-the-badge&logo=gmail&logoColor=white" alt="Gmail" />
+    <img alt="Gmail" title="Gmail" height="24" width="24" src="https://cdn.simpleicons.org/gmail">
   </a>
 </p>
 
-<p align="center">
-  <img src="https://visitor-badge.laobi.icu/badge?page_id=zw-g.zw-g&left_color=gray&right_color=6C63FF&left_text=profile%20views" alt="Profile Views" />
-</p>
+<!-- more information -->
+<details>
+<summary align="center"><samp> more about me 👇 </samp></summary>
 
----
+#
 
-### 👋 About Me
+<!-- my introduction -->
+<div align="left">
+  
+  - 🧑🏻‍💻 My name sounds like **Jaw-Way**
+  - 🎓 I've graduated with BS in **Technology Information Management** & MS in **Software Development**
+  - 🔭 I'm currently working on **Facebook Feed Ranking** @ Meta
+  - 🌱 I'm currently exploring **Machine Learning**, **LLM Agents**, and AI-powered automation
+  - 🏟️ Building [**Trading Arena**](https://zw-g.github.io/trading-arena-dashboard/) — an AI trading strategy competition platform
+  - 🤔 My career interests lie in building innovative products that enrich people's everyday experiences.
 
-- 🧑‍💻 Software Engineer @ **Meta** — Core Feed Ranking team
-- 🤖 Exploring **Machine Learning**, **LLM agents**, and AI-powered automation
-- 🏟️ Building [**Trading Arena**](https://zw-g.github.io/trading-arena-dashboard/) — an AI trading strategy competition platform
-- 🎓 BS in Technology Information Management & MS in Software Development
-- 📍 Based in the US, originally from Xi'an, China 🇨🇳
+</div>
 
----
+<br/>
 
-### 🔭 What I'm Working On
+<!-- GitHub Stats -->
+<div align="center">
 
-> **[🏟️ Trading Arena](https://zw-g.github.io/trading-arena-dashboard/)** — 5 AI strategies compete head-to-head on S&P 500 stocks. Features Claude-powered debate, multi-master voting (Buffett × Wood × Druckenmiller × Burry), and quantitative models. [**See it live →**](https://zw-g.github.io/trading-arena-dashboard/)
+  ### 📊 GitHub Stats
+  
+  <img src="https://github-profile-summary-cards.vercel.app/api/cards/stats?username=zw-g&theme=github_dark" width="320" />
+  <img src="https://github-profile-summary-cards.vercel.app/api/cards/repos-per-language?username=zw-g&theme=github_dark" width="320" />
+  
+  <br/>
+  
+  <img src="https://streak-stats.demolab.com/?user=zw-g&theme=react&hide_border=true" width="420" />
+  
+  <br/>
+  
+  <img src="https://github-profile-summary-cards.vercel.app/api/cards/profile-details?username=zw-g&theme=github_dark" width="660" />
 
----
+</div>
 
-### 📊 GitHub Stats
+<hr/>
 
-<p align="center">
-  <img width="48%" src="https://github-profile-summary-cards.vercel.app/api/cards/stats?username=zw-g&theme=github_dark" />
-  &nbsp;
-  <img width="48%" src="https://github-profile-summary-cards.vercel.app/api/cards/repos-per-language?username=zw-g&theme=github_dark" />
-</p>
+<div align="center">
+  
+  **Code Cycle**
+  
+  <img src="https://raw.githubusercontent.com/Tarikul-Islam-Anik/Animated-Fluent-Emojis/master/Emojis/Smilies/Face%20with%20Spiral%20Eyes.png" width="10%" alt="Broken system!"/>
+  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+  <img src="https://raw.githubusercontent.com/Tarikul-Islam-Anik/Animated-Fluent-Emojis/master/Emojis/Smilies/Relieved%20Face.png" width="10%" alt="It's working!"/>
+  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+  <img src="https://raw.githubusercontent.com/Tarikul-Islam-Anik/Animated-Fluent-Emojis/master/Emojis/Smilies/Astonished%20Face.png" width="10%" alt="It's working but you don't know how!"/>
 
-<p align="center">
-  <a href="https://git.io/streak-stats">
-    <img width="52%" src="https://streak-stats.demolab.com/?user=zw-g&theme=react&hide_border=true" />
-  </a>
-</p>
+</div>
 
-<p align="center">
-  <img width="96%" src="https://github-profile-summary-cards.vercel.app/api/cards/profile-details?username=zw-g&theme=github_dark" />
-</p>
-
----
-
-### 🛠️ Tech Stack
-
-<p align="center">
-  <img src="https://skillicons.dev/icons?i=python,java,js,ts,react,nextjs,nodejs,flask,aws,gcp,docker,linux,git,mysql,pytorch,vscode&perline=8" />
-</p>
-
----
-
-### 🎵 Vibing To
-
-<p align="center">
-  <a href="https://music.youtube.com/">
-    <img src="https://img.shields.io/badge/YouTube_Music-FF0000?style=for-the-badge&logo=youtubemusic&logoColor=white" alt="YouTube Music" />
-  </a>
-</p>
-
----
+</details>
 
 <p align="center">
-  <img src="https://capsule-render.vercel.app/api?type=waving&color=gradient&customColorList=6,11,20&height=100&section=footer" />
+  <img src="https://capsule-render.vercel.app/api?type=waving&color=0:6C63FF,100:3B82F6&height=80&section=footer&text=&fontSize=0" width="100%" />
 </p>
