@@ -63,14 +63,19 @@
 
 <br/>
 
-<!-- ─────────────── WEATHER + MUSIC (side by side) ─────────────── -->
+<!-- ─────────────── WEATHER (full-width) ─────────────── -->
 
-<table align="center" border="0" cellspacing="0" cellpadding="8"><tr>
-  <td align="center"><img src="./assets/weather-globe.svg" width="400" alt="Live weather — Menlo Park, CA" /></td>
-  <td align="center"><a href="https://music.youtube.com"><img src="./assets/music-widget.svg" width="400" alt="Now vibing on YouTube Music" /></a></td>
-</tr></table>
+<p align="center">
+  <img src="./assets/weather.gif" width="100%" alt="Live weather — Menlo Park, CA" />
+</p>
 
-<br/>
+<!-- ─────────────── MUSIC (full-width) ─────────────── -->
+
+<p align="center">
+  <a href="https://music.youtube.com">
+    <img src="./assets/music.gif" width="100%" alt="Now vibing on YouTube Music" />
+  </a>
+</p>
 
 <!-- ─────────────── LANGUAGES & TOOLS ─────────────── -->
 
@@ -93,12 +98,10 @@
   <a href="https://pytorch.org"><img src="https://go-skill-icons.vercel.app/api/icons?i=pytorch&theme=dark" height="44" alt="PyTorch" /></a>
 </p>
 
-<br/>
-
-<!-- ─────────────── CONTRIBUTION ROLLERCOASTER ─────────────── -->
+<!-- ─────────────── COMMIT ACTIVITY (full-width) ─────────────── -->
 
 <p align="center">
-  <img src="./assets/contribution-rollercoaster.svg" width="98%" alt="Commit activity with alien roller coaster" />
+  <img src="./assets/commits.gif" width="100%" alt="Commit activity — bicycle over hills" />
 </p>
 
 <hr/>
