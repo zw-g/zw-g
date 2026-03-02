@@ -14,19 +14,16 @@
   <img width="250" src="https://media.giphy.com/media/LXjLNXabM2b0qN4DV6/giphy.gif">
 </p>
 
-<!-- my contact info — small icons, consistent style -->
+<!-- my contact info — small icons -->
 <p align="center">
   <a href="https://www.linkedin.com/in/zhaoweigu/">
-    <img alt="LinkedIn" title="LinkedIn" height="24" width="24" src="https://cdn.simpleicons.org/linkedin/0A66C2">
-  </a>&nbsp;
+    <img alt="LinkedIn" title="LinkedIn" height="24" width="24" src="https://raw.githubusercontent.com/simple-icons/simple-icons/develop/icons/linkedin.svg">
+  </a>&nbsp;&nbsp;
   <a href="https://github.com/zw-g">
-    <picture>
-      <source media="(prefers-color-scheme: dark)" srcset="https://cdn.simpleicons.org/github/white">
-      <img alt="GitHub" title="GitHub" height="24" width="24" src="https://cdn.simpleicons.org/github">
-    </picture>
-  </a>&nbsp;
+    <img alt="GitHub" title="GitHub" height="24" width="24" src="https://raw.githubusercontent.com/simple-icons/simple-icons/develop/icons/github.svg">
+  </a>&nbsp;&nbsp;
   <a href="mailto:zhaoweifz@gmail.com">
-    <img alt="Gmail" title="Gmail" height="24" width="24" src="https://cdn.simpleicons.org/gmail">
+    <img alt="Gmail" title="Gmail" height="24" width="24" src="https://raw.githubusercontent.com/simple-icons/simple-icons/develop/icons/gmail.svg">
   </a>
 </p>
 
