@@ -14,17 +14,13 @@
   <img width="250" src="https://media.giphy.com/media/LXjLNXabM2b0qN4DV6/giphy.gif">
 </p>
 
-<!-- my contact info — small icons -->
+<!-- my contact info -->
 <p align="center">
-  <a href="https://www.linkedin.com/in/zhaoweigu/">
-    <img alt="LinkedIn" title="LinkedIn" height="24" width="24" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/linkedin/linkedin-original.svg">
-  </a>&nbsp;&nbsp;
-  <a href="https://github.com/zw-g">
-    <img alt="GitHub" title="GitHub" height="24" width="24" src="https://raw.githubusercontent.com/simple-icons/simple-icons/develop/icons/github.svg">
-  </a>&nbsp;&nbsp;
-  <a href="mailto:zhaoweifz@gmail.com">
-    <img alt="Gmail" title="Gmail" height="24" width="24" src="https://raw.githubusercontent.com/simple-icons/simple-icons/develop/icons/gmail.svg">
-  </a>
+  <a href="https://www.linkedin.com/in/zhaoweigu/"><img alt="LinkedIn" title="LinkedIn" height="24" width="24" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/linkedin/linkedin-original.svg"></a>
+  <span>&nbsp;</span>
+  <a href="https://github.com/zw-g"><img alt="GitHub" title="GitHub" height="24" width="24" src="https://raw.githubusercontent.com/simple-icons/simple-icons/develop/icons/github.svg"></a>
+  <span>&nbsp;</span>
+  <a href="mailto:zhaoweifz@gmail.com"><img alt="Gmail" title="Gmail" height="24" width="24" src="https://raw.githubusercontent.com/simple-icons/simple-icons/develop/icons/gmail.svg"></a>
 </p>
 
 <!-- more information -->
@@ -40,7 +36,6 @@
   - 🎓 I've graduated with BS in **Technology Information Management** & MS in **Software Development**
   - 🔭 I'm currently working on **Facebook Feed Ranking** @ Meta
   - 🌱 I'm currently exploring **Machine Learning**, **LLM Agents**, and AI-powered automation
-  - 🏟️ Building [**Trading Arena**](https://zw-g.github.io/trading-arena-dashboard/) — an AI trading strategy competition platform
   - 🤔 My career interests lie in building innovative products that enrich people's everyday experiences.
 
 </div>
@@ -48,22 +43,14 @@
 <br/>
 
 <!-- GitHub Stats -->
-<div align="center">
+<p align="center">
+  <img src="https://github-readme-stats.vercel.app/api?username=zw-g&show_icons=true&theme=tokyonight&hide_border=true&bg_color=00000000&count_private=true&title_color=6C63FF&icon_color=6C63FF&text_color=c9d1d9" width="49%" />
+  <img src="https://streak-stats.demolab.com/?user=zw-g&theme=tokyonight&hide_border=true&background=00000000&ring=6C63FF&fire=6C63FF&currStreakLabel=6C63FF" width="49%" />
+</p>
 
-  ### 📊 GitHub Stats
-  
-  <img src="https://github-profile-summary-cards.vercel.app/api/cards/stats?username=zw-g&theme=github_dark" width="320" />
-  <img src="https://github-profile-summary-cards.vercel.app/api/cards/repos-per-language?username=zw-g&theme=github_dark" width="320" />
-  
-  <br/>
-  
-  <img src="https://streak-stats.demolab.com/?user=zw-g&theme=react&hide_border=true" width="420" />
-  
-  <br/>
-  
-  <img src="https://github-profile-summary-cards.vercel.app/api/cards/profile-details?username=zw-g&theme=github_dark" width="660" />
-
-</div>
+<p align="center">
+  <img src="https://github-readme-activity-graph.vercel.app/graph?username=zw-g&theme=react-dark&hide_border=true&bg_color=00000000&color=6C63FF&line=3B82F6&point=6C63FF&area=true&area_color=3B82F6" width="98%" />
+</p>
 
 <hr/>
 
