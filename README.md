@@ -63,6 +63,16 @@
 
 <br/>
 
+<!-- ─────────────── NOW VIBING ─────────────── -->
+
+<p align="center">
+  <a href="https://music.youtube.com">
+    <img src="./assets/music-widget.svg" width="400" alt="Recently liked on YouTube Music" />
+  </a>
+</p>
+
+<br/>
+
 <!-- ─────────────── LANGUAGES & TOOLS ─────────────── -->
 
 <h4 align="center">🌿 Languages & Tools</h4>

@@ -20,4 +20,30 @@
 - [ ] ⚠️ 需要 Papa 提供：Instagram URL, Facebook URL
 
 ## Session 记录
-（暂无）
+
+### Session 1 (2026-03-02 00:18-00:45 PST)
+**做了什么**：
+- Spawned 3 research agents (YT Music, weather globe, alien theme) + 2 build agents (weather globe, README)
+- Identified art style: cute hand-drawn doodle, NOT sci-fi (steered agents mid-flight)
+- Found reliable icon source: cdn.jsdelivr.net/npm/simple-icons@v13 (tested 5/5 icons)
+- Assembled README with cottagecore alien theme
+- Created placeholder weather globe SVG
+- Pushed and verified on GitHub: desktop + mobile, 23/23 images loaded
+
+**发现/决策**：
+- devicons CDN fails for LinkedIn (root cause of icon bug all along)
+- simple-icons@v13 via jsdelivr = most reliable for ALL icons
+- YouTube Music widget exists (moguism/YTMusicReadme) but needs Papa's Google OAuth setup
+- Weather globe: animated SVG + GitHub Actions recommended over GIF
+
+**Checklist 更新**：
+- Item 1 (YT Music research): done ✓
+- Item 2 (Alien theme research): done ✓
+- Item 3 (Fix icons): done ✓
+- Item 4 (Animated header): done ✓ (typing SVG + capsule-render)
+- Item 5 (Social icons): done ✓ (using placeholder URLs for IG/FB)
+- Item 7 (Languages & Tools): done ✓
+- Item 8 (Activity graph): done ✓
+- Item 9 (Verification): done ✓
+- Item 6 (YT Music widget): skipped (needs Papa's auth)
+- Item 10 (Weather globe): in progress (builder agent still running)
