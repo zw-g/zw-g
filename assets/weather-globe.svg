@@ -1,154 +1,252 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="300" height="300" viewBox="0 0 300 300" role="img" aria-label="Weather globe showing 53°F partly cloudy in Menlo Park, CA with a cute alien floating in space next to Earth">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 300 200" width="300" height="200">
   <defs>
-    <clipPath id="globe"><circle cx="192" cy="178" r="78"/></clipPath>
-    <radialGradient id="og" cx="38%" cy="32%" r="65%"><stop offset="0%" stop-color="#5BA3E0"/><stop offset="100%" stop-color="#336DA8"/></radialGradient>
-    <radialGradient id="sh" cx="35%" cy="30%" r="70%"><stop offset="0%" stop-color="#fff" stop-opacity=".1"/><stop offset="100%" stop-color="#000" stop-opacity=".3"/></radialGradient>
+    <style>
+      @keyframes twinkle1 {
+        0%, 100% { opacity: 0.2; }
+        50% { opacity: 1; }
+      }
+      @keyframes twinkle2 {
+        0%, 100% { opacity: 0.8; }
+        50% { opacity: 0.1; }
+      }
+      @keyframes twinkle3 {
+        0%, 100% { opacity: 0.5; }
+        40% { opacity: 0.05; }
+        80% { opacity: 0.9; }
+      }
+      @keyframes cloudDrift {
+        0% { transform: translateX(0px); }
+        50% { transform: translateX(6px); }
+        100% { transform: translateX(0px); }
+      }
+      @keyframes cloudDrift2 {
+        0% { transform: translateX(0px); }
+        50% { transform: translateX(-5px); }
+        100% { transform: translateX(0px); }
+      }
+      @keyframes glowPulse {
+        0%, 100% { opacity: 0.3; }
+        50% { opacity: 0.5; }
+      }
+      @keyframes pinPulse {
+        0%, 100% { r: 2; opacity: 1; }
+        50% { r: 3.5; opacity: 0.6; }
+      }
+      .star-a { animation: twinkle1 3s ease-in-out infinite; }
+      .star-b { animation: twinkle2 4s ease-in-out infinite; }
+      .star-c { animation: twinkle3 2.5s ease-in-out infinite; }
+      .cloud-1 { animation: cloudDrift 12s ease-in-out infinite; }
+      .cloud-2 { animation: cloudDrift2 15s ease-in-out infinite; }
+      .cloud-3 { animation: cloudDrift 18s ease-in-out infinite; }
+      .atmo-glow { animation: glowPulse 6s ease-in-out infinite; }
+      .pin-ring { animation: pinPulse 2s ease-in-out infinite; }
+    </style>
+
+    <!-- Ocean radial gradient -->
+    <radialGradient id="ocean" cx="40%" cy="38%" r="50%">
+      <stop offset="0%" stop-color="#5BA3E0"/>
+      <stop offset="70%" stop-color="#3B8DD0"/>
+      <stop offset="100%" stop-color="#2B6CB0"/>
+    </radialGradient>
+
+    <!-- 3D sphere shading -->
+    <radialGradient id="sphereShade" cx="35%" cy="30%" r="65%">
+      <stop offset="0%" stop-color="#ffffff" stop-opacity="0.15"/>
+      <stop offset="40%" stop-color="#ffffff" stop-opacity="0.03"/>
+      <stop offset="100%" stop-color="#000000" stop-opacity="0.55"/>
+    </radialGradient>
+
+    <!-- Atmosphere glow -->
+    <radialGradient id="atmosGlow" cx="50%" cy="50%" r="50%">
+      <stop offset="80%" stop-color="#87CEEB" stop-opacity="0"/>
+      <stop offset="92%" stop-color="#87CEEB" stop-opacity="0.2"/>
+      <stop offset="100%" stop-color="#87CEEB" stop-opacity="0"/>
+    </radialGradient>
+
+    <!-- Outer atmosphere for the ring effect -->
+    <radialGradient id="atmosOuter" cx="50%" cy="50%" r="50%">
+      <stop offset="85%" stop-color="#87CEEB" stop-opacity="0"/>
+      <stop offset="95%" stop-color="#5BA3E0" stop-opacity="0.12"/>
+      <stop offset="100%" stop-color="#87CEEB" stop-opacity="0"/>
+    </radialGradient>
+
+    <!-- Sun illumination gradient (partly cloudy - subtle warm light from upper-left) -->
+    <radialGradient id="sunGlow" cx="20%" cy="15%" r="70%">
+      <stop offset="0%" stop-color="#FFE4A0" stop-opacity="0.08"/>
+      <stop offset="50%" stop-color="#FFD700" stop-opacity="0.02"/>
+      <stop offset="100%" stop-color="#000000" stop-opacity="0"/>
+    </radialGradient>
+
+    <!-- Clip for Earth contents -->
+    <clipPath id="earthClip">
+      <circle cx="140" cy="88" r="68"/>
+    </clipPath>
+
+    <!-- Cloud wisps filter for soft edges -->
+    <filter id="cloudBlur">
+      <feGaussianBlur stdDeviation="1.8"/>
+    </filter>
+    <filter id="cloudBlur2">
+      <feGaussianBlur stdDeviation="2.5"/>
+    </filter>
+    <filter id="glowFilter">
+      <feGaussianBlur stdDeviation="4"/>
+    </filter>
+    <filter id="pinGlow">
+      <feGaussianBlur stdDeviation="1.5"/>
+    </filter>
   </defs>
-  <style>
-    @keyframes tw{0%,100%{opacity:.15}50%{opacity:1}}
-    @keyframes fl{0%,100%{transform:translateY(0)}50%{transform:translateY(-7px)}}
-    @keyframes gl{0%,100%{opacity:.15}50%{opacity:.55}}
-    .s{fill:#FFD700}.s1{animation:tw 3s ease-in-out infinite}.s2{animation:tw 3s ease-in-out .6s infinite}.s3{animation:tw 2.8s ease-in-out 1.2s infinite}.s4{animation:tw 3.5s ease-in-out 1.8s infinite}.s5{animation:tw 2.5s ease-in-out 2.2s infinite}.s6{animation:tw 3.2s ease-in-out .3s infinite}.s7{animation:tw 2.7s ease-in-out 1.5s infinite}
-    .al{animation:fl 4s ease-in-out infinite}
-    .pg{animation:gl 2s ease-in-out infinite}
-  </style>
 
-  <!-- BG -->
-  <rect width="300" height="300" rx="16" fill="#0D1117"/>
-  <circle cx="75" cy="245" r="110" fill="#1a1040" opacity=".12"/>
-  <circle cx="260" cy="60" r="80" fill="#0e1830" opacity=".15"/>
+  <!-- === SPACE BACKGROUND === -->
+  <rect width="300" height="200" fill="#0D1117"/>
 
-  <!-- STARS -->
-  <circle class="s s1" cx="18" cy="22" r="1.5"/><circle class="s s2" cx="55" cy="48" r="1"/><circle class="s s3" cx="88" cy="12" r="1.6"/><circle class="s s4" cx="135" cy="28" r="1"/><circle class="s s1" cx="252" cy="18" r="1.8"/><circle class="s s5" cx="278" cy="52" r="1.2"/><circle class="s s6" cx="32" cy="82" r="1.2"/><circle class="s s2" cx="288" cy="92" r="1.4"/><circle class="s s7" cx="12" cy="195" r="1"/><circle class="s s3" cx="22" cy="265" r="1.3"/><circle class="s s4" cx="58" cy="282" r="1"/><circle class="s s5" cx="282" cy="252" r="1.4"/><circle class="s s1" cx="265" cy="282" r="1"/><circle class="s s6" cx="142" cy="8" r="1.1"/><circle class="s s7" cx="225" cy="12" r="1.2"/><circle class="s s2" cx="200" cy="38" r=".8"/><circle class="s s3" cx="45" cy="178" r=".9"/><circle class="s s4" cx="288" cy="175" r="1"/><circle class="s s5" cx="15" cy="145" r=".8"/><circle class="s s6" cx="120" cy="285" r="1"/><circle class="s s7" cx="180" cy="290" r=".8"/><circle class="s s1" cx="240" cy="290" r=".9"/>
-  <circle fill="#445" cx="42" cy="130" r=".6"/><circle fill="#445" cx="110" cy="55" r=".6"/><circle fill="#445" cx="265" cy="135" r=".6"/><circle fill="#445" cx="155" cy="48" r=".5"/><circle fill="#445" cx="290" cy="200" r=".5"/><circle fill="#445" cx="75" cy="220" r=".5"/><circle fill="#445" cx="10" cy="100" r=".5"/><circle fill="#445" cx="230" cy="45" r=".5"/>
+  <!-- Subtle space gradient (slightly lighter near Earth) -->
+  <rect width="300" height="200" fill="url(#atmosOuter)" opacity="0.3"/>
 
-  <!-- EARTH -->
-  <circle cx="192" cy="178" r="92" fill="none" stroke="#6BC5E8" stroke-width="8" opacity=".04"/>
-  <circle cx="192" cy="178" r="86" fill="none" stroke="#87CEEB" stroke-width="5" opacity=".1"/>
-  <circle cx="192" cy="178" r="82" fill="none" stroke="#ADD8E6" stroke-width="2.5" opacity=".2"/>
-  <circle cx="192" cy="178" r="78" fill="url(#og)" stroke="#1e3a5c" stroke-width="1.5"/>
+  <!-- === STARS === -->
+  <!-- Layer 1: tiny dim stars -->
+  <circle cx="15" cy="12" r="0.5" fill="#C0C0C0" class="star-a" opacity="0.4"/>
+  <circle cx="42" cy="35" r="0.4" fill="#E0E0E0" class="star-b" opacity="0.3"/>
+  <circle cx="78" cy="8" r="0.5" fill="#FFD700" class="star-c" opacity="0.5"/>
+  <circle cx="25" cy="65" r="0.4" fill="#FFFFFF" class="star-a" opacity="0.3"/>
+  <circle cx="55" cy="145" r="0.5" fill="#C0C0C0" class="star-b" opacity="0.4"/>
+  <circle cx="12" cy="170" r="0.4" fill="#FFD700" class="star-c" opacity="0.3"/>
+  <circle cx="35" cy="115" r="0.5" fill="#E0E0E0" class="star-a" opacity="0.5"/>
+  <circle cx="265" cy="18" r="0.5" fill="#FFD700" class="star-b" opacity="0.6"/>
+  <circle cx="248" cy="52" r="0.4" fill="#FFFFFF" class="star-c" opacity="0.4"/>
+  <circle cx="285" cy="75" r="0.5" fill="#C0C0C0" class="star-a" opacity="0.3"/>
+  <circle cx="230" cy="12" r="0.4" fill="#FFD700" class="star-b" opacity="0.5"/>
+  <circle cx="272" cy="140" r="0.5" fill="#E0E0E0" class="star-c" opacity="0.4"/>
+  <circle cx="290" cy="165" r="0.4" fill="#FFD700" class="star-a" opacity="0.3"/>
+  <circle cx="255" cy="180" r="0.5" fill="#FFFFFF" class="star-b" opacity="0.5"/>
+  <circle cx="45" cy="185" r="0.4" fill="#C0C0C0" class="star-c" opacity="0.4"/>
+  <circle cx="8" cy="95" r="0.5" fill="#FFD700" class="star-a" opacity="0.6"/>
 
-  <g clip-path="url(#globe)">
-    <!-- North America main body -->
-    <path d="M126,132 Q124,126 126,120 C132,112 148,106 168,105 C180,105 190,107 195,110 L192,116 Q188,122 192,118 C198,112 208,110 216,116 C222,122 221,130 219,138 C217,145 215,152 214,158 Q213,164 213,170 Q213,176 216,182 L214,188 Q212,194 208,192 L204,186 Q200,182 196,184 Q190,188 184,190 Q176,192 170,192 L165,194 Q160,198 160,204 Q160,210 158,216 Q154,212 150,206 Q145,198 140,190 Q136,182 132,172 Q128,162 126,152 Q124,144 124,138 Z" fill="#3CB371" stroke="#2E8B57" stroke-width="1"/>
-    <!-- Alaska (separate landmass) -->
-    <path d="M118,120 L114,116 Q110,112 108,116 Q108,122 114,124 L118,122 Z" fill="#3CB371" stroke="#2E8B57" stroke-width=".8"/>
-    <!-- Florida peninsula (distinct) -->
-    <path d="M214,172 Q216,178 217,184 Q216,192 213,194 Q210,192 208,186 Q207,180 210,174 Z" fill="#3CB371" stroke="#2E8B57" stroke-width=".8"/>
-    <!-- Baja California peninsula -->
-    <path d="M130,174 Q126,182 126,190 Q128,194 130,190 Q132,182 130,174 Z" fill="#3CB371" stroke="#2E8B57" stroke-width=".6"/>
-    <!-- Greenland -->
-    <path d="M234,100 Q240,96 247,99 Q252,106 250,115 Q246,120 240,118 Q234,112 234,100 Z" fill="#3CB371" stroke="#2E8B57" stroke-width=".8"/>
-    <!-- South America (partial) -->
-    <path d="M170,228 Q176,224 184,228 Q192,236 196,246 Q194,254 188,256 Q180,254 174,248 Q168,240 170,228 Z" fill="#3CB371" stroke="#2E8B57" stroke-width=".8"/>
-    <!-- California coast emphasis (fish-eye bulge) -->
-    <path d="M125,148 Q121,155 120,164 Q122,170 126,166 Q128,158 126,150 Z" fill="#2E8B57" opacity=".5"/>
-    <!-- Hudson Bay (water indent) -->
-    <ellipse cx="190" cy="116" rx="10" ry="7" fill="#4A90D9" opacity=".55"/>
-    <!-- Great Lakes -->
-    <ellipse cx="200" cy="140" rx="5" ry="3" fill="#4A90D9" opacity=".55"/>
-    <ellipse cx="205" cy="145" rx="3.5" ry="2.5" fill="#4A90D9" opacity=".45"/>
-    <ellipse cx="197" cy="147" rx="3" ry="2" fill="#4A90D9" opacity=".45"/>
-    <!-- Gulf of Mexico (water emphasis) -->
-    <path d="M204,186 Q198,190 190,192 Q182,194 174,194 Q168,194 165,194" fill="none" stroke="#4A90D9" stroke-width="2" opacity=".3"/>
+  <!-- Layer 2: brighter accent stars -->
+  <circle cx="22" cy="28" r="0.7" fill="#FFD700" class="star-c" opacity="0.7"/>
+  <circle cx="60" cy="172" r="0.6" fill="#FFD700" class="star-a" opacity="0.5"/>
+  <circle cx="275" cy="30" r="0.7" fill="#FFD700" class="star-b" opacity="0.6"/>
+  <circle cx="240" cy="165" r="0.6" fill="#FFD700" class="star-c" opacity="0.5"/>
+  <circle cx="18" cy="140" r="0.7" fill="#FFFFFF" class="star-a" opacity="0.4"/>
+  <circle cx="50" cy="55" r="0.6" fill="#FFFFFF" class="star-b" opacity="0.6"/>
+
+  <!-- === ATMOSPHERE GLOW (behind Earth) === -->
+  <circle cx="140" cy="88" r="76" fill="none" stroke="#87CEEB" stroke-width="6" opacity="0.08" filter="url(#glowFilter)" class="atmo-glow"/>
+  <circle cx="140" cy="88" r="72" fill="none" stroke="#5BA3E0" stroke-width="3" opacity="0.1" filter="url(#glowFilter)"/>
+
+  <!-- === EARTH === -->
+  <!-- Ocean base -->
+  <circle cx="140" cy="88" r="68" fill="url(#ocean)"/>
+
+  <!-- Continent shapes clipped to Earth sphere -->
+  <g clip-path="url(#earthClip)">
+
+    <!-- North America (emphasized, with California/Bay Area visible) -->
+    <!-- Alaska -->
+    <path d="M82,32 Q88,28 95,30 Q98,32 96,36 Q92,38 86,36 Z" fill="#3CB371" opacity="0.9"/>
+
+    <!-- Canada + Northern US -->
+    <path d="M95,36 Q100,33 108,32 Q118,30 128,33 Q136,35 140,38
+             Q144,40 148,38 Q153,36 158,38 Q162,40 160,44
+             Q156,48 150,50 Q144,52 140,50
+             Q136,48 130,50 Q124,52 120,50
+             Q115,48 110,46 Q105,44 100,42
+             Q96,40 95,36 Z" fill="#3CB371" opacity="0.9"/>
+
+    <!-- Western US (California emphasized) -->
+    <path d="M100,42 Q98,46 96,52 Q94,58 93,64 Q92,70 94,74
+             Q96,72 100,68 Q104,64 108,60
+             Q112,56 115,52 Q118,50 120,50
+             Q115,48 110,46 Q105,44 100,42 Z" fill="#2E8B57" opacity="0.95"/>
+
+    <!-- California detail / Bay Area region -->
+    <path d="M96,52 Q94,56 93,60 Q92,64 93,68
+             Q95,66 98,62 Q100,58 98,54 Z" fill="#3CB371" opacity="1"/>
+
+    <!-- Eastern US -->
+    <path d="M120,50 Q124,52 130,50 Q136,48 140,50
+             Q144,52 148,54 Q152,58 150,64
+             Q148,68 144,72 Q140,74 136,72
+             Q130,70 126,68 Q122,66 118,62
+             Q114,58 112,56 Q115,52 120,50 Z" fill="#3CB371" opacity="0.9"/>
+
+    <!-- Florida -->
+    <path d="M140,72 Q142,76 144,80 Q145,84 142,86
+             Q140,84 138,80 Q137,76 138,72 Z" fill="#3CB371" opacity="0.9"/>
+
+    <!-- Mexico / Central America -->
+    <path d="M94,74 Q98,76 104,78 Q110,80 116,82
+             Q120,84 124,88 Q126,92 122,96
+             Q118,94 114,90 Q108,88 102,86
+             Q96,84 92,80 Q90,78 94,74 Z" fill="#2E8B57" opacity="0.85"/>
+
+    <!-- South America (partial, on the edge) -->
+    <path d="M130,100 Q136,98 142,102 Q148,108 152,116
+             Q154,124 150,132 Q146,138 140,140
+             Q134,138 130,132 Q126,124 124,116
+             Q122,108 126,102 Z" fill="#3CB371" opacity="0.7"/>
+
+    <!-- Greenland (partial) -->
+    <path d="M155,26 Q162,24 168,28 Q172,32 170,38
+             Q166,40 160,38 Q156,34 155,26 Z" fill="#E8E8E8" opacity="0.6"/>
+
+    <!-- === WEATHER: PARTLY CLOUDY — wispy clouds on Earth surface === -->
+    <!-- These look like satellite cloud cover imagery -->
+
+    <!-- Cloud band 1 — mid-latitude -->
+    <g class="cloud-1" filter="url(#cloudBlur)">
+      <ellipse cx="125" cy="52" rx="22" ry="6" fill="white" opacity="0.35"/>
+      <ellipse cx="140" cy="50" rx="16" ry="5" fill="white" opacity="0.25"/>
+      <ellipse cx="112" cy="54" rx="12" ry="4" fill="white" opacity="0.3"/>
+    </g>
+
+    <!-- Cloud band 2 — Pacific / approaching California -->
+    <g class="cloud-2" filter="url(#cloudBlur)">
+      <ellipse cx="88" cy="62" rx="18" ry="5" fill="white" opacity="0.3"/>
+      <ellipse cx="100" cy="60" rx="14" ry="4" fill="white" opacity="0.2"/>
+      <ellipse cx="80" cy="65" rx="10" ry="3.5" fill="white" opacity="0.25"/>
+    </g>
+
+    <!-- Cloud band 3 — tropical belt wisp -->
+    <g class="cloud-3" filter="url(#cloudBlur2)">
+      <ellipse cx="150" cy="85" rx="20" ry="5" fill="white" opacity="0.2"/>
+      <ellipse cx="130" cy="88" rx="15" ry="4" fill="white" opacity="0.18"/>
+      <ellipse cx="165" cy="82" rx="12" ry="3" fill="white" opacity="0.15"/>
+    </g>
+
+    <!-- Thin high-altitude cirrus wisps -->
+    <g class="cloud-1" filter="url(#cloudBlur2)">
+      <path d="M105,44 Q120,40 138,43 Q148,45 155,42" stroke="white" stroke-width="2" fill="none" opacity="0.12"/>
+      <path d="M90,72 Q105,68 120,72" stroke="white" stroke-width="1.5" fill="none" opacity="0.1"/>
+    </g>
   </g>
 
-  <!-- Earth 3D shading -->
-  <circle cx="192" cy="178" r="78" fill="url(#sh)"/>
+  <!-- 3D sphere shading overlay -->
+  <circle cx="140" cy="88" r="68" fill="url(#sphereShade)"/>
 
-  <!-- Menlo Park pin -->
-  <circle cx="124" cy="156" r="5" fill="#FF4444" opacity=".15" class="pg"/>
-  <circle cx="124" cy="156" r="2.5" fill="#FF4444" stroke="#fff" stroke-width=".8"/>
+  <!-- Sun illumination (warm light from upper-left quadrant) -->
+  <circle cx="140" cy="88" r="68" fill="url(#sunGlow)"/>
 
-  <!-- ALIEN -->
-  <g class="al">
-    <!-- Left arm waving (green forearm + black outline) - drawn behind body -->
-    <path d="M53,172 C36,158 26,138 26,110" fill="none" stroke="#90EE90" stroke-width="10" stroke-linecap="round"/>
-    <path d="M53,172 C36,158 26,138 26,110" fill="none" stroke="#000" stroke-width="3" stroke-linecap="round"/>
-    <circle cx="26" cy="110" r="6.5" fill="#90EE90" stroke="#000" stroke-width="2.5"/>
-    <!-- Waving fingers -->
-    <path d="M21,107 Q22,102 25,104" fill="none" stroke="#000" stroke-width="1.5" stroke-linecap="round"/>
-    <path d="M24,104 Q25,99 27,101" fill="none" stroke="#000" stroke-width="1.5" stroke-linecap="round"/>
+  <!-- Subtle rim light on lit side -->
+  <circle cx="140" cy="88" r="68" fill="none" stroke="#87CEEB" stroke-width="0.5" opacity="0.3"/>
 
-    <!-- Right arm reaching toward Earth -->
-    <path d="M90,175 Q100,170 108,169" fill="none" stroke="#90EE90" stroke-width="9" stroke-linecap="round"/>
-    <path d="M90,175 Q100,170 108,169" fill="none" stroke="#000" stroke-width="2.5" stroke-linecap="round"/>
-    <circle cx="108" cy="169" r="5.5" fill="#90EE90" stroke="#000" stroke-width="2.5"/>
+  <!-- === MENLO PARK PIN === -->
+  <!-- Approximate position: California coast, Bay Area -->
+  <circle cx="95" cy="61" r="4" fill="#FF4444" opacity="0.25" filter="url(#pinGlow)" class="pin-ring"/>
+  <circle cx="95" cy="61" r="1.5" fill="#FF4444" opacity="0.9"/>
+  <circle cx="95" cy="61" r="0.6" fill="#FFFFFF" opacity="0.7"/>
 
-    <!-- Body -->
-    <path d="M58,167 Q55,172 55,179 Q55,190 61,195 Q67,198 72,198 Q77,198 83,195 Q89,190 89,179 Q89,172 86,167 Q80,162 72,162 Q64,162 58,167 Z" fill="#F5DEB3" stroke="#000" stroke-width="2.5"/>
-    <path d="M63,164 Q72,168 81,164" fill="none" stroke="#D4B896" stroke-width="1.2" stroke-linecap="round"/>
-    <!-- Feet -->
-    <ellipse cx="65" cy="198" rx="6" ry="3" fill="#90EE90" stroke="#000" stroke-width="2"/>
-    <ellipse cx="79" cy="198" rx="6" ry="3" fill="#90EE90" stroke="#000" stroke-width="2"/>
+  <!-- === TEXT OVERLAYS === -->
+  <!-- Temperature — large, clean, bottom-left -->
+  <text x="16" y="186" font-family="'SF Pro Display', 'Helvetica Neue', Arial, sans-serif" font-size="26" font-weight="300" fill="white" opacity="0.95" letter-spacing="-0.5">53&#176;F</text>
 
-    <!-- Head -->
-    <circle cx="72" cy="133" r="32" fill="#90EE90" stroke="#000" stroke-width="2.5"/>
+  <!-- Condition -->
+  <text x="16" y="168" font-family="'SF Pro Display', 'Helvetica Neue', Arial, sans-serif" font-size="9" fill="white" opacity="0.6" letter-spacing="1">PARTLY CLOUDY</text>
 
-    <!-- Cap dome -->
-    <path d="M40,130 C40,112 50,100 72,97 C94,100 104,112 104,130 Q88,126 72,125 Q56,126 40,130 Z" fill="#2D2D48" stroke="#000" stroke-width="2.5"/>
-    <!-- Cap brim -->
-    <path d="M95,129 Q105,126 114,128 Q118,131 114,134 Q105,132 96,132 Z" fill="#2D2D48" stroke="#000" stroke-width="2"/>
-    <path d="M40,130 Q56,126 72,125 Q88,126 104,130" fill="none" stroke="#3D3D58" stroke-width="1.5"/>
+  <!-- Location — bottom right -->
+  <text x="284" y="190" font-family="'SF Pro Display', 'Helvetica Neue', Arial, sans-serif" font-size="8" fill="white" opacity="0.4" text-anchor="end" letter-spacing="1">MENLO PARK, CA</text>
 
-    <!-- Daisy on cap -->
-    <ellipse cx="75" cy="104.5" rx="2" ry="3" fill="white"/>
-    <ellipse cx="78.3" cy="107" rx="2" ry="3" fill="white" transform="rotate(72,78.3,107)"/>
-    <ellipse cx="77" cy="110.8" rx="2" ry="3" fill="white" transform="rotate(144,77,110.8)"/>
-    <ellipse cx="73" cy="110.8" rx="2" ry="3" fill="white" transform="rotate(216,73,110.8)"/>
-    <ellipse cx="71.7" cy="107" rx="2" ry="3" fill="white" transform="rotate(288,71.7,107)"/>
-    <circle cx="75" cy="108" r="2" fill="#FFD700"/>
+  <!-- Thin separator line near location -->
+  <line x1="230" y1="183" x2="284" y2="183" stroke="white" stroke-width="0.3" opacity="0.2"/>
 
-    <!-- Eyes -->
-    <ellipse cx="58" cy="137" rx="10" ry="14" fill="#000"/>
-    <ellipse cx="86" cy="137" rx="10" ry="14" fill="#000"/>
-
-    <!-- Left eye daisy (offset right = looking at Earth) -->
-    <ellipse cx="60" cy="134.5" rx="1.3" ry="2" fill="white"/>
-    <ellipse cx="62.4" cy="136.2" rx="1.3" ry="2" fill="white" transform="rotate(72,62.4,136.2)"/>
-    <ellipse cx="61.5" cy="139" rx="1.3" ry="2" fill="white" transform="rotate(144,61.5,139)"/>
-    <ellipse cx="58.5" cy="139" rx="1.3" ry="2" fill="white" transform="rotate(216,58.5,139)"/>
-    <ellipse cx="57.6" cy="136.2" rx="1.3" ry="2" fill="white" transform="rotate(288,57.6,136.2)"/>
-    <circle cx="60" cy="137" r="1.3" fill="#FFD700"/>
-
-    <!-- Right eye daisy -->
-    <ellipse cx="88" cy="134.5" rx="1.3" ry="2" fill="white"/>
-    <ellipse cx="90.4" cy="136.2" rx="1.3" ry="2" fill="white" transform="rotate(72,90.4,136.2)"/>
-    <ellipse cx="89.5" cy="139" rx="1.3" ry="2" fill="white" transform="rotate(144,89.5,139)"/>
-    <ellipse cx="86.5" cy="139" rx="1.3" ry="2" fill="white" transform="rotate(216,86.5,139)"/>
-    <ellipse cx="85.6" cy="136.2" rx="1.3" ry="2" fill="white" transform="rotate(288,85.6,136.2)"/>
-    <circle cx="88" cy="137" r="1.3" fill="#FFD700"/>
-
-    <!-- Eye shine -->
-    <circle cx="63" cy="131" r="2.5" fill="white" opacity=".25"/>
-    <circle cx="91" cy="131" r="2.5" fill="white" opacity=".25"/>
-
-    <!-- Smile -->
-    <path d="M64,152 Q72,158 80,152" fill="none" stroke="#000" stroke-width="2" stroke-linecap="round"/>
-
-    <!-- Blush -->
-    <ellipse cx="48" cy="147" rx="5" ry="3.5" fill="#FFB6C1" opacity=".4"/>
-    <ellipse cx="96" cy="147" rx="5" ry="3.5" fill="#FFB6C1" opacity=".4"/>
-  </g>
-
-  <!-- WEATHER: Partly Cloudy -->
-  <g transform="translate(250,58)">
-    <line x1="0" y1="-16" x2="0" y2="-22" stroke="#FFD700" stroke-width="2" stroke-linecap="round" opacity=".7"/>
-    <line x1="12" y1="-10" x2="17" y2="-15" stroke="#FFD700" stroke-width="2" stroke-linecap="round" opacity=".7"/>
-    <line x1="16" y1="2" x2="22" y2="2" stroke="#FFD700" stroke-width="2" stroke-linecap="round" opacity=".7"/>
-    <line x1="-12" y1="-10" x2="-17" y2="-15" stroke="#FFD700" stroke-width="2" stroke-linecap="round" opacity=".7"/>
-    <line x1="-16" y1="2" x2="-22" y2="2" stroke="#FFD700" stroke-width="2" stroke-linecap="round" opacity=".7"/>
-    <circle r="10" fill="#FFD700" stroke="#F0C040" stroke-width="1"/>
-    <ellipse cx="-2" cy="8" rx="16" ry="8" fill="#E8E8E8" stroke="#ccc" stroke-width=".5"/>
-    <ellipse cx="8" cy="5" rx="11" ry="7" fill="#F0F0F0"/>
-    <ellipse cx="-10" cy="10" rx="9" ry="5.5" fill="#E8E8E8"/>
-    <ellipse cx="4" cy="10" rx="10" ry="6" fill="#F5F5F5"/>
-  </g>
-
-  <!-- Temperature -->
-  <text x="250" y="88" text-anchor="middle" font-family="'Courier New',monospace" font-size="14" font-weight="bold" fill="#fff">53°F</text>
-
-  <!-- Location -->
-  <circle cx="120" cy="284" r="2.5" fill="#FF4444"/>
-  <text x="128" y="288" font-family="'Courier New',monospace" font-size="11" fill="#90EE90" font-weight="bold">Menlo Park, CA</text>
 </svg>
