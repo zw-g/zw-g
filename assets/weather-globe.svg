@@ -1,35 +1,154 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="200" height="240" viewBox="0 0 200 240">
+<svg xmlns="http://www.w3.org/2000/svg" width="300" height="300" viewBox="0 0 300 300" role="img" aria-label="Weather globe showing 53°F partly cloudy in Menlo Park, CA with a cute alien floating in space next to Earth">
+  <defs>
+    <clipPath id="globe"><circle cx="192" cy="178" r="78"/></clipPath>
+    <radialGradient id="og" cx="38%" cy="32%" r="65%"><stop offset="0%" stop-color="#5BA3E0"/><stop offset="100%" stop-color="#336DA8"/></radialGradient>
+    <radialGradient id="sh" cx="35%" cy="30%" r="70%"><stop offset="0%" stop-color="#fff" stop-opacity=".1"/><stop offset="100%" stop-color="#000" stop-opacity=".3"/></radialGradient>
+  </defs>
   <style>
-    .bg { fill: #FFF8F0; }
-    .ocean { fill: #87CEEB; stroke: #000; stroke-width: 2; }
-    .land { fill: #90EE90; stroke: #000; stroke-width: 1.5; }
-    .star { fill: #FFD700; animation: twinkle 3s ease-in-out infinite; }
-    .star:nth-child(2) { animation-delay: 0.5s; }
-    .star:nth-child(3) { animation-delay: 1s; }
-    .star:nth-child(4) { animation-delay: 1.5s; }
-    .star:nth-child(5) { animation-delay: 2s; }
-    .dot { fill: #000; opacity: 0.15; }
-    .temp { font-family: 'Comic Sans MS', cursive; font-size: 16px; fill: #2D2D48; font-weight: bold; }
-    .loc { font-family: 'Comic Sans MS', cursive; font-size: 10px; fill: #7BD47B; }
-    .weather { font-size: 24px; }
-    @keyframes twinkle { 0%, 100% { opacity: 0.2; } 50% { opacity: 1; } }
-    @keyframes pulse { 0%, 100% { r: 3; } 50% { r: 5; } }
-    .pin { fill: #FF6B6B; animation: pulse 2s ease-in-out infinite; }
+    @keyframes tw{0%,100%{opacity:.15}50%{opacity:1}}
+    @keyframes fl{0%,100%{transform:translateY(0)}50%{transform:translateY(-7px)}}
+    @keyframes gl{0%,100%{opacity:.15}50%{opacity:.55}}
+    .s{fill:#FFD700}.s1{animation:tw 3s ease-in-out infinite}.s2{animation:tw 3s ease-in-out .6s infinite}.s3{animation:tw 2.8s ease-in-out 1.2s infinite}.s4{animation:tw 3.5s ease-in-out 1.8s infinite}.s5{animation:tw 2.5s ease-in-out 2.2s infinite}.s6{animation:tw 3.2s ease-in-out .3s infinite}.s7{animation:tw 2.7s ease-in-out 1.5s infinite}
+    .al{animation:fl 4s ease-in-out infinite}
+    .pg{animation:gl 2s ease-in-out infinite}
   </style>
-  <rect class="bg" width="200" height="240" rx="12"/>
-  <g class="star"><circle cx="20" cy="15" r="2.5"/></g>
-  <g class="star"><circle cx="170" cy="25" r="2"/></g>
-  <g class="star"><circle cx="45" cy="35" r="2"/></g>
-  <g class="star"><circle cx="155" cy="10" r="2.5"/></g>
-  <g class="star"><circle cx="100" cy="5" r="2"/></g>
-  <circle class="dot" cx="30" cy="50" r="1.5"/>
-  <circle class="dot" cx="180" cy="45" r="1.5"/>
-  <circle class="ocean" cx="100" cy="110" r="60"/>
-  <path class="land" d="M75,75 Q80,65 95,68 Q105,65 115,72 Q120,80 118,90 Q110,85 100,88 Q90,85 82,82 Z"/>
-  <path class="land" d="M60,100 Q65,95 72,98 Q70,108 65,115 Q58,110 60,100 Z"/>
-  <path class="land" d="M110,100 Q120,95 130,100 Q135,110 130,120 Q120,118 112,112 Q108,105 110,100 Z"/>
-  <circle class="pin" cx="85" cy="85" r="3"/>
-  <text class="weather" x="100" y="195" text-anchor="middle">🌤️</text>
-  <text class="temp" x="100" y="215" text-anchor="middle">53°F</text>
-  <text class="loc" x="100" y="232" text-anchor="middle">Menlo Park, CA</text>
+
+  <!-- BG -->
+  <rect width="300" height="300" rx="16" fill="#0D1117"/>
+  <circle cx="75" cy="245" r="110" fill="#1a1040" opacity=".12"/>
+  <circle cx="260" cy="60" r="80" fill="#0e1830" opacity=".15"/>
+
+  <!-- STARS -->
+  <circle class="s s1" cx="18" cy="22" r="1.5"/><circle class="s s2" cx="55" cy="48" r="1"/><circle class="s s3" cx="88" cy="12" r="1.6"/><circle class="s s4" cx="135" cy="28" r="1"/><circle class="s s1" cx="252" cy="18" r="1.8"/><circle class="s s5" cx="278" cy="52" r="1.2"/><circle class="s s6" cx="32" cy="82" r="1.2"/><circle class="s s2" cx="288" cy="92" r="1.4"/><circle class="s s7" cx="12" cy="195" r="1"/><circle class="s s3" cx="22" cy="265" r="1.3"/><circle class="s s4" cx="58" cy="282" r="1"/><circle class="s s5" cx="282" cy="252" r="1.4"/><circle class="s s1" cx="265" cy="282" r="1"/><circle class="s s6" cx="142" cy="8" r="1.1"/><circle class="s s7" cx="225" cy="12" r="1.2"/><circle class="s s2" cx="200" cy="38" r=".8"/><circle class="s s3" cx="45" cy="178" r=".9"/><circle class="s s4" cx="288" cy="175" r="1"/><circle class="s s5" cx="15" cy="145" r=".8"/><circle class="s s6" cx="120" cy="285" r="1"/><circle class="s s7" cx="180" cy="290" r=".8"/><circle class="s s1" cx="240" cy="290" r=".9"/>
+  <circle fill="#445" cx="42" cy="130" r=".6"/><circle fill="#445" cx="110" cy="55" r=".6"/><circle fill="#445" cx="265" cy="135" r=".6"/><circle fill="#445" cx="155" cy="48" r=".5"/><circle fill="#445" cx="290" cy="200" r=".5"/><circle fill="#445" cx="75" cy="220" r=".5"/><circle fill="#445" cx="10" cy="100" r=".5"/><circle fill="#445" cx="230" cy="45" r=".5"/>
+
+  <!-- EARTH -->
+  <circle cx="192" cy="178" r="92" fill="none" stroke="#6BC5E8" stroke-width="8" opacity=".04"/>
+  <circle cx="192" cy="178" r="86" fill="none" stroke="#87CEEB" stroke-width="5" opacity=".1"/>
+  <circle cx="192" cy="178" r="82" fill="none" stroke="#ADD8E6" stroke-width="2.5" opacity=".2"/>
+  <circle cx="192" cy="178" r="78" fill="url(#og)" stroke="#1e3a5c" stroke-width="1.5"/>
+
+  <g clip-path="url(#globe)">
+    <!-- North America main body -->
+    <path d="M126,132 Q124,126 126,120 C132,112 148,106 168,105 C180,105 190,107 195,110 L192,116 Q188,122 192,118 C198,112 208,110 216,116 C222,122 221,130 219,138 C217,145 215,152 214,158 Q213,164 213,170 Q213,176 216,182 L214,188 Q212,194 208,192 L204,186 Q200,182 196,184 Q190,188 184,190 Q176,192 170,192 L165,194 Q160,198 160,204 Q160,210 158,216 Q154,212 150,206 Q145,198 140,190 Q136,182 132,172 Q128,162 126,152 Q124,144 124,138 Z" fill="#3CB371" stroke="#2E8B57" stroke-width="1"/>
+    <!-- Alaska (separate landmass) -->
+    <path d="M118,120 L114,116 Q110,112 108,116 Q108,122 114,124 L118,122 Z" fill="#3CB371" stroke="#2E8B57" stroke-width=".8"/>
+    <!-- Florida peninsula (distinct) -->
+    <path d="M214,172 Q216,178 217,184 Q216,192 213,194 Q210,192 208,186 Q207,180 210,174 Z" fill="#3CB371" stroke="#2E8B57" stroke-width=".8"/>
+    <!-- Baja California peninsula -->
+    <path d="M130,174 Q126,182 126,190 Q128,194 130,190 Q132,182 130,174 Z" fill="#3CB371" stroke="#2E8B57" stroke-width=".6"/>
+    <!-- Greenland -->
+    <path d="M234,100 Q240,96 247,99 Q252,106 250,115 Q246,120 240,118 Q234,112 234,100 Z" fill="#3CB371" stroke="#2E8B57" stroke-width=".8"/>
+    <!-- South America (partial) -->
+    <path d="M170,228 Q176,224 184,228 Q192,236 196,246 Q194,254 188,256 Q180,254 174,248 Q168,240 170,228 Z" fill="#3CB371" stroke="#2E8B57" stroke-width=".8"/>
+    <!-- California coast emphasis (fish-eye bulge) -->
+    <path d="M125,148 Q121,155 120,164 Q122,170 126,166 Q128,158 126,150 Z" fill="#2E8B57" opacity=".5"/>
+    <!-- Hudson Bay (water indent) -->
+    <ellipse cx="190" cy="116" rx="10" ry="7" fill="#4A90D9" opacity=".55"/>
+    <!-- Great Lakes -->
+    <ellipse cx="200" cy="140" rx="5" ry="3" fill="#4A90D9" opacity=".55"/>
+    <ellipse cx="205" cy="145" rx="3.5" ry="2.5" fill="#4A90D9" opacity=".45"/>
+    <ellipse cx="197" cy="147" rx="3" ry="2" fill="#4A90D9" opacity=".45"/>
+    <!-- Gulf of Mexico (water emphasis) -->
+    <path d="M204,186 Q198,190 190,192 Q182,194 174,194 Q168,194 165,194" fill="none" stroke="#4A90D9" stroke-width="2" opacity=".3"/>
+  </g>
+
+  <!-- Earth 3D shading -->
+  <circle cx="192" cy="178" r="78" fill="url(#sh)"/>
+
+  <!-- Menlo Park pin -->
+  <circle cx="124" cy="156" r="5" fill="#FF4444" opacity=".15" class="pg"/>
+  <circle cx="124" cy="156" r="2.5" fill="#FF4444" stroke="#fff" stroke-width=".8"/>
+
+  <!-- ALIEN -->
+  <g class="al">
+    <!-- Left arm waving (green forearm + black outline) - drawn behind body -->
+    <path d="M53,172 C36,158 26,138 26,110" fill="none" stroke="#90EE90" stroke-width="10" stroke-linecap="round"/>
+    <path d="M53,172 C36,158 26,138 26,110" fill="none" stroke="#000" stroke-width="3" stroke-linecap="round"/>
+    <circle cx="26" cy="110" r="6.5" fill="#90EE90" stroke="#000" stroke-width="2.5"/>
+    <!-- Waving fingers -->
+    <path d="M21,107 Q22,102 25,104" fill="none" stroke="#000" stroke-width="1.5" stroke-linecap="round"/>
+    <path d="M24,104 Q25,99 27,101" fill="none" stroke="#000" stroke-width="1.5" stroke-linecap="round"/>
+
+    <!-- Right arm reaching toward Earth -->
+    <path d="M90,175 Q100,170 108,169" fill="none" stroke="#90EE90" stroke-width="9" stroke-linecap="round"/>
+    <path d="M90,175 Q100,170 108,169" fill="none" stroke="#000" stroke-width="2.5" stroke-linecap="round"/>
+    <circle cx="108" cy="169" r="5.5" fill="#90EE90" stroke="#000" stroke-width="2.5"/>
+
+    <!-- Body -->
+    <path d="M58,167 Q55,172 55,179 Q55,190 61,195 Q67,198 72,198 Q77,198 83,195 Q89,190 89,179 Q89,172 86,167 Q80,162 72,162 Q64,162 58,167 Z" fill="#F5DEB3" stroke="#000" stroke-width="2.5"/>
+    <path d="M63,164 Q72,168 81,164" fill="none" stroke="#D4B896" stroke-width="1.2" stroke-linecap="round"/>
+    <!-- Feet -->
+    <ellipse cx="65" cy="198" rx="6" ry="3" fill="#90EE90" stroke="#000" stroke-width="2"/>
+    <ellipse cx="79" cy="198" rx="6" ry="3" fill="#90EE90" stroke="#000" stroke-width="2"/>
+
+    <!-- Head -->
+    <circle cx="72" cy="133" r="32" fill="#90EE90" stroke="#000" stroke-width="2.5"/>
+
+    <!-- Cap dome -->
+    <path d="M40,130 C40,112 50,100 72,97 C94,100 104,112 104,130 Q88,126 72,125 Q56,126 40,130 Z" fill="#2D2D48" stroke="#000" stroke-width="2.5"/>
+    <!-- Cap brim -->
+    <path d="M95,129 Q105,126 114,128 Q118,131 114,134 Q105,132 96,132 Z" fill="#2D2D48" stroke="#000" stroke-width="2"/>
+    <path d="M40,130 Q56,126 72,125 Q88,126 104,130" fill="none" stroke="#3D3D58" stroke-width="1.5"/>
+
+    <!-- Daisy on cap -->
+    <ellipse cx="75" cy="104.5" rx="2" ry="3" fill="white"/>
+    <ellipse cx="78.3" cy="107" rx="2" ry="3" fill="white" transform="rotate(72,78.3,107)"/>
+    <ellipse cx="77" cy="110.8" rx="2" ry="3" fill="white" transform="rotate(144,77,110.8)"/>
+    <ellipse cx="73" cy="110.8" rx="2" ry="3" fill="white" transform="rotate(216,73,110.8)"/>
+    <ellipse cx="71.7" cy="107" rx="2" ry="3" fill="white" transform="rotate(288,71.7,107)"/>
+    <circle cx="75" cy="108" r="2" fill="#FFD700"/>
+
+    <!-- Eyes -->
+    <ellipse cx="58" cy="137" rx="10" ry="14" fill="#000"/>
+    <ellipse cx="86" cy="137" rx="10" ry="14" fill="#000"/>
+
+    <!-- Left eye daisy (offset right = looking at Earth) -->
+    <ellipse cx="60" cy="134.5" rx="1.3" ry="2" fill="white"/>
+    <ellipse cx="62.4" cy="136.2" rx="1.3" ry="2" fill="white" transform="rotate(72,62.4,136.2)"/>
+    <ellipse cx="61.5" cy="139" rx="1.3" ry="2" fill="white" transform="rotate(144,61.5,139)"/>
+    <ellipse cx="58.5" cy="139" rx="1.3" ry="2" fill="white" transform="rotate(216,58.5,139)"/>
+    <ellipse cx="57.6" cy="136.2" rx="1.3" ry="2" fill="white" transform="rotate(288,57.6,136.2)"/>
+    <circle cx="60" cy="137" r="1.3" fill="#FFD700"/>
+
+    <!-- Right eye daisy -->
+    <ellipse cx="88" cy="134.5" rx="1.3" ry="2" fill="white"/>
+    <ellipse cx="90.4" cy="136.2" rx="1.3" ry="2" fill="white" transform="rotate(72,90.4,136.2)"/>
+    <ellipse cx="89.5" cy="139" rx="1.3" ry="2" fill="white" transform="rotate(144,89.5,139)"/>
+    <ellipse cx="86.5" cy="139" rx="1.3" ry="2" fill="white" transform="rotate(216,86.5,139)"/>
+    <ellipse cx="85.6" cy="136.2" rx="1.3" ry="2" fill="white" transform="rotate(288,85.6,136.2)"/>
+    <circle cx="88" cy="137" r="1.3" fill="#FFD700"/>
+
+    <!-- Eye shine -->
+    <circle cx="63" cy="131" r="2.5" fill="white" opacity=".25"/>
+    <circle cx="91" cy="131" r="2.5" fill="white" opacity=".25"/>
+
+    <!-- Smile -->
+    <path d="M64,152 Q72,158 80,152" fill="none" stroke="#000" stroke-width="2" stroke-linecap="round"/>
+
+    <!-- Blush -->
+    <ellipse cx="48" cy="147" rx="5" ry="3.5" fill="#FFB6C1" opacity=".4"/>
+    <ellipse cx="96" cy="147" rx="5" ry="3.5" fill="#FFB6C1" opacity=".4"/>
+  </g>
+
+  <!-- WEATHER: Partly Cloudy -->
+  <g transform="translate(250,58)">
+    <line x1="0" y1="-16" x2="0" y2="-22" stroke="#FFD700" stroke-width="2" stroke-linecap="round" opacity=".7"/>
+    <line x1="12" y1="-10" x2="17" y2="-15" stroke="#FFD700" stroke-width="2" stroke-linecap="round" opacity=".7"/>
+    <line x1="16" y1="2" x2="22" y2="2" stroke="#FFD700" stroke-width="2" stroke-linecap="round" opacity=".7"/>
+    <line x1="-12" y1="-10" x2="-17" y2="-15" stroke="#FFD700" stroke-width="2" stroke-linecap="round" opacity=".7"/>
+    <line x1="-16" y1="2" x2="-22" y2="2" stroke="#FFD700" stroke-width="2" stroke-linecap="round" opacity=".7"/>
+    <circle r="10" fill="#FFD700" stroke="#F0C040" stroke-width="1"/>
+    <ellipse cx="-2" cy="8" rx="16" ry="8" fill="#E8E8E8" stroke="#ccc" stroke-width=".5"/>
+    <ellipse cx="8" cy="5" rx="11" ry="7" fill="#F0F0F0"/>
+    <ellipse cx="-10" cy="10" rx="9" ry="5.5" fill="#E8E8E8"/>
+    <ellipse cx="4" cy="10" rx="10" ry="6" fill="#F5F5F5"/>
+  </g>
+
+  <!-- Temperature -->
+  <text x="250" y="88" text-anchor="middle" font-family="'Courier New',monospace" font-size="14" font-weight="bold" fill="#fff">53°F</text>
+
+  <!-- Location -->
+  <circle cx="120" cy="284" r="2.5" fill="#FF4444"/>
+  <text x="128" y="288" font-family="'Courier New',monospace" font-size="11" fill="#90EE90" font-weight="bold">Menlo Park, CA</text>
 </svg>
