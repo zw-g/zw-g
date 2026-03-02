@@ -1,0 +1,125 @@
+{
+  "task": "GitHub Profile README Redesign — Alien Theme",
+  "mode": "implementation",
+  "created": "2026-03-02",
+  "items": [
+    {
+      "id": 1,
+      "category": "Research",
+      "description": "Research YouTube Music 'Now Playing' widget for GitHub README (equivalent to Spotify novatorem)",
+      "steps": [
+        "Search for existing YouTube Music GitHub README widgets",
+        "If none exist, evaluate feasibility of building one (API availability, auth)",
+        "Document finding: available / buildable / not possible"
+      ],
+      "done": false
+    },
+    {
+      "id": 2,
+      "category": "Research",
+      "description": "Research alien/space-themed GitHub README components (colors, animations, star effects)",
+      "steps": [
+        "Find capsule-render options for space/alien themes",
+        "Find or create star animation SVG for header",
+        "Identify green/purple/dark color palette matching the alien GIF",
+        "Document all usable resources"
+      ],
+      "done": false
+    },
+    {
+      "id": 10,
+      "category": "Research + Build",
+      "description": "Dynamic weather globe — Earth with Menlo Park weather, animated, alien-themed",
+      "steps": [
+        "Research existing weather widgets for GitHub README",
+        "Research globe/Earth visualization options (animated GIF or SVG)",
+        "Build GitHub Action to generate daily weather globe GIF for Menlo Park, CA",
+        "Style must match alien GIF theme (green/purple/space)",
+        "Place next to alien GIF in layout"
+      ],
+      "done": false
+    },
+    {
+      "id": 3,
+      "category": "Fix",
+      "description": "Fix LinkedIn/GitHub/Gmail icons — consistent, small, working",
+      "steps": [
+        "Test multiple icon sources to find one that reliably loads on GitHub",
+        "All 3 icons render at same size",
+        "Verify by loading github.com/zw-g in browser"
+      ],
+      "done": false
+    },
+    {
+      "id": 4,
+      "category": "Design",
+      "description": "Replace intro text with alien-themed animated header (keep original text)",
+      "steps": [
+        "Create space-themed header with star animation or slide effect",
+        "Text preserved exactly: 'Hi there 👋 welcome to my Github! I'm a Software Engineer @ Meta Core Feed Ranking team passionate about Automation.'",
+        "Visual style matches alien GIF (green/purple/space colors)",
+        "Verify animation works on GitHub"
+      ],
+      "done": false
+    },
+    {
+      "id": 5,
+      "category": "Design",
+      "description": "Add social icons: Instagram + Facebook (alongside LinkedIn/GitHub/Gmail)",
+      "steps": [
+        "Add Instagram and Facebook icons in same style as other icons",
+        "Need Papa's Instagram and Facebook profile URLs",
+        "All 5 icons consistent size and style"
+      ],
+      "done": false
+    },
+    {
+      "id": 6,
+      "category": "Design",
+      "description": "YouTube Music widget or remove music section",
+      "steps": [
+        "If widget exists: integrate it",
+        "If buildable: build it",
+        "If not possible: remove music section entirely, don't leave ugly placeholder"
+      ],
+      "done": false
+    },
+    {
+      "id": 7,
+      "category": "Design",
+      "description": "Languages & Tools section — modern, alien-themed",
+      "steps": [
+        "Include: Python, SQL, C++, PHP, terminal/CLI tools",
+        "Include modern AI tools: Claude/Anthropic, OpenAI, Google AI",
+        "Visual style matches alien theme",
+        "May need custom badges for AI tools if none exist"
+      ],
+      "done": false
+    },
+    {
+      "id": 8,
+      "category": "Design",
+      "description": "Contribution graph with alien theme",
+      "steps": [
+        "Use github-readme-activity-graph or similar with alien color scheme",
+        "Green/purple palette matching GIF",
+        "Verify it loads reliably"
+      ],
+      "done": false
+    },
+    {
+      "id": 9,
+      "category": "Verify",
+      "description": "Full end-to-end verification — desktop + mobile",
+      "steps": [
+        "Screenshot at 1440px desktop width",
+        "Screenshot at 390px mobile width",
+        "Click 'more about me' and verify expanded state",
+        "Check ALL images load (0 broken)",
+        "Verify animations work",
+        "Check both light and dark GitHub themes"
+      ],
+      "done": false
+    }
+  ]
+}

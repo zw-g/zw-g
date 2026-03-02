@@ -1,0 +1,35 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="200" height="240" viewBox="0 0 200 240">
+  <style>
+    .bg { fill: #FFF8F0; }
+    .ocean { fill: #87CEEB; stroke: #000; stroke-width: 2; }
+    .land { fill: #90EE90; stroke: #000; stroke-width: 1.5; }
+    .star { fill: #FFD700; animation: twinkle 3s ease-in-out infinite; }
+    .star:nth-child(2) { animation-delay: 0.5s; }
+    .star:nth-child(3) { animation-delay: 1s; }
+    .star:nth-child(4) { animation-delay: 1.5s; }
+    .star:nth-child(5) { animation-delay: 2s; }
+    .dot { fill: #000; opacity: 0.15; }
+    .temp { font-family: 'Comic Sans MS', cursive; font-size: 16px; fill: #2D2D48; font-weight: bold; }
+    .loc { font-family: 'Comic Sans MS', cursive; font-size: 10px; fill: #7BD47B; }
+    .weather { font-size: 24px; }
+    @keyframes twinkle { 0%, 100% { opacity: 0.2; } 50% { opacity: 1; } }
+    @keyframes pulse { 0%, 100% { r: 3; } 50% { r: 5; } }
+    .pin { fill: #FF6B6B; animation: pulse 2s ease-in-out infinite; }
+  </style>
+  <rect class="bg" width="200" height="240" rx="12"/>
+  <g class="star"><circle cx="20" cy="15" r="2.5"/></g>
+  <g class="star"><circle cx="170" cy="25" r="2"/></g>
+  <g class="star"><circle cx="45" cy="35" r="2"/></g>
+  <g class="star"><circle cx="155" cy="10" r="2.5"/></g>
+  <g class="star"><circle cx="100" cy="5" r="2"/></g>
+  <circle class="dot" cx="30" cy="50" r="1.5"/>
+  <circle class="dot" cx="180" cy="45" r="1.5"/>
+  <circle class="ocean" cx="100" cy="110" r="60"/>
+  <path class="land" d="M75,75 Q80,65 95,68 Q105,65 115,72 Q120,80 118,90 Q110,85 100,88 Q90,85 82,82 Z"/>
+  <path class="land" d="M60,100 Q65,95 72,98 Q70,108 65,115 Q58,110 60,100 Z"/>
+  <path class="land" d="M110,100 Q120,95 130,100 Q135,110 130,120 Q120,118 112,112 Q108,105 110,100 Z"/>
+  <circle class="pin" cx="85" cy="85" r="3"/>
+  <text class="weather" x="100" y="195" text-anchor="middle">🌤️</text>
+  <text class="temp" x="100" y="215" text-anchor="middle">53°F</text>
+  <text class="loc" x="100" y="232" text-anchor="middle">Menlo Park, CA</text>
+</svg>
