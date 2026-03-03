@@ -63,11 +63,34 @@
 
 <br/>
 
-<!-- ─────────────── WEATHER (full-width) ─────────────── -->
+<!-- ─────────────── WEATHER ─────────────── -->
 
-<p align="center">
-  <img src="./assets/weather.gif" width="100%" alt="Live weather — Menlo Park, CA" />
-</p>
+<!-- WEATHER:START -->
+<div align="center">
+<table>
+<tr>
+<td align="center" width="160">
+<img src="https://raw.githubusercontent.com/basmilius/weather-icons/dev/production/fill/svg/clear-day.svg" width="80" /><br/>
+<strong>62°F</strong><br/>
+<sub>Clear sky</sub><br/>
+<sub>Feels like 61°F</sub>
+</td>
+<td align="left">
+<h4>📍 Menlo Park, CA</h4>
+<sub>💨 Wind: 9 mph · 💧 Humidity: 77%</sub><br/>
+<sub>🌡️ High: 63°F · Low: 51°F</sub><br/><br/>
+<strong>3-Day Forecast:</strong><br/>
+<sub>
+Mon: ☁️ 63°F / 51°F · 
+Tue: ☁️ 63°F / 48°F · 
+Wed: 🌧️ 62°F / 47°F
+</sub><br/>
+<sub><i>Updated: Mon Mar 2, 4:08 PM PST</i></sub>
+</td>
+</tr>
+</table>
+</div>
+<!-- WEATHER:END -->
 
 <!-- ─────────────── MUSIC (full-width) ─────────────── -->
 

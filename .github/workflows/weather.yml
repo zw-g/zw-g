@@ -1,34 +1,21 @@
-name: Update Weather Globe
-
+name: Update Weather
 on:
   schedule:
-    - cron: '0 */6 * * *'  # Every 6 hours
-  workflow_dispatch:         # Manual trigger
-
-permissions:
-  contents: write
+    - cron: '0 * * * *'  # Every hour
+  workflow_dispatch:
 
 jobs:
-  update-weather:
+  update:
     runs-on: ubuntu-latest
     steps:
-      - name: Checkout
-        uses: actions/checkout@v4
-
-      - name: Set up Python
-        uses: actions/setup-python@v5
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
         with:
-          python-version: '3.12'
-
-      - name: Generate weather globe
-        run: python scripts/generate_weather_globe.py
-
-      - name: Commit and push if changed
+          python-version: '3.11'
+      - run: pip install requests
+      - run: python scripts/update_weather.py
+      - name: Commit changes
         run: |
-          git config user.name "github-actions[bot]"
-          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add assets/weather-globe.svg
-          if ! git diff --staged --quiet; then
-            git commit -m "🌍 Update weather globe [skip ci]"
-            git push
-          fi
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git diff --quiet || (git add README.md && git commit -m 'chore: update weather' && git push)
