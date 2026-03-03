@@ -201,7 +201,7 @@ def build_card(data: dict) -> str:
 <sub>Feels like {feels}°F</sub>
 </td>
 <td align="left">
-<h4>📍 {LOCATION}</h4>
+<strong style="font-size:1.1em">📍 {LOCATION}</strong><br/>
 <sub>💨 Wind: {wind} mph · 💧 Humidity: {humidity}%</sub><br/>
 <sub>🌡️ High: {high}°F · Low: {low}°F</sub><br/><br/>
 <strong>3-Day Forecast:</strong><br/>
