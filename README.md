@@ -71,9 +71,9 @@
 <tr>
 <td align="center" width="160">
 <img src="https://raw.githubusercontent.com/basmilius/weather-icons/dev/production/fill/svg/clear-night.svg" width="80" /><br/>
-<strong>63°F</strong><br/>
+<strong>61°F</strong><br/>
 <sub>Clear sky</sub><br/>
-<sub>Feels like 63°F</sub>
+<sub>Feels like 60°F</sub>
 </td>
 <td align="left">
 <strong style="font-size:1.1em">📍 Menlo Park, CA</strong><br/>
@@ -85,7 +85,7 @@ Sat: ☁️ 83°F / 56°F ·
 Sun: ☀️ 81°F / 48°F · 
 Mon: ☁️ 75°F / 47°F
 </sub><br/>
-<sub><i>Updated: Sat Mar 21, 1:41 AM PDT</i></sub>
+<sub><i>Updated: Sat Mar 21, 2:38 AM PDT</i></sub>
 </td>
 </tr>
 </table>
