@@ -70,9 +70,9 @@
 <table>
 <tr>
 <td align="center" width="160">
-<img src="https://raw.githubusercontent.com/basmilius/weather-icons/dev/production/fill/svg/partly-cloudy-day.svg" width="80" /><br/>
-<strong>79°F</strong><br/>
-<sub>Mainly clear</sub><br/>
+<img src="https://raw.githubusercontent.com/basmilius/weather-icons/dev/production/fill/svg/overcast-day.svg" width="80" /><br/>
+<strong>80°F</strong><br/>
+<sub>Overcast</sub><br/>
 <sub>Feels like 78°F</sub>
 </td>
 <td align="left">
@@ -82,10 +82,10 @@
 <strong>3-Day Forecast:</strong><br/>
 <sub>
 Fri: ☁️ 81°F / 54°F · 
-Sat: 🌤️ 71°F / 48°F · 
+Sat: 🌤️ 71°F / 47°F · 
 Sun: 🌫️ 81°F / 47°F
 </sub><br/>
-<sub><i>Updated: Fri Mar 27, 2:42 PM PDT</i></sub>
+<sub><i>Updated: Fri Mar 27, 3:40 PM PDT</i></sub>
 </td>
 </tr>
 </table>
