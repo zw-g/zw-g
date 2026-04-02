@@ -92,14 +92,6 @@ Sat: ☀️ 81°F / 51°F
 </div>
 <!-- WEATHER:END -->
 
-<!-- ─────────────── MUSIC (full-width) ─────────────── -->
-
-<p align="center">
-  <a href="https://music.youtube.com">
-    <img src="./assets/music.gif" width="100%" alt="Now vibing on YouTube Music" />
-  </a>
-</p>
-
 <!-- ─────────────── LANGUAGES & TOOLS ─────────────── -->
 
 <h4 align="center">🌿 Languages & Tools</h4>
@@ -119,12 +111,6 @@ Sat: ☀️ 81°F / 51°F
   <a href="https://openai.com"><img src="https://go-skill-icons.vercel.app/api/icons?i=chatgpt&theme=dark" height="44" alt="ChatGPT" /></a>&nbsp;&nbsp;
   <a href="https://deepmind.google/technologies/gemini/"><img src="https://go-skill-icons.vercel.app/api/icons?i=gemini&theme=dark" height="44" alt="Gemini" /></a>&nbsp;&nbsp;
   <a href="https://pytorch.org"><img src="https://go-skill-icons.vercel.app/api/icons?i=pytorch&theme=dark" height="44" alt="PyTorch" /></a>
-</p>
-
-<!-- ─────────────── COMMIT ACTIVITY (full-width) ─────────────── -->
-
-<p align="center">
-  <img src="./assets/commits.gif" width="100%" alt="Commit activity — bicycle over hills" />
 </p>
 
 <hr/>
