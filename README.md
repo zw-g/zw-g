@@ -70,14 +70,14 @@
 <table>
 <tr>
 <td align="center" width="160">
-<img src="https://raw.githubusercontent.com/basmilius/weather-icons/dev/production/fill/svg/clear-day.svg" width="80" /><br/>
-<strong>80°F</strong><br/>
-<sub>Clear sky</sub><br/>
-<sub>Feels like 80°F</sub>
+<img src="https://raw.githubusercontent.com/basmilius/weather-icons/dev/production/fill/svg/partly-cloudy-day.svg" width="80" /><br/>
+<strong>81°F</strong><br/>
+<sub>Partly cloudy</sub><br/>
+<sub>Feels like 79°F</sub>
 </td>
 <td align="left">
 <strong style="font-size:1.1em">📍 Menlo Park, CA</strong><br/>
-<sub>💨 Wind: 8 mph · 💧 Humidity: 29%</sub><br/>
+<sub>💨 Wind: 10 mph · 💧 Humidity: 26%</sub><br/>
 <sub>🌡️ High: 82°F · Low: 54°F</sub><br/><br/>
 <strong>3-Day Forecast:</strong><br/>
 <sub>
@@ -85,7 +85,7 @@ Sun: ☁️ 82°F / 54°F ·
 Mon: ☁️ 68°F / 48°F · 
 Tue: ☁️ 73°F / 44°F
 </sub><br/>
-<sub><i>Updated: Sun Apr 5, 1:41 PM PDT</i></sub>
+<sub><i>Updated: Sun Apr 5, 2:38 PM PDT</i></sub>
 </td>
 </tr>
 </table>
