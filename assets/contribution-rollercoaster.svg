@@ -145,18 +145,18 @@
           fill="#90EE90" opacity="0.15"/>
 
   <!-- ── Month labels ── -->
-    <text x="56" y="192" fill="#8B949E" font-family="'Segoe UI',system-ui,sans-serif" font-size="9" text-anchor="middle">May</text>
-    <text x="119" y="192" fill="#8B949E" font-family="'Segoe UI',system-ui,sans-serif" font-size="9" text-anchor="middle">Jun</text>
-    <text x="180" y="192" fill="#8B949E" font-family="'Segoe UI',system-ui,sans-serif" font-size="9" text-anchor="middle">Jul</text>
-    <text x="243" y="192" fill="#8B949E" font-family="'Segoe UI',system-ui,sans-serif" font-size="9" text-anchor="middle">Aug</text>
-    <text x="306" y="192" fill="#8B949E" font-family="'Segoe UI',system-ui,sans-serif" font-size="9" text-anchor="middle">Sep</text>
-    <text x="367" y="192" fill="#8B949E" font-family="'Segoe UI',system-ui,sans-serif" font-size="9" text-anchor="middle">Oct</text>
-    <text x="430" y="192" fill="#8B949E" font-family="'Segoe UI',system-ui,sans-serif" font-size="9" text-anchor="middle">Nov</text>
-    <text x="491" y="192" fill="#8B949E" font-family="'Segoe UI',system-ui,sans-serif" font-size="9" text-anchor="middle">Dec</text>
-    <text x="554" y="192" fill="#8B949E" font-family="'Segoe UI',system-ui,sans-serif" font-size="9" text-anchor="middle">Jan</text>
-    <text x="617" y="192" fill="#8B949E" font-family="'Segoe UI',system-ui,sans-serif" font-size="9" text-anchor="middle">Feb</text>
-    <text x="673" y="192" fill="#8B949E" font-family="'Segoe UI',system-ui,sans-serif" font-size="9" text-anchor="middle">Mar</text>
-    <text x="736" y="192" fill="#8B949E" font-family="'Segoe UI',system-ui,sans-serif" font-size="9" text-anchor="middle">Apr</text>
+    <text x="54" y="192" fill="#8B949E" font-family="'Segoe UI',system-ui,sans-serif" font-size="9" text-anchor="middle">May</text>
+    <text x="117" y="192" fill="#8B949E" font-family="'Segoe UI',system-ui,sans-serif" font-size="9" text-anchor="middle">Jun</text>
+    <text x="178" y="192" fill="#8B949E" font-family="'Segoe UI',system-ui,sans-serif" font-size="9" text-anchor="middle">Jul</text>
+    <text x="241" y="192" fill="#8B949E" font-family="'Segoe UI',system-ui,sans-serif" font-size="9" text-anchor="middle">Aug</text>
+    <text x="304" y="192" fill="#8B949E" font-family="'Segoe UI',system-ui,sans-serif" font-size="9" text-anchor="middle">Sep</text>
+    <text x="365" y="192" fill="#8B949E" font-family="'Segoe UI',system-ui,sans-serif" font-size="9" text-anchor="middle">Oct</text>
+    <text x="428" y="192" fill="#8B949E" font-family="'Segoe UI',system-ui,sans-serif" font-size="9" text-anchor="middle">Nov</text>
+    <text x="489" y="192" fill="#8B949E" font-family="'Segoe UI',system-ui,sans-serif" font-size="9" text-anchor="middle">Dec</text>
+    <text x="552" y="192" fill="#8B949E" font-family="'Segoe UI',system-ui,sans-serif" font-size="9" text-anchor="middle">Jan</text>
+    <text x="615" y="192" fill="#8B949E" font-family="'Segoe UI',system-ui,sans-serif" font-size="9" text-anchor="middle">Feb</text>
+    <text x="671" y="192" fill="#8B949E" font-family="'Segoe UI',system-ui,sans-serif" font-size="9" text-anchor="middle">Mar</text>
+    <text x="734" y="192" fill="#8B949E" font-family="'Segoe UI',system-ui,sans-serif" font-size="9" text-anchor="middle">Apr</text>
 
   <!-- ═══ ALIEN SPACESHIP ═══ -->
   <!-- Outer group: positioning only (SVG transform) -->
