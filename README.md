@@ -73,7 +73,7 @@
 <img src="https://raw.githubusercontent.com/basmilius/weather-icons/dev/production/fill/svg/overcast-night.svg" width="80" /><br/>
 <strong>59°F</strong><br/>
 <sub>Overcast</sub><br/>
-<sub>Feels like 59°F</sub>
+<sub>Feels like 60°F</sub>
 </td>
 <td align="left">
 <strong style="font-size:1.1em">📍 Menlo Park, CA</strong><br/>
@@ -85,7 +85,7 @@ Mon: ☁️ 81°F / 58°F ·
 Tue: 🌫️ 81°F / 56°F · 
 Wed: ☁️ 88°F / 55°F
 </sub><br/>
-<sub><i>Updated: Mon Aug 17, 2:48 AM PDT</i></sub>
+<sub><i>Updated: Mon Aug 17, 3:36 AM PDT</i></sub>
 </td>
 </tr>
 </table>
