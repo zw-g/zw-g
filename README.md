@@ -71,7 +71,7 @@
 <tr>
 <td align="center" width="160">
 <img src="https://raw.githubusercontent.com/basmilius/weather-icons/dev/production/fill/svg/overcast-day.svg" width="80" /><br/>
-<strong>60°F</strong><br/>
+<strong>59°F</strong><br/>
 <sub>Overcast</sub><br/>
 <sub>Feels like 60°F</sub>
 </td>
@@ -82,10 +82,10 @@
 <strong>3-Day Forecast:</strong><br/>
 <sub>
 Thu: 🌫️ 78°F / 59°F · 
-Fri: ☁️ 79°F / 55°F · 
+Fri: ☁️ 76°F / 56°F · 
 Sat: ☁️ 83°F / 54°F
 </sub><br/>
-<sub><i>Updated: Thu Aug 20, 6:53 AM PDT</i></sub>
+<sub><i>Updated: Thu Aug 20, 7:41 AM PDT</i></sub>
 </td>
 </tr>
 </table>
