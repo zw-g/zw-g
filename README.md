@@ -71,7 +71,7 @@
 <tr>
 <td align="center" width="160">
 <img src="https://raw.githubusercontent.com/basmilius/weather-icons/dev/production/fill/svg/clear-day.svg" width="80" /><br/>
-<strong>77°F</strong><br/>
+<strong>78°F</strong><br/>
 <sub>Clear sky</sub><br/>
 <sub>Feels like 80°F</sub>
 </td>
@@ -85,7 +85,7 @@ Mon: ☁️ 78°F / 60°F ·
 Tue: ☁️ 85°F / 59°F · 
 Wed: ☁️ 92°F / 56°F
 </sub><br/>
-<sub><i>Updated: Mon Aug 24, 2:34 PM PDT</i></sub>
+<sub><i>Updated: Mon Aug 24, 3:31 PM PDT</i></sub>
 </td>
 </tr>
 </table>
