@@ -77,15 +77,15 @@
 </td>
 <td align="left">
 <strong style="font-size:1.1em">📍 Menlo Park, CA</strong><br/>
-<sub>💨 Wind: 4 mph · 💧 Humidity: 91%</sub><br/>
-<sub>🌡️ High: 92°F · Low: 57°F</sub><br/><br/>
+<sub>💨 Wind: 5 mph · 💧 Humidity: 92%</sub><br/>
+<sub>🌡️ High: 91°F · Low: 57°F</sub><br/><br/>
 <strong>3-Day Forecast:</strong><br/>
 <sub>
-Wed: 🌫️ 92°F / 57°F · 
+Wed: ☁️ 91°F / 57°F · 
 Thu: ☁️ 94°F / 58°F · 
 Fri: ☁️ 85°F / 54°F
 </sub><br/>
-<sub><i>Updated: Wed Aug 26, 2:48 AM PDT</i></sub>
+<sub><i>Updated: Wed Aug 26, 3:39 AM PDT</i></sub>
 </td>
 </tr>
 </table>
