@@ -70,22 +70,22 @@
 <table>
 <tr>
 <td align="center" width="160">
-<img src="https://raw.githubusercontent.com/basmilius/weather-icons/dev/production/fill/svg/partly-cloudy-day.svg" width="80" /><br/>
-<strong>65°F</strong><br/>
-<sub>Mainly clear</sub><br/>
-<sub>Feels like 60°F</sub>
+<img src="https://raw.githubusercontent.com/basmilius/weather-icons/dev/production/fill/svg/clear-night.svg" width="80" /><br/>
+<strong>52°F</strong><br/>
+<sub>Clear sky</sub><br/>
+<sub>Feels like 49°F</sub>
 </td>
 <td align="left">
 <strong style="font-size:1.1em">📍 Menlo Park, CA</strong><br/>
-<sub>💨 Wind: 12 mph · 💧 Humidity: 53%</sub><br/>
+<sub>💨 Wind: 4 mph · 💧 Humidity: 69%</sub><br/>
 <sub>🌡️ High: 66°F · Low: 48°F</sub><br/><br/>
 <strong>3-Day Forecast:</strong><br/>
 <sub>
 Sat: ☁️ 66°F / 48°F · 
-Sun: 🌧️ 65°F / 49°F · 
-Mon: ☁️ 68°F / 46°F
+Sun: 🌧️ 64°F / 49°F · 
+Mon: ☁️ 65°F / 46°F
 </sub><br/>
-<sub><i>Updated: Sat Oct 31, 4:14 PM PDT</i></sub>
+<sub><i>Updated: Sat Oct 31, 10:30 PM PDT</i></sub>
 </td>
 </tr>
 </table>
