@@ -11,8 +11,8 @@
 <h4 align="center">
   <a href="https://github.com/zw-g">
     <picture>
-      <source media="(prefers-color-scheme: dark)" srcset="https://readme-typing-svg.demolab.com/?lines=Hi+there+%F0%9F%91%8B+welcome+to+my+Github!;I'm+a+Software+Engineer+%40+Meta;Core+Feed+Ranking+%E2%80%A2+passionate+about+Automation;Exploring+ML+%26+LLM+Agents+%F0%9F%8C%B1&font=Comic+Neue&center=true&width=520&height=45&color=90EE90&vCenter=true&pause=2000&size=18&duration=2500" />
-      <img src="https://readme-typing-svg.demolab.com/?lines=Hi+there+%F0%9F%91%8B+welcome+to+my+Github!;I'm+a+Software+Engineer+%40+Meta;Core+Feed+Ranking+%E2%80%A2+passionate+about+Automation;Exploring+ML+%26+LLM+Agents+%F0%9F%8C%B1&font=Comic+Neue&center=true&width=520&height=45&color=2D2D48&vCenter=true&pause=2000&size=18&duration=2500" />
+      <source media="(prefers-color-scheme: dark)" srcset="https://readme-typing-svg.demolab.com/?lines=Hi+there+%F0%9F%91%8B+welcome+to+my+Github!;I'm+a+Software+Engineer+%40+Meta;Feed+Ranking+%E2%80%A2+passionate+about+Automation;Exploring+ML+%26+AI+Infra+%F0%9F%8C%B1&font=Comic+Neue&center=true&width=520&height=45&color=90EE90&vCenter=true&pause=2000&size=18&duration=2500" />
+      <img src="https://readme-typing-svg.demolab.com/?lines=Hi+there+%F0%9F%91%8B+welcome+to+my+Github!;I'm+a+Software+Engineer+%40+Meta;Feed+Ranking+%E2%80%A2+passionate+about+Automation;Exploring+ML+%26+AI+Infra+%F0%9F%8C%B1&font=Comic+Neue&center=true&width=520&height=45&color=2D2D48&vCenter=true&pause=2000&size=18&duration=2500" />
     </picture>
   </a>
 </h4>
@@ -28,7 +28,7 @@
 <!-- INTRO TEXT                                                      -->
 <!-- ═══════════════════════════════════════════════════════════════ -->
 <p align="center">
-  <samp>Hi there 👋 welcome to my Github! I'm a Software Engineer @ Meta Core Feed Ranking team passionate about Automation.</samp>
+  <samp>Hi there 👋 welcome to my Github! I'm a Software Engineer @ Meta Feed Ranking team passionate about Automation.</samp>
 </p>
 
 <!-- ═══════════════════════════════════════════════════════════════ -->
@@ -54,9 +54,9 @@
 <div align="left">
 
   - 🧑🏻‍💻 My name sounds like **Jaw-Way**
-  - 🎓 I've graduated with BS in **Technology Information Management** & MS in **Software Development**
+  - 🎓 I've graduated with BS in **Technology Information Management** & MS in **Computer Science**
   - 🔭 I'm currently working on **Facebook Feed Ranking** @ Meta
-  - 🌱 I'm currently exploring **Machine Learning**, **LLM Agents**, and AI-powered automation
+  - 🌱 I'm currently exploring **Machine Learning**, **AI Infra**, and AI-powered automation
   - 🤔 My career interests lie in building innovative products that enrich people's everyday experiences.
 
 </div>
@@ -107,10 +107,10 @@ Fri: ☁️ 72°F / 46°F
 <h4 align="center">✨ AI / ML</h4>
 
 <p align="center">
+  <a href="https://ai.meta.com/muse/"><img src="https://raw.githubusercontent.com/zw-g/zw-g/main/assets/muse.png" height="44" alt="Muse" /></a>&nbsp;&nbsp;
   <a href="https://anthropic.com"><img src="https://go-skill-icons.vercel.app/api/icons?i=claude&theme=dark" height="44" alt="Claude" /></a>&nbsp;&nbsp;
   <a href="https://openai.com"><img src="https://go-skill-icons.vercel.app/api/icons?i=chatgpt&theme=dark" height="44" alt="ChatGPT" /></a>&nbsp;&nbsp;
-  <a href="https://deepmind.google/technologies/gemini/"><img src="https://go-skill-icons.vercel.app/api/icons?i=gemini&theme=dark" height="44" alt="Gemini" /></a>&nbsp;&nbsp;
-  <a href="https://pytorch.org"><img src="https://go-skill-icons.vercel.app/api/icons?i=pytorch&theme=dark" height="44" alt="PyTorch" /></a>
+  <a href="https://deepmind.google/technologies/gemini/"><img src="https://go-skill-icons.vercel.app/api/icons?i=gemini&theme=dark" height="44" alt="Gemini" /></a>
 </p>
 
 <hr/>
