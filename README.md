@@ -35,11 +35,11 @@
 <!-- SOCIAL ICONS — all skillicons.dev for consistency              -->
 <!-- ═══════════════════════════════════════════════════════════════ -->
 <p align="center">
-  <a href="https://www.linkedin.com/in/zhaoweigu/"><img src="https://go-skill-icons.vercel.app/api/icons?i=linkedin" height="32" alt="LinkedIn" /></a>&nbsp;
-  <a href="https://github.com/zw-g"><img src="https://go-skill-icons.vercel.app/api/icons?i=github" height="32" alt="GitHub" /></a>&nbsp;
-  <a href="mailto:zhaoweigu1024419269@gmail.com"><img src="https://go-skill-icons.vercel.app/api/icons?i=gmail" height="32" alt="Gmail" /></a>&nbsp;
-  <a href="https://www.instagram.com/zhaoweiiii/"><img src="https://go-skill-icons.vercel.app/api/icons?i=instagram" height="32" alt="Instagram" /></a>&nbsp;
-  <a href="https://www.facebook.com/gzw.fb"><img src="https://go-skill-icons.vercel.app/api/icons?i=facebook" height="32" alt="Facebook" /></a>
+  <a href="https://www.linkedin.com/in/zhaoweigu/"><img src="https://raw.githubusercontent.com/zw-g/zw-g/main/assets/icons/linkedin.svg" height="32" alt="LinkedIn" /></a>&nbsp;
+  <a href="https://github.com/zw-g"><img src="https://raw.githubusercontent.com/zw-g/zw-g/main/assets/icons/github-auto.svg" height="32" alt="GitHub" /></a>&nbsp;
+  <a href="mailto:zhaoweigu1024419269@gmail.com"><img src="https://raw.githubusercontent.com/zw-g/zw-g/main/assets/icons/gmail-auto.svg" height="32" alt="Gmail" /></a>&nbsp;
+  <a href="https://www.instagram.com/zhaoweiiii/"><img src="https://raw.githubusercontent.com/zw-g/zw-g/main/assets/icons/instagram.svg" height="32" alt="Instagram" /></a>&nbsp;
+  <a href="https://www.facebook.com/gzw.fb"><img src="https://raw.githubusercontent.com/zw-g/zw-g/main/assets/icons/facebook.svg" height="32" alt="Facebook" /></a>
 </p>
 
 <!-- ═══════════════════════════════════════════════════════════════ -->
@@ -108,9 +108,9 @@ Sat: ☁️ 62°F / 50°F
 
 <p align="center">
   <a href="https://ai.meta.com/muse/"><img src="https://raw.githubusercontent.com/zw-g/zw-g/main/assets/muse.png" height="44" alt="Muse" /></a>&nbsp;&nbsp;
-  <a href="https://anthropic.com"><img src="https://go-skill-icons.vercel.app/api/icons?i=claude&theme=dark" height="44" alt="Claude" /></a>&nbsp;&nbsp;
-  <a href="https://openai.com"><img src="https://go-skill-icons.vercel.app/api/icons?i=chatgpt&theme=dark" height="44" alt="ChatGPT" /></a>&nbsp;&nbsp;
-  <a href="https://deepmind.google/technologies/gemini/"><img src="https://go-skill-icons.vercel.app/api/icons?i=gemini&theme=dark" height="44" alt="Gemini" /></a>
+  <a href="https://anthropic.com"><img src="https://raw.githubusercontent.com/zw-g/zw-g/main/assets/icons/claude-dark.svg" height="44" alt="Claude" /></a>&nbsp;&nbsp;
+  <a href="https://openai.com"><img src="https://raw.githubusercontent.com/zw-g/zw-g/main/assets/icons/chatgpt-dark.svg" height="44" alt="ChatGPT" /></a>&nbsp;&nbsp;
+  <a href="https://deepmind.google/technologies/gemini/"><img src="https://raw.githubusercontent.com/zw-g/zw-g/main/assets/icons/gemini-dark.svg" height="44" alt="Gemini" /></a>
 </p>
 
 <hr/>
