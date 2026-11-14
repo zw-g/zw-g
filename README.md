@@ -70,22 +70,22 @@
 <table>
 <tr>
 <td align="center" width="160">
-<img src="https://raw.githubusercontent.com/basmilius/weather-icons/dev/production/fill/svg/overcast-day.svg" width="80" /><br/>
-<strong>58°F</strong><br/>
-<sub>Overcast</sub><br/>
-<sub>Feels like 56°F</sub>
+<img src="https://raw.githubusercontent.com/basmilius/weather-icons/dev/production/fill/svg/rain.svg" width="80" /><br/>
+<strong>56°F</strong><br/>
+<sub>Rain</sub><br/>
+<sub>Feels like 55°F</sub>
 </td>
 <td align="left">
 <strong style="font-size:1.1em">📍 Menlo Park, CA</strong><br/>
-<sub>💨 Wind: 12 mph · 💧 Humidity: 78%</sub><br/>
-<sub>🌡️ High: 62°F · Low: 52°F</sub><br/><br/>
+<sub>💨 Wind: 4 mph · 💧 Humidity: 74%</sub><br/>
+<sub>🌡️ High: 64°F · Low: 53°F</sub><br/><br/>
 <strong>3-Day Forecast:</strong><br/>
 <sub>
-Fri: 🌧️ 62°F / 52°F · 
-Sat: ☁️ 61°F / 50°F · 
-Sun: 🌧️ 65°F / 51°F
+Fri: 🌧️ 64°F / 53°F · 
+Sat: 🌧️ 62°F / 52°F · 
+Sun: 🌧️ 65°F / 52°F
 </sub><br/>
-<sub><i>Updated: Fri Nov 13, 7:14 AM PST</i></sub>
+<sub><i>Updated: Fri Nov 13, 6:07 PM PST</i></sub>
 </td>
 </tr>
 </table>
